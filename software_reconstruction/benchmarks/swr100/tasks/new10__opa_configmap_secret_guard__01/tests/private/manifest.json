@@ -1,0 +1,163 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:35:12.817309+00:00",
+  "axes_to_vary": [
+    "identity",
+    "namespace",
+    "resource_shape",
+    "exception",
+    "overlay"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:32.759624+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "opa_configmap_secret_guard",
+  "effective_axes_to_vary": [
+    "exception",
+    "identity",
+    "namespace",
+    "overlay",
+    "resource_shape"
+  ],
+  "family_id": "opa_rego_policy",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "namespace/resource exceptions and negative policy cases",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_2_h",
+        "namespace": "namespace_3_h",
+        "overlay": 7.286,
+        "resource_shape": 6.571
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_10_h",
+        "namespace": "namespace_9_h",
+        "overlay": 4.429,
+        "resource_shape": 6.857
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_5_h",
+        "namespace": "namespace_12_h",
+        "overlay": 4.857,
+        "resource_shape": 3.857
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_2.identity",
+    "public_2.namespace"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:45:06.505039+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_4_p",
+        "namespace": "namespace_0_p",
+        "overlay": 1.857,
+        "resource_shape": 6.714
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "service-account",
+        "namespace": "payments",
+        "overlay": 4.564,
+        "resource_shape": 4.643
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_3_p",
+        "namespace": "namespace_5_p",
+        "overlay": 3.143,
+        "resource_shape": 1.964
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "editor",
+        "namespace": "analytics",
+        "overlay": 3.921,
+        "resource_shape": 3.75
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_15_p",
+        "namespace": "namespace_10_p",
+        "overlay": 2.436,
+        "resource_shape": 9.964
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "auditor",
+        "namespace": "default",
+        "overlay": 4.885,
+        "resource_shape": 9.093
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:37.141517+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:34:13.250585+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "opa",
+    "helm",
+    "kustomize",
+    "kubeconform"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "opa_library",
+    "gatekeeper_library"
+  ],
+  "task_id": "opa_configmap_secret_guard__01"
+}

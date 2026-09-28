@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:33.532019+00:00",
+  "demo_id": "hydro_nodata_fill_policy",
+  "group_id": "hydro_nodata_fill_policy_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 6.5125,
+        "dem_resolution": 9.7059,
+        "flow_direction_method": "stress",
+        "nodata_policy": "baseline",
+        "rainfall_window": 24
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.0625,
+        "dem_resolution": 4.9265,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "edge",
+        "rainfall_window": 19
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.2125,
+        "dem_resolution": 8.3088,
+        "flow_direction_method": "compat",
+        "nodata_policy": "strict",
+        "rainfall_window": 22
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 4.5125,
+        "dem_resolution": 1.4706,
+        "flow_direction_method": "edge",
+        "nodata_policy": "edge",
+        "rainfall_window": 2
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 2.0125,
+        "dem_resolution": 3.3088,
+        "flow_direction_method": "stress",
+        "nodata_policy": "compat",
+        "rainfall_window": 12
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "a881efcf0fe8d766178bf1bbafbe16c589ba8b3098a7cda4550b5765cc708ee5",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__hydro_nodata_fill_policy__04"
+}

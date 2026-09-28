@@ -1,0 +1,44 @@
+{
+  "axes_to_vary": [
+    "lighting",
+    "product_count",
+    "shelf_rows",
+    "label_theme",
+    "camera"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/blender_instanced_product_shelf/input.tar.gz",
+  "base_input_bundle_sha256": "28b3b1fee529662565c93ade4bf9170b2e08bc9c1bfb6a293b95704e0bb51c8b",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group05_20260827_2320/tasks/blender_instanced_product_shelf__blender_instanced_product_s/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "5815141346ca5e718026c03541765227c9ce9bf7330894585c91fd5aac1af863",
+  "benchmark_repaired_at": "2026-09-12T02:44:04.017487+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "blender_instanced_product_shelf",
+  "distinctness": {
+    "artifact_sha256": "5815141346ca5e718026c03541765227c9ce9bf7330894585c91fd5aac1af863",
+    "base_artifact_sha256": "679b10a805914b91b51fc55e761f584f5a635682afccdabb28b11b8ad5a91782",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "family_id": "blender_scene_graph",
+  "family_oracle_repaired": false,
+  "group_id": "blender_instanced_product_shelf_param_group_05",
+  "hidden_intervention": "camera",
+  "minimum_changed_axes": 5,
+  "oracle_distinctness_gate": "Scene graph object/material/node counts or rendered crop hashes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/blender-node-assets/Nodes/Extruder.blend",
+  "status": "parametric_oracle_accepted",
+  "strategy": "hidden_intervention",
+  "task_id": "blender_instanced_product_shelf__05"
+}

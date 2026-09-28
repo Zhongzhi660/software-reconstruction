@@ -1,0 +1,146 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:25.190597+00:00",
+  "axes_to_vary": [
+    "zoom_range",
+    "simplification_tolerance",
+    "layer_filter",
+    "projection",
+    "label_priority"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:54.680876+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Cartography / Map Rendering",
+  "demo_id": "map_feature_minzoom_audit",
+  "effective_axes_to_vary": [
+    "label_priority",
+    "layer_filter",
+    "projection",
+    "simplification_tolerance",
+    "zoom_range"
+  ],
+  "family_id": "cartography_map_rendering",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "OSM/vector-tile summaries under hidden layer, projection, and simplification interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:17:57.140281+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 3.8824,
+        "layer_filter": 1.5529,
+        "projection": [
+          6.6,
+          7.15,
+          7.7
+        ],
+        "simplification_tolerance": 1.4135,
+        "zoom_range": 10
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.2324,
+        "layer_filter": 2.4912,
+        "projection": [
+          3.85,
+          4.4,
+          4.95
+        ],
+        "simplification_tolerance": 2.4915,
+        "zoom_range": 7
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 6.4706,
+        "layer_filter": 4.4118,
+        "projection": [
+          6.0,
+          7.0,
+          8.0
+        ],
+        "simplification_tolerance": 2.29,
+        "zoom_range": 19
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.4706,
+        "layer_filter": 2.5882,
+        "projection": [
+          9.0,
+          10.0,
+          11.0
+        ],
+        "simplification_tolerance": 4.85,
+        "zoom_range": 19
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.0059,
+        "layer_filter": 9.0265,
+        "projection": [
+          18.6,
+          20.15,
+          21.7
+        ],
+        "simplification_tolerance": 3.8595,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "label_priority": 8.0235,
+        "layer_filter": 4.8324,
+        "projection": [
+          17.05,
+          18.6,
+          20.15
+        ],
+        "simplification_tolerance": 6.2155,
+        "zoom_range": 12
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:14.635890+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "tippecanoe",
+    "osmium",
+    "vector-tile tooling"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "tippecanoe",
+    "libosmium"
+  ],
+  "task_id": "map_feature_minzoom_audit__02"
+}

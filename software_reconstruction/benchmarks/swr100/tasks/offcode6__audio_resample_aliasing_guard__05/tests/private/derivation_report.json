@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:03.472204+00:00",
+  "demo_id": "audio_resample_aliasing_guard",
+  "group_id": "audio_resample_aliasing_guard_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "edge",
+        "noise_profile": "baseline",
+        "sample_rate": 11,
+        "window_size": 15
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "stress",
+        "noise_profile": "baseline",
+        "sample_rate": 24,
+        "window_size": 14
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "compat",
+        "noise_profile": "stress",
+        "sample_rate": 20,
+        "window_size": 20
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "strict",
+        "noise_profile": "baseline",
+        "sample_rate": 11,
+        "window_size": 14
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "edge",
+        "filter_type": "strict",
+        "noise_profile": "strict",
+        "sample_rate": 21,
+        "window_size": 4
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "a1495edbc609f003f18aeeff5e75d296a3b4f3326a7025b0327f2c97da803316",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__audio_resample_aliasing_guard__05"
+}

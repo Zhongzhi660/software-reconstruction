@@ -1,0 +1,156 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:40:53.299858+00:00",
+  "axes_to_vary": [
+    "sample_rate",
+    "filter_type",
+    "window_size",
+    "channel_layout",
+    "noise_profile"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:44.416654+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Audio / Signal Processing",
+  "demo_id": "audio_codec_metadata_roundtrip",
+  "effective_axes_to_vary": [
+    "channel_layout",
+    "filter_type",
+    "noise_profile",
+    "sample_rate",
+    "window_size"
+  ],
+  "family_id": "audio_signal_processing",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "unseen resampling/filter/noise interactions not present in public clips",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "strict",
+        "noise_profile": "baseline",
+        "sample_rate": 17,
+        "window_size": 2
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "compat",
+        "filter_type": "edge",
+        "noise_profile": "edge",
+        "sample_rate": 2,
+        "window_size": 3
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "stress",
+        "noise_profile": "compat",
+        "sample_rate": 9,
+        "window_size": 9
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:47:59.522665+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "edge",
+        "filter_type": "stress",
+        "noise_profile": "compat",
+        "sample_rate": 2,
+        "window_size": 9
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "stress",
+        "noise_profile": "baseline",
+        "sample_rate": 3,
+        "window_size": 9
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "strict",
+        "filter_type": "compat",
+        "noise_profile": "edge",
+        "sample_rate": 5,
+        "window_size": 4
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "channel_layout": "compat",
+        "filter_type": "baseline",
+        "noise_profile": "compat",
+        "sample_rate": 3,
+        "window_size": 6
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "strict",
+        "noise_profile": "baseline",
+        "sample_rate": 22,
+        "window_size": 6
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "compat",
+        "noise_profile": "baseline",
+        "sample_rate": 11,
+        "window_size": 25
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:16.394778+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "ffmpeg",
+    "sox",
+    "python scipy.signal",
+    "librosa"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "ffmpeg",
+    "scipy",
+    "librosa"
+  ],
+  "task_id": "audio_codec_metadata_roundtrip__01"
+}

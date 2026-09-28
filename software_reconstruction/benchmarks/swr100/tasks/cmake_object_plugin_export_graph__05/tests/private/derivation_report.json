@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:58:44.883708+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076",
+    "base_artifact_sha256": "a39245ca4b237af678600a5de6a9f0619d0a7d6f8932cf6e73d231e22f9917d7",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 797
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "305278a0baecd6af15c284f8dbae2d29967bda488d384a6b4970e545577ca6be",
+  "reference_outputs_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076",
+  "status": "parametric_oracle_accepted",
+  "task_id": "cmake_object_plugin_export_graph__05"
+}

@@ -1,0 +1,127 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:37.404006+00:00",
+  "axes_to_vary": [
+    "joint_limit",
+    "actuator_gain",
+    "initial_pose",
+    "trajectory_target",
+    "collision_margin"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:47:02.199067+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Robotics / Control",
+  "demo_id": "robotics_urdf_mass_inertia_repair",
+  "effective_axes_to_vary": [
+    "actuator_gain",
+    "collision_margin",
+    "initial_pose",
+    "joint_limit",
+    "trajectory_target"
+  ],
+  "family_id": "robotics_control",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "joint/controller/collision boundary cases under hidden poses",
+  "naturalized_public_parameter_keys": [
+    "public_1.trajectory_target",
+    "public_2.trajectory_target"
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:50:58.754376+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 6,
+        "collision_margin": false,
+        "initial_pose": 10.6615,
+        "joint_limit": 3.7692,
+        "trajectory_target": "trajectory-target-9"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 3,
+        "collision_margin": true,
+        "initial_pose": 5.4923,
+        "joint_limit": 9.9077,
+        "trajectory_target": "trajectory-target-4"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 10,
+        "collision_margin": false,
+        "initial_pose": 6.0769,
+        "joint_limit": 6.1538,
+        "trajectory_target": "trajectory-target-4"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 16,
+        "collision_margin": true,
+        "initial_pose": 6.4615,
+        "joint_limit": 2.3846,
+        "trajectory_target": "trajectory-target-3"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 6,
+        "collision_margin": true,
+        "initial_pose": 2.2846,
+        "joint_limit": 1.9038,
+        "trajectory_target": "trajectory-target-14"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 8,
+        "collision_margin": false,
+        "initial_pose": 3.6385,
+        "joint_limit": 1.8192,
+        "trajectory_target": "trajectory-target-16"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:53.182941+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "mujoco",
+    "python",
+    "urdf/mjcf tooling"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "mujoco_menagerie",
+    "gymnasium_robotics",
+    "robot_descriptions"
+  ],
+  "task_id": "robotics_urdf_mass_inertia_repair__05"
+}

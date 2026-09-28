@@ -1,0 +1,245 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:51.921539+00:00",
+  "axes_to_vary": [
+    "base_image",
+    "package_set",
+    "labels",
+    "entrypoint",
+    "sbom_scope"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:25.298493+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "container_syft_python_sbom",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: online source exists and complexity meets medium-high threshold",
+    "difficulty_score": 10,
+    "expected_command_lines": 14,
+    "expected_oracle_steps": 21,
+    "parameter_axis_count": 5,
+    "rationale": "medium-high: multi-command native tool oracle with hidden parameter axes and nontrivial fixtures",
+    "static_source_bytes": 859797,
+    "static_source_file_count": 6597,
+    "static_source_repos": {
+      "hadolint": {
+        "bytes": 256457,
+        "exists": true,
+        "file_count": 232,
+        "suffix_counts": {
+          ".cabal": 1,
+          ".css": 1,
+          ".dockerignore": 1,
+          ".envrc": 1,
+          ".eot": 1,
+          ".gitignore": 1,
+          ".hs": 187,
+          ".json": 1,
+          ".lock": 1,
+          ".md": 6,
+          ".nix": 1,
+          ".png": 2,
+          ".project": 1,
+          ".scss": 4,
+          ".sh": 2,
+          ".txt": 1,
+          ".yaml": 6,
+          ".yml": 5,
+          "dockerfile": 1,
+          "license": 1
+        }
+      },
+      "syft": {
+        "bytes": 246997,
+        "exists": true,
+        "file_count": 2985,
+        "suffix_counts": {
+          ".cs": 16,
+          ".gitignore": 56,
+          ".go": 1190,
+          ".golden": 29,
+          ".json": 255,
+          ".lock": 79,
+          ".md": 33,
+          ".mod": 17,
+          ".properties": 17,
+          ".py": 16,
+          ".sh": 29,
+          ".txt": 101,
+          ".xml": 42,
+          ".yaml": 101,
+          "dockerfile": 83,
+          "envoy": 20,
+          "grafana": 16,
+          "license": 18,
+          "makefile": 30,
+          "os-release": 29
+        }
+      },
+      "trivy": {
+        "bytes": 356343,
+        "exists": true,
+        "file_count": 3380,
+        "suffix_counts": {
+          ".go": 1624,
+          ".golden": 121,
+          ".gz": 11,
+          ".json": 266,
+          ".lock": 101,
+          ".md": 210,
+          ".mod": 15,
+          ".png": 17,
+          ".pom": 42,
+          ".rego": 46,
+          ".sh": 11,
+          ".sum": 16,
+          ".tf": 44,
+          ".toml": 39,
+          ".txt": 77,
+          ".txtar": 44,
+          ".xml": 100,
+          ".yaml": 255,
+          ".yml": 18,
+          "dockerfile": 10
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "base_image",
+    "entrypoint",
+    "labels",
+    "package_set",
+    "sbom_scope"
+  ],
+  "family_id": "container_supply_chain",
+  "family_oracle_repaired": false,
+  "group_id": "container_syft_python_sbom_param_group_03",
+  "hidden_intervention": "SBOM/license/label edge cases not visible in public layer",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "base_image": 7.086,
+        "entrypoint": "entrypoint_15_h",
+        "labels": 3.764,
+        "package_set": 7.971,
+        "sbom_scope": 4.871
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "base_image": 7.529,
+        "entrypoint": "entrypoint_2_h",
+        "labels": 1.55,
+        "package_set": 10.186,
+        "sbom_scope": 8.414
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "base_image": 11.514,
+        "entrypoint": "entrypoint_6_h",
+        "labels": 4.207,
+        "package_set": 3.986,
+        "sbom_scope": 6.421
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "image_family": "Container / Supply Chain",
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:43:58.434427+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "base_image": 6.421,
+        "entrypoint": "entrypoint_2_p",
+        "labels": 8.193,
+        "package_set": 10.186,
+        "sbom_scope": 11.736
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "base_image": 11.293,
+        "entrypoint": "entrypoint_7_p",
+        "labels": 4.871,
+        "package_set": 8.414,
+        "sbom_scope": 2.214
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "base_image": 7.286,
+        "entrypoint": "entrypoint_8_p",
+        "labels": 5.143,
+        "package_set": 8.0,
+        "sbom_scope": 2.571
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "base_image": 4.429,
+        "entrypoint": "entrypoint_1_p",
+        "labels": 8.0,
+        "package_set": 6.857,
+        "sbom_scope": 3.571
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "base_image": 2.829,
+        "entrypoint": "entrypoint_10_p",
+        "labels": 2.436,
+        "package_set": 0.629,
+        "sbom_scope": 4.086
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "base_image": 3.064,
+        "entrypoint": "entrypoint_15_p",
+        "labels": 2.436,
+        "package_set": 4.4,
+        "sbom_scope": 1.1
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:21.835993+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "hadolint",
+    "syft",
+    "skopeo"
+  ],
+  "source_repos": [
+    "hadolint",
+    "syft",
+    "trivy"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "boundary_high",
+  "task_id": "container_syft_python_sbom__03"
+}

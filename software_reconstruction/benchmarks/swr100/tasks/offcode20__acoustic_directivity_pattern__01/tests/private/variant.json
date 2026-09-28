@@ -1,0 +1,200 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:37.423682+00:00",
+  "axes_to_vary": [
+    "room_size",
+    "absorption_level",
+    "microphone_array",
+    "source_position",
+    "rir_length"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:20:08.280450+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Acoustics / Room Simulation",
+  "demo_id": "acoustic_directivity_pattern",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 14,
+    "expected_oracle_steps": 36,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 93,
+    "static_source_bytes": 9582678,
+    "static_source_file_count": 103,
+    "static_source_repos": {
+      "pyroomacoustics": {
+        "bytes": 8562616,
+        "domain_file_count": 53,
+        "exists": true,
+        "file_count": 58,
+        "suffix_counts": {
+          ".md": 1,
+          ".png": 2,
+          ".py": 37,
+          ".stl": 1,
+          ".txt": 1,
+          ".wav": 16
+        }
+      },
+      "scipy": {
+        "bytes": 1020062,
+        "domain_file_count": 40,
+        "exists": true,
+        "file_count": 45,
+        "suffix_counts": {
+          ".build": 4,
+          ".csv": 1,
+          ".md": 1,
+          ".py": 39
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "absorption_level",
+    "microphone_array",
+    "rir_length",
+    "room_size",
+    "source_position"
+  ],
+  "family_id": "acoustics_room_simulation",
+  "family_oracle_repaired": true,
+  "group_id": "acoustic_directivity_pattern_param_group_01",
+  "hidden_intervention": "room impulse and beamforming summaries under hidden geometry/acoustic interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 2.0588,
+        "rir_length": 4.4118,
+        "room_size": 11,
+        "source_position": "source_position_23_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 3.2941,
+        "rir_length": 5.2941,
+        "room_size": 12,
+        "source_position": "source_position_8_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 7,
+        "microphone_array": 7.5882,
+        "rir_length": 5.0,
+        "room_size": 17,
+        "source_position": "source_position_26_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.source_position",
+    "public_2.source_position"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:09:44.835702+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 15,
+        "microphone_array": 7.8235,
+        "rir_length": 1.5882,
+        "room_size": 17,
+        "source_position": "source-position-1"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 3,
+        "microphone_array": 4.4706,
+        "rir_length": 3.7059,
+        "room_size": 2,
+        "source_position": "source-position-4"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 3,
+        "microphone_array": 3.9794,
+        "rir_length": 1.8118,
+        "room_size": 8,
+        "source_position": "source-position-10"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 2.9441,
+        "rir_length": 1.4235,
+        "room_size": 2,
+        "source_position": "source-position-8"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "absorption_level": 5,
+        "microphone_array": 3.9206,
+        "rir_length": 3.2824,
+        "room_size": 20,
+        "source_position": "source-position-17"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "absorption_level": 26,
+        "microphone_array": 8.7529,
+        "rir_length": 9.1176,
+        "room_size": 9,
+        "source_position": "source-position-15"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:55.643546+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "pyroomacoustics",
+    "scipy.signal"
+  ],
+  "source_repos": [
+    "pyroomacoustics",
+    "scipy"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "balanced_shift",
+  "task_id": "acoustic_directivity_pattern__01"
+}

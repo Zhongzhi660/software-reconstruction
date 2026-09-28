@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:09.430510+00:00",
+  "demo_id": "audio_codec_metadata_roundtrip",
+  "group_id": "audio_codec_metadata_roundtrip_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "strict",
+        "noise_profile": "baseline",
+        "sample_rate": 17,
+        "window_size": 2
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "compat",
+        "filter_type": "edge",
+        "noise_profile": "edge",
+        "sample_rate": 2,
+        "window_size": 3
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "stress",
+        "noise_profile": "compat",
+        "sample_rate": 9,
+        "window_size": 9
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "edge",
+        "filter_type": "stress",
+        "noise_profile": "compat",
+        "sample_rate": 2,
+        "window_size": 9
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "stress",
+        "noise_profile": "baseline",
+        "sample_rate": 3,
+        "window_size": 9
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "e9fc4aacfc5590b3c8e7554ab9f703a00dfbed0490094bb1f89ee7775514751b",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__audio_codec_metadata_roundtrip__01"
+}

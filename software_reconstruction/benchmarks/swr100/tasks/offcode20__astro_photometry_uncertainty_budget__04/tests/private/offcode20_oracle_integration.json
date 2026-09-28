@@ -1,0 +1,7 @@
+{
+  "family_id": "astronomy_fits_photometry",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:47:53.426844+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__astro_photometry_uncertainty_budget__04"
+}

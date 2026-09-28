@@ -1,0 +1,153 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:22.727376+00:00",
+  "axes_to_vary": [
+    "enzyme_rule",
+    "mass_tolerance",
+    "charge_state",
+    "retention_window",
+    "fdr_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:25.449544+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Proteomics / Mass Spectrometry",
+  "demo_id": "proteomics_psm_fdr_filter",
+  "effective_axes_to_vary": [
+    "charge_state",
+    "enzyme_rule",
+    "fdr_threshold",
+    "mass_tolerance",
+    "retention_window"
+  ],
+  "family_id": "proteomics_mass_spectrometry",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "mzML/peptide QC summaries under hidden tolerance, charge, and FDR interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 5.7647,
+        "enzyme_rule": 10.7882,
+        "fdr_threshold": 3.43,
+        "mass_tolerance": 5.11,
+        "retention_window": 14
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 6.1765,
+        "enzyme_rule": 10.0471,
+        "fdr_threshold": 6.846,
+        "mass_tolerance": 1.694,
+        "retention_window": 13
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.8235,
+        "enzyme_rule": 8.3176,
+        "fdr_threshold": 1.75,
+        "mass_tolerance": 2.478,
+        "retention_window": 8
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:23:33.297036+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 1.6471,
+        "enzyme_rule": 3.4588,
+        "fdr_threshold": 5.502,
+        "mass_tolerance": 2.534,
+        "retention_window": 3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 2.1412,
+        "enzyme_rule": 7.9059,
+        "fdr_threshold": 0.07,
+        "mass_tolerance": 0.126,
+        "retention_window": 21
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 5.2941,
+        "enzyme_rule": 3.7059,
+        "fdr_threshold": 2.01,
+        "mass_tolerance": 1.29,
+        "retention_window": 14
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.8235,
+        "enzyme_rule": 4.0588,
+        "fdr_threshold": 0.49,
+        "mass_tolerance": 2.37,
+        "retention_window": 15
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "charge_state": 3.9147,
+        "enzyme_rule": 4.0765,
+        "fdr_threshold": 0.0935,
+        "mass_tolerance": 2.0075,
+        "retention_window": 10
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "charge_state": 3.0412,
+        "enzyme_rule": 4.2706,
+        "fdr_threshold": 0.5775,
+        "mass_tolerance": 0.3795,
+        "retention_window": 6
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:11.332997+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "OpenMS",
+    "pyteomics"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "openms",
+    "pyteomics"
+  ],
+  "task_id": "proteomics_psm_fdr_filter__05"
+}

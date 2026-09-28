@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:57:23.987752+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "8afb20bfe6e1b89a356cf6aee40e41e950f01be8c8461d1e7b85773e410cbbbd",
+    "base_artifact_sha256": "ea7db4df6cc8cc7387b51a02fdae3398acdd9c71b38ab29da62735ccadfaa2d5",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 206
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "173bcb705f0a3c1588d73d41a9f6e32a4cfe21c437aae56eb82a74079ac7f673",
+  "reference_outputs_sha256": "8afb20bfe6e1b89a356cf6aee40e41e950f01be8c8461d1e7b85773e410cbbbd",
+  "status": "parametric_oracle_accepted",
+  "task_id": "cmake_tutorial_complete__04"
+}

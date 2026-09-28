@@ -1,0 +1,7 @@
+{
+  "family_id": "structural_biology_pdb",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:28.279184+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__pdb_solvent_accessibility_proxy__01"
+}

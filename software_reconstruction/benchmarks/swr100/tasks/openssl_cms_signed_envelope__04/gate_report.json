@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "add299d53709a7ca7f5f295f6d87a59071c09dc754e32184380ea606db88937c",
+      "base_artifact_sha256": "dd9759ae5a3f6180326d0722923ef0d721997b94e9bcd56942ebf1730bf9d6ba",
+      "overlap_with_base_signature_count": 1,
+      "passed": true,
+      "payload_signature_count": 33
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/openssl_cms_signed_envelope__openssl_cms_signed_envelope_par/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "add299d53709a7ca7f5f295f6d87a59071c09dc754e32184380ea606db88937c"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "openssl_cms_signed_envelope__04"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:46.251541+00:00",
+  "demo_id": "geology_unit_conversion_audit",
+  "group_id": "geology_unit_conversion_audit_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "edge",
+        "depth_interval": 2.7941,
+        "lithology_alias": 4.3382,
+        "smoothing_window": 20,
+        "unit_system": 5.8088
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "strict",
+        "depth_interval": 5.2941,
+        "lithology_alias": 5.5882,
+        "smoothing_window": 11,
+        "unit_system": 9.1912
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "curve_selection": "stress",
+        "depth_interval": 5.5147,
+        "lithology_alias": 9.1176,
+        "smoothing_window": 5,
+        "unit_system": 8.6765
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 8.3088,
+        "lithology_alias": 5.9559,
+        "smoothing_window": 12,
+        "unit_system": 5.0
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "strict",
+        "depth_interval": 3.4559,
+        "lithology_alias": 3.6029,
+        "smoothing_window": 16,
+        "unit_system": 8.2353
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "9346a572fcb8b8d0bbdebf8d8e2fc3099dbf3bec30d74c35d0cf91464542954f",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__geology_unit_conversion_audit__04"
+}

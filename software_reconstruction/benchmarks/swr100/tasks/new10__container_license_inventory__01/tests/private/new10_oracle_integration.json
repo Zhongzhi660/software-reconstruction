@@ -1,0 +1,7 @@
+{
+  "family_id": "container_supply_chain",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:50.668606+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__container_license_inventory__01"
+}

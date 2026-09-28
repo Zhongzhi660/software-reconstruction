@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:53.763360+00:00",
+  "demo_id": "astro_image_stack_alignment",
+  "group_id": "astro_image_stack_alignment_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 3,
+        "background_model": "domain_specific",
+        "sigma_clip": 8.041,
+        "source_threshold": 4.029,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 10,
+        "background_model": "compat",
+        "sigma_clip": 1.785,
+        "source_threshold": 0.085,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 22,
+        "background_model": "strict",
+        "sigma_clip": 8.721,
+        "source_threshold": 2.941,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 3,
+        "background_model": "stress",
+        "sigma_clip": 4.641,
+        "source_threshold": 5.661,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 5,
+        "background_model": "baseline",
+        "sigma_clip": 8.721,
+        "source_threshold": 8.721,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "3136bd75c5d1d13ff008b7e8ff65a05917b91c062aca483c99b6dbc89f09e0a2",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__astro_image_stack_alignment__06"
+}

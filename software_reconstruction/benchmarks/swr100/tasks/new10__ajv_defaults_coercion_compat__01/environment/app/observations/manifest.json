@@ -1,0 +1,128 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:35.952748+00:00",
+  "axes_to_vary": [
+    "union_branch",
+    "required_fields",
+    "additional_properties",
+    "format",
+    "recursive_ref"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:20.026538+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "ajv_defaults_coercion_compat",
+  "effective_axes_to_vary": [
+    "additional_properties",
+    "format",
+    "recursive_ref",
+    "required_fields",
+    "union_branch"
+  ],
+  "family_id": "ajv_schema",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "invalid near-miss payloads and recursive references",
+  "naturalized_public_parameter_keys": [
+    "public_2.format"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:42:52.414618+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 3.0,
+        "format": "edge",
+        "recursive_ref": 4.0,
+        "required_fields": 5.286,
+        "union_branch": 4.571
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.713,
+        "format": "csv",
+        "recursive_ref": 6.744,
+        "required_fields": 3.998,
+        "union_branch": 5.971
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.021,
+        "format": "baseline",
+        "recursive_ref": 3.771,
+        "required_fields": 2.829,
+        "union_branch": 3.3
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.42,
+        "format": "table",
+        "recursive_ref": 5.844,
+        "required_fields": 4.698,
+        "union_branch": 2.521
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "additional_properties": 9.743,
+        "format": "compat",
+        "recursive_ref": 10.85,
+        "required_fields": 4.65,
+        "union_branch": 9.521
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "additional_properties": 8.906,
+        "format": "report",
+        "recursive_ref": 8.244,
+        "required_fields": 9.683,
+        "union_branch": 10.828
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:04.604887+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:54:14.720522+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "ajv",
+    "jsonschema"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "json_schema_tests",
+    "ajv"
+  ],
+  "task_id": "ajv_defaults_coercion_compat__01"
+}

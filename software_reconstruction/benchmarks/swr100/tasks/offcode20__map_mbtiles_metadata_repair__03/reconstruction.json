@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "cartography_map_rendering",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "zoom_range",
+      "simplification_tolerance",
+      "layer_filter",
+      "projection",
+      "label_priority"
+    ],
+    "demo_id": "map_mbtiles_metadata_repair",
+    "group_id": "map_mbtiles_metadata_repair_param_group_03",
+    "hidden_intervention": "OSM/vector-tile summaries under hidden layer, projection, and simplification interventions",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+    "source_group": "offcode20"
+  },
+  "parent": {
+    "attribution": "offcode20 online demo map_mbtiles_metadata_repair with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "842bbabcf8f92cad2fc0e9beb70ff8f1a9933bfdc7f382be0ee69a02ee12e738",
+    "source_url": "acquired:offcode20:cartography_map_rendering"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "cartography_map_rendering reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:cartography_map_rendering",
+    "name": "tippecanoe, osmium, vector-tile tooling",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:38:27.943828+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode20_public_artifacts_repaired_at": "2026-08-31T04:18:19.039240+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 4470,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:39:17.518106+00:00"
+  },
+  "task_id": "offcode20__map_mbtiles_metadata_repair__03"
+}

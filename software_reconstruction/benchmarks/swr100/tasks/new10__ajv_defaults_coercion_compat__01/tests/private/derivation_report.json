@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:35.285017+00:00",
+  "demo_id": "ajv_defaults_coercion_compat",
+  "group_id": "ajv_defaults_coercion_compat_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 3.714,
+        "format": "baseline",
+        "recursive_ref": 2.714,
+        "required_fields": 3.0,
+        "union_branch": 7.571
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 6.429,
+        "format": "compat",
+        "recursive_ref": 4.143,
+        "required_fields": 7.714,
+        "union_branch": 1.429
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 3.0,
+        "format": "baseline",
+        "recursive_ref": 1.0,
+        "required_fields": 1.857,
+        "union_branch": 5.286
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 3.0,
+        "format": "edge",
+        "recursive_ref": 4.0,
+        "required_fields": 5.286,
+        "union_branch": 4.571
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.0,
+        "format": "compat",
+        "recursive_ref": 5.143,
+        "required_fields": 2.286,
+        "union_branch": 4.0
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "233b2deb2e55f0e96e96734d93ebc7733d3184392a6490737ebd44b2f5112d4a",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__ajv_defaults_coercion_compat__01"
+}

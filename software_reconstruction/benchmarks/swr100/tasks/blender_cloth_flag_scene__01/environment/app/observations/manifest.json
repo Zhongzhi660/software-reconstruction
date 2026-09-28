@@ -1,0 +1,74 @@
+{
+  "axes_to_vary": [
+    "wind_strength",
+    "pin_group",
+    "frame",
+    "cloth_subdiv"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/blender_cloth_flag_scene/input.tar.gz",
+  "base_input_bundle_sha256": "529340403ba74722c9702ff6e74ec5222125dca4a86c7d2a337541db8d92bb27",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group01_20260827_2305/tasks/blender_cloth_flag_scene__blender_cloth_flag_scene_param_gro/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad",
+  "benchmark_repaired_at": "2026-09-12T02:44:01.880868+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "blender_cloth_flag_scene",
+  "distinctness": {
+    "artifact_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad",
+    "base_artifact_sha256": "94c0565d1a8080af4681e5461a7f9e73a2ecea8b4b624a4e00836404197f9c61",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "family_id": "blender_scene_graph",
+  "family_oracle_repaired": false,
+  "group_id": "blender_cloth_flag_scene_param_group_01",
+  "hidden_intervention": "cloth_subdiv",
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "Scene graph object/material/node counts or rendered crop hashes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_count": 2,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "cloth_subdiv": 3.1,
+        "frame": 21,
+        "pin_group": 6.7,
+        "wind_strength": 3.1
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "cloth_subdiv": 5.9,
+        "frame": 16,
+        "pin_group": 3.1,
+        "wind_strength": 1.4
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/blender-node-assets/Nodes/Grid Plus.blend",
+  "status": "parametric_oracle_accepted",
+  "strategy": "balanced_shift",
+  "task_id": "blender_cloth_flag_scene__01"
+}

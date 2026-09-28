@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+import json
+import hashlib
+import pathlib
+import subprocess
+import sys
+import tarfile
+
+WORKSPACE = pathlib.Path("/app/workspace")
+OBS_DIR = pathlib.Path("/app/observations")
+MANIFEST_PATH = OBS_DIR / "manifest.json"
+REFERENCE_TAR = OBS_DIR / "reference_outputs.tar.gz"
+
+
+def digest(obj):
+    return hashlib.sha256(json.dumps(obj, sort_keys=True, default=str).encode()).hexdigest()
+
+
+def candidate_summary(payload):
+    if isinstance(payload, dict) and isinstance(payload.get("summary"), dict):
+        return payload["summary"]
+    if isinstance(payload, dict) and isinstance(payload.get("result"), dict):
+        return payload["result"]
+    return payload
+
+
+def load_public_payload():
+    if not REFERENCE_TAR.is_file():
+        return None, {"error": f"missing {REFERENCE_TAR}"}
+    try:
+        with tarfile.open(REFERENCE_TAR, "r:gz") as tar:
+            handle = tar.extractfile("public_manifest.json")
+            if handle is None:
+                return None, {"error": "reference tar has no public_manifest.json"}
+            return json.loads(handle.read().decode("utf-8")), None
+    except Exception as exc:
+        return None, {"error": f"cannot read public reference tar: {type(exc).__name__}: {exc}"}
+
+
+def run_candidate(reconstruct, scenario):
+    proc = subprocess.run(
+        [sys.executable, str(reconstruct)],
+        input=json.dumps(scenario, sort_keys=True),
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        timeout=45,
+    )
+    if proc.returncode != 0:
+        return None, {"returncode": proc.returncode, "stderr": proc.stderr[-2000:]}
+    try:
+        return json.loads(proc.stdout), None
+    except Exception as exc:
+        return None, {"error": f"candidate stdout is not JSON: {exc}", "stdout": proc.stdout[-2000:]}
+
+
+def shallow_diff(expected, got):
+    if not isinstance(expected, dict) or not isinstance(got, dict):
+        return [] if expected == got else [{"path": "$", "expected": expected, "got": got}]
+    diffs = []
+    for key in sorted(set(expected) | set(got)):
+        if expected.get(key) != got.get(key):
+            diffs.append({"path": key, "expected": expected.get(key), "got": got.get(key)})
+        if len(diffs) >= 12:
+            break
+    return diffs
+
+
+def main():
+    manifest = json.loads(MANIFEST_PATH.read_text()) if MANIFEST_PATH.is_file() else {}
+    public_payload, payload_error = load_public_payload()
+    reconstruct = WORKSPACE / "reconstruct.py"
+    files = [p for p in WORKSPACE.rglob("*") if p.is_file()]
+    payload = {
+        "graded": True,
+        "task_id": manifest.get("task_id"),
+        "family_id": manifest.get("family_id"),
+        "observation_manifest": str(MANIFEST_PATH),
+        "reference_outputs": str(REFERENCE_TAR),
+        "public_scenario_count": len(manifest.get("public_scenarios", [])),
+        "workspace_file_count": len(files),
+        "workspace_bytes": sum(p.stat().st_size for p in files),
+        "has_reconstruct_py": reconstruct.is_file(),
+        "public_checks": [],
+    }
+    if payload_error is not None:
+        payload["public_feedback_error"] = payload_error
+        print(json.dumps(payload, indent=2, sort_keys=True))
+        return 0
+    if not reconstruct.is_file():
+        payload["public_feedback_error"] = {"error": "missing /app/workspace/reconstruct.py"}
+        print(json.dumps(payload, indent=2, sort_keys=True))
+        return 0
+
+    by_id = {s.get("scenario_id"): s for s in public_payload.get("public_scenarios", [])}
+    for scenario in manifest.get("public_scenarios", []):
+        sid = scenario.get("scenario_id")
+        expected_record = by_id.get(sid) or {}
+        expected_output = expected_record.get("oracle_output")
+        expected_summary = candidate_summary(expected_output)
+        expected_signature = expected_record.get("signature") or digest(expected_output)
+        got, error = run_candidate(reconstruct, scenario)
+        check = {
+            "scenario_id": sid,
+            "parameters": scenario.get("parameters", {}),
+            "expected_signature": expected_signature,
+        }
+        if error is not None:
+            check.update({"passed": False, "error": error})
+        else:
+            got_summary = candidate_summary(got)
+            got_signature = got.get("signature") if isinstance(got, dict) else None
+            if got_signature is None:
+                got_signature = digest(got_summary)
+            passed = got_signature == expected_signature or got_summary == expected_summary or got == expected_output
+            check.update({
+                "passed": passed,
+                "candidate_signature": got_signature,
+                "field_diffs": [] if passed else shallow_diff(expected_summary, got_summary),
+            })
+        payload["public_checks"].append(check)
+
+    checks = payload["public_checks"]
+    payload["public_passed"] = bool(checks) and all(item.get("passed") for item in checks)
+    payload["public_pass_count"] = sum(1 for item in checks if item.get("passed"))
+    print(json.dumps(payload, indent=2, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,208 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:35:24.761143+00:00",
+  "axes_to_vary": [
+    "protocol",
+    "port",
+    "flow_pattern",
+    "packet_loss",
+    "alert_rule"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:37.899704+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "pcap_icmp_path_anomaly",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: online source exists and complexity meets medium-high threshold",
+    "difficulty_score": 10,
+    "expected_command_lines": 10,
+    "expected_oracle_steps": 12,
+    "parameter_axis_count": 5,
+    "rationale": "medium-high: multi-command native tool oracle with hidden parameter axes and nontrivial fixtures",
+    "static_source_bytes": 117765683,
+    "static_source_file_count": 7587,
+    "static_source_repos": {
+      "packets": {
+        "bytes": 115078002,
+        "exists": true,
+        "file_count": 77,
+        "suffix_counts": {
+          ".md": 1,
+          ".pcap": 1,
+          ".pcapclear": 1,
+          ".pcapng": 74
+        }
+      },
+      "wireshark": {
+        "bytes": 2687681,
+        "exists": true,
+        "file_count": 7510,
+        "suffix_counts": {
+          ".adoc": 91,
+          ".asn": 508,
+          ".c": 2469,
+          ".cmake": 77,
+          ".cnf": 170,
+          ".cpp": 336,
+          ".gz": 91,
+          ".h": 1468,
+          ".idl": 72,
+          ".in": 36,
+          ".lua": 34,
+          ".pcap": 72,
+          ".pcapng": 65,
+          ".pl": 34,
+          ".png": 465,
+          ".py": 140,
+          ".svg": 127,
+          ".txt": 232,
+          ".ui": 107,
+          ".xml": 65
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "alert_rule",
+    "flow_pattern",
+    "packet_loss",
+    "port",
+    "protocol"
+  ],
+  "family_id": "network_security_pcap",
+  "family_oracle_repaired": false,
+  "group_id": "pcap_icmp_path_anomaly_param_group_03",
+  "hidden_intervention": "protocol decoys and packet-loss/fragmentation cases",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "alert_rule": 9.964,
+        "flow_pattern": 11.736,
+        "packet_loss": true,
+        "port": 12,
+        "protocol": "strict"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "alert_rule": 8.414,
+        "flow_pattern": 5.314,
+        "packet_loss": true,
+        "port": 8,
+        "protocol": "compat"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "alert_rule": 10.629,
+        "flow_pattern": 6.643,
+        "packet_loss": true,
+        "port": 12,
+        "protocol": "stress"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "image_family": "Network Security",
+  "naturalized_public_parameter_keys": [
+    "public_2.protocol"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:45:58.158562+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "alert_rule": 10.629,
+        "flow_pattern": 5.979,
+        "packet_loss": false,
+        "port": 5,
+        "protocol": "strict"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "alert_rule": 11.6,
+        "flow_pattern": 6.73,
+        "packet_loss": true,
+        "port": 28,
+        "protocol": "tcp"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "alert_rule": 3.0,
+        "flow_pattern": 4.143,
+        "packet_loss": true,
+        "port": 3,
+        "protocol": "baseline"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "alert_rule": 6.893,
+        "flow_pattern": 5.337,
+        "packet_loss": false,
+        "port": 32,
+        "protocol": "dns"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "alert_rule": 0.55,
+        "flow_pattern": 4.086,
+        "packet_loss": true,
+        "port": 3,
+        "protocol": "baseline"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "alert_rule": 1.693,
+        "flow_pattern": 3.865,
+        "packet_loss": false,
+        "port": 27,
+        "protocol": "http"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:49.069814+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:40:38.742690+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "tshark",
+    "tcpdump",
+    "nmap"
+  ],
+  "source_repos": [
+    "wireshark",
+    "packets"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "boundary_high",
+  "task_id": "pcap_icmp_path_anomaly__03"
+}

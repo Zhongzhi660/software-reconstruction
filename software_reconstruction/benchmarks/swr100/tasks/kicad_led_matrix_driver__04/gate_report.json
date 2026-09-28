@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2",
+      "base_artifact_sha256": "f00c70a58f9293ef238f928070ea27798c66f3da3781fd266a6d607861f294e8",
+      "overlap_with_base_signature_count": 1,
+      "passed": true,
+      "payload_signature_count": 6
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/kicad_led_matrix_driver__kicad_led_matrix_driver_param_group/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "kicad_led_matrix_driver__04"
+}

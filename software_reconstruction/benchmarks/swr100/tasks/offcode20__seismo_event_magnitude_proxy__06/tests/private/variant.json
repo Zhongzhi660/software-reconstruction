@@ -1,0 +1,206 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:35.679982+00:00",
+  "axes_to_vary": [
+    "station_selection",
+    "filter_band",
+    "phase_pick",
+    "response_removal",
+    "window_duration"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:30.494163+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Seismology / Waveforms",
+  "demo_id": "seismo_event_magnitude_proxy",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 20,
+    "expected_oracle_steps": 20,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 284,
+    "static_source_bytes": 18891652,
+    "static_source_file_count": 787,
+    "static_source_repos": {
+      "obspy": {
+        "bytes": 18891652,
+        "domain_file_count": 284,
+        "exists": true,
+        "file_count": 787,
+        "suffix_counts": {
+          ".asc": 7,
+          ".ascii": 13,
+          ".c": 3,
+          ".csv": 3,
+          ".dat": 19,
+          ".dataless": 9,
+          ".evt": 7,
+          ".gse": 3,
+          ".gz": 63,
+          ".hyp": 6,
+          ".lst": 4,
+          ".mini": 8,
+          ".mseed": 77,
+          ".ndk": 7,
+          ".npy": 18,
+          ".npz": 7,
+          ".out": 4,
+          ".pkl": 84,
+          ".png": 5,
+          ".py": 23,
+          ".qbn": 4,
+          ".qhd": 4,
+          ".resp": 5,
+          ".sac": 16,
+          ".sc3ml": 22,
+          ".seed": 7,
+          ".txt": 48,
+          ".wfdisc": 4,
+          ".xml": 89,
+          ".z": 5
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "filter_band",
+    "phase_pick",
+    "response_removal",
+    "station_selection",
+    "window_duration"
+  ],
+  "family_id": "seismology_waveform_processing",
+  "family_oracle_repaired": false,
+  "group_id": "seismo_event_magnitude_proxy_param_group_06",
+  "hidden_intervention": "waveform and station metadata summaries under hidden filter/pick/window changes",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "filter_band": 3.0,
+        "phase_pick": 7.2,
+        "response_removal": false,
+        "station_selection": "strict",
+        "window_duration": 20
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "filter_band": 4.3,
+        "phase_pick": 12.2,
+        "response_removal": false,
+        "station_selection": "stress",
+        "window_duration": 19
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "filter_band": 5.0,
+        "phase_pick": 2.3,
+        "response_removal": true,
+        "station_selection": "stress",
+        "window_duration": 5
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:24:47.472231+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "filter_band": 8.9,
+        "phase_pick": 6.4,
+        "response_removal": true,
+        "station_selection": "edge",
+        "window_duration": 32
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "filter_band": 4.1,
+        "phase_pick": 5.2,
+        "response_removal": true,
+        "station_selection": "domain_specific",
+        "window_duration": 29
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "filter_band": 2.9412,
+        "phase_pick": 3.1176,
+        "response_removal": true,
+        "station_selection": "baseline",
+        "window_duration": 7
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "filter_band": 7.6471,
+        "phase_pick": 5.1176,
+        "response_removal": true,
+        "station_selection": "stress",
+        "window_duration": 13
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "filter_band": 2.4588,
+        "phase_pick": 2.6529,
+        "response_removal": true,
+        "station_selection": "strict",
+        "window_duration": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "filter_band": 1.5529,
+        "phase_pick": 1.2618,
+        "response_removal": true,
+        "station_selection": "compat",
+        "window_duration": 10
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:27.663483+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "ObsPy"
+  ],
+  "source_repos": [
+    "obspy"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "stress_resource",
+  "task_id": "seismo_event_magnitude_proxy__06"
+}

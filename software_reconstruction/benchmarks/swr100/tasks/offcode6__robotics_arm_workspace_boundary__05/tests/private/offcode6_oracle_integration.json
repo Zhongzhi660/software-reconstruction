@@ -1,0 +1,7 @@
+{
+  "family_id": "robotics_control",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T20:57:42.303545+00:00",
+  "judge": "offcode6 hidden native-oracle adapter",
+  "task_id": "offcode6__robotics_arm_workspace_boundary__05"
+}

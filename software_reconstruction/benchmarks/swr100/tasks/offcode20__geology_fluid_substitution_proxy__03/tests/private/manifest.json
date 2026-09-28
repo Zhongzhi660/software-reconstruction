@@ -1,0 +1,155 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:37:19.170400+00:00",
+  "axes_to_vary": [
+    "curve_selection",
+    "depth_interval",
+    "lithology_alias",
+    "smoothing_window",
+    "unit_system"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:58.899796+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Geology / Well Logs",
+  "demo_id": "geology_fluid_substitution_proxy",
+  "effective_axes_to_vary": [
+    "curve_selection",
+    "depth_interval",
+    "lithology_alias",
+    "smoothing_window",
+    "unit_system"
+  ],
+  "family_id": "geology_well_log_analysis",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "LAS well-log and stratigraphy summaries under hidden depth, lithology, and unit interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "stress",
+        "depth_interval": 2.9176,
+        "lithology_alias": 2.5529,
+        "smoothing_window": 11,
+        "unit_system": 4.0118
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 5.9265,
+        "lithology_alias": 1.55,
+        "smoothing_window": 9,
+        "unit_system": 8.2971
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "curve_selection": "edge",
+        "depth_interval": 5.5618,
+        "lithology_alias": 9.1176,
+        "smoothing_window": 5,
+        "unit_system": 12.0353
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:13:40.234992+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 1.55,
+        "lithology_alias": 11.1235,
+        "smoothing_window": 3,
+        "unit_system": 9.5735
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 8.8441,
+        "lithology_alias": 1.8235,
+        "smoothing_window": 16,
+        "unit_system": 3.3735
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "curve_selection": "baseline",
+        "depth_interval": 6.4706,
+        "lithology_alias": 1.0588,
+        "smoothing_window": 13,
+        "unit_system": 7.5294
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "curve_selection": "strict",
+        "depth_interval": 7.1176,
+        "lithology_alias": 4.6471,
+        "smoothing_window": 6,
+        "unit_system": 1.3529
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 2.4912,
+        "lithology_alias": 2.8794,
+        "smoothing_window": 1,
+        "unit_system": 3.5588
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "curve_selection": "stress",
+        "depth_interval": 2.2324,
+        "lithology_alias": 2.6853,
+        "smoothing_window": 9,
+        "unit_system": 2.9765
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:34.959125+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "welly",
+    "striplog",
+    "bruges"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "welly",
+    "striplog",
+    "bruges"
+  ],
+  "task_id": "geology_fluid_substitution_proxy__03"
+}

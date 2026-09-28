@@ -1,0 +1,121 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:49.873157+00:00",
+  "axes_to_vary": [
+    "wcs_frame",
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:50.509672+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Astronomy / FITS Photometry",
+  "demo_id": "astro_photometry_uncertainty_budget",
+  "effective_axes_to_vary": [
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold",
+    "wcs_frame"
+  ],
+  "family_id": "astronomy_fits_photometry",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "FITS/WCS photometry summaries under hidden aperture and background interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:10:53.574786+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 5,
+        "background_model": "compat",
+        "sigma_clip": 1.0625,
+        "source_threshold": 1.0625,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 16,
+        "background_model": "domain_specific",
+        "sigma_clip": 2.9125,
+        "source_threshold": 2.9125,
+        "wcs_frame": "strict"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 8,
+        "background_model": "stress",
+        "sigma_clip": 4.97,
+        "source_threshold": 4.49,
+        "wcs_frame": "strict"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 3,
+        "background_model": "domain_specific",
+        "sigma_clip": 4.21,
+        "source_threshold": 5.45,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 10,
+        "background_model": "edge",
+        "sigma_clip": 0.4235,
+        "source_threshold": 0.1815,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 9,
+        "background_model": "stress",
+        "sigma_clip": 0.2475,
+        "source_threshold": 3.0855,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:09.058081+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "astropy",
+    "photutils"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "astropy",
+    "photutils"
+  ],
+  "task_id": "astro_photometry_uncertainty_budget__04"
+}

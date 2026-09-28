@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "audio_signal_processing",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "sample_rate",
+      "filter_type",
+      "window_size",
+      "channel_layout",
+      "noise_profile"
+    ],
+    "demo_id": "audio_resample_aliasing_guard",
+    "group_id": "audio_resample_aliasing_guard_param_group_05",
+    "hidden_intervention": "unseen resampling/filter/noise interactions not present in public clips",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+    "source_group": "offcode6"
+  },
+  "parent": {
+    "attribution": "offcode6 online demo audio_resample_aliasing_guard with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "a1495edbc609f003f18aeeff5e75d296a3b4f3326a7025b0327f2c97da803316",
+    "source_url": "acquired:offcode6:audio_signal_processing"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "audio_signal_processing reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:audio_signal_processing",
+    "name": "ffmpeg, sox, python scipy.signal, librosa",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:40:57.295306+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode6_public_artifacts_repaired_at": "2026-08-31T04:48:18.696758+00:00",
+    "public_artifact_concrete_file_count": 18,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 67712,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:37:19.790801+00:00"
+  },
+  "task_id": "offcode6__audio_resample_aliasing_guard__05"
+}

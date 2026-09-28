@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:59.551651+00:00",
+  "demo_id": "astro_photometry_uncertainty_budget",
+  "group_id": "astro_photometry_uncertainty_budget_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 24,
+        "background_model": "edge",
+        "sigma_clip": 2.5125,
+        "source_threshold": 6.5125,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 20,
+        "background_model": "compat",
+        "sigma_clip": 2.0125,
+        "source_threshold": 0.5625,
+        "wcs_frame": "domain_specific"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 24,
+        "background_model": "strict",
+        "sigma_clip": 6.0125,
+        "source_threshold": 6.9625,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 5,
+        "background_model": "compat",
+        "sigma_clip": 1.0625,
+        "source_threshold": 1.0625,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 16,
+        "background_model": "domain_specific",
+        "sigma_clip": 2.9125,
+        "source_threshold": 2.9125,
+        "wcs_frame": "strict"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "7e7742cc13ac0c21696b4d4fad6f83ae750fb44374d46275ed0bab5a5a449b7c",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__astro_photometry_uncertainty_budget__04"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:26.789852+00:00",
+  "demo_id": "duckdb_outlier_quality_dashboard",
+  "group_id": "duckdb_outlier_quality_dashboard_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 5.829,
+        "ordering_ties": 2.671,
+        "partitioning": 14,
+        "schema_evolution": "edge",
+        "window_frame": 14.45
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 9.714,
+        "ordering_ties": 12.629,
+        "partitioning": 3,
+        "schema_evolution": "stress",
+        "window_frame": 6.63
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "nested_types": 3.643,
+        "ordering_ties": 11.657,
+        "partitioning": 14,
+        "schema_evolution": "baseline",
+        "window_frame": 18.02
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 7.771,
+        "ordering_ties": 2.186,
+        "partitioning": 3,
+        "schema_evolution": "compat",
+        "window_frame": 4.59
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 2.671,
+        "ordering_ties": 2.429,
+        "partitioning": 5,
+        "schema_evolution": "stress",
+        "window_frame": 10.03
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "86943f601a6957b7852848b86eba88c449b9de84c4280befec8781681a88b89f",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__duckdb_outlier_quality_dashboard__06"
+}

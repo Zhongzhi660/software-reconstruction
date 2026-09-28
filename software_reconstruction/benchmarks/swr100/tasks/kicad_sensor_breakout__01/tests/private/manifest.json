@@ -1,0 +1,91 @@
+{
+  "axes_to_vary": [
+    "footprint",
+    "connector",
+    "outline",
+    "netclass"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/kicad_sensor_breakout/input.tar.gz",
+  "base_input_bundle_sha256": "e0af37148c57008a656bd77c3921733fa012769de0f5980dafd122718c7f74be",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group01_20260827_2305/tasks/kicad_sensor_breakout__kicad_sensor_breakout_param_group_01/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "b6ad7d207d522c2ca255dc701402ce8f7dae834013f419d9ba43bb52ad90ee39",
+  "benchmark_repaired_at": "2026-09-12T02:44:16.402581+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "kicad_sensor_breakout",
+  "distinctness": {
+    "artifact_sha256": "b6ad7d207d522c2ca255dc701402ce8f7dae834013f419d9ba43bb52ad90ee39",
+    "base_artifact_sha256": "e519f7d9899e8c788df0c276a94b63caad3a6536c48d6feb2a485239cd18d1a2",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "family_id": "kicad_pcb",
+  "family_oracle_repaired": false,
+  "group_id": "kicad_sensor_breakout_param_group_01",
+  "hidden_intervention": "netclass",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "connector": 1.1,
+        "footprint": 7.8,
+        "netclass": 4.5,
+        "outline": 3.3
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "connector": 7.0,
+        "footprint": 4.9,
+        "netclass": 7.8,
+        "outline": 5.8
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "ERC/DRC, netlist, footprint placement, or BOM outputs must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "connector": 6.2,
+        "footprint": 4.2,
+        "netclass": 5.9,
+        "outline": 2.5
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "connector": 7.5,
+        "footprint": 5.4,
+        "netclass": 2.2,
+        "outline": 6.3
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/kicad-source-mirror/demos",
+  "status": "parametric_oracle_accepted",
+  "strategy": "balanced_shift",
+  "task_id": "kicad_sensor_breakout__01"
+}

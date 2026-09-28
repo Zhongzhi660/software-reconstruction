@@ -1,0 +1,87 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "document_ocr_publishing",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "page_range",
+      "dpi",
+      "language",
+      "font",
+      "metadata"
+    ],
+    "demo_id": "tesseract_table_image_ocr",
+    "group_id": "tesseract_table_image_ocr_param_group_01",
+    "hidden_intervention": "page overflow, OCR language/font and metadata changes",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+    "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+    "source_group": "new10"
+  },
+  "parent": {
+    "attribution": "new10 online demo tesseract_table_image_ocr with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "8721ef30e60bf1cf3d8479a21ab20b4f6c9663875472ca95422bc1622da882c7",
+    "source_url": "acquired:new10:document_ocr_publishing"
+  },
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:28:59.494398+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "document_ocr_publishing reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:document_ocr_publishing",
+    "name": "pandoc, poppler-utils, tesseract, qpdf",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:35:43.355947+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "new10_public_artifacts_repaired_at": "2026-08-31T04:47:22.547328+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 9228,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:37:08.083685+00:00"
+  },
+  "task_id": "new10__tesseract_table_image_ocr__01"
+}

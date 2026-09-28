@@ -1,0 +1,7 @@
+{
+  "family_id": "opa_rego_policy",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:55.668584+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__opa_configmap_secret_guard__01"
+}

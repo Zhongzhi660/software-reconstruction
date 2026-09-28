@@ -1,0 +1,162 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "axes_to_vary": [
+    "service_date",
+    "route_filter",
+    "transfer_policy",
+    "time_zone",
+    "headway_window"
+  ],
+  "benchmark_repaired_at": "2026-09-12T03:02:51.875959+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Transportation / GTFS",
+  "demo_id": "gtfs_realtime_trip_update_join",
+  "effective_axes_to_vary": [
+    "headway_window",
+    "route_filter",
+    "service_date",
+    "time_zone",
+    "transfer_policy"
+  ],
+  "family_id": "transport_gtfs_schedule",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "GTFS schedule/validation summaries under hidden calendar, route, and transfer interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "headway_window": 10,
+        "route_filter": "route-filter-8",
+        "service_date": 3.5912,
+        "time_zone": 0.7441,
+        "transfer_policy": "domain_specific"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "headway_window": 9,
+        "route_filter": "route-filter-28",
+        "service_date": 1.6824,
+        "time_zone": 0.7118,
+        "transfer_policy": "strict"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "headway_window": 9,
+        "route_filter": "route-filter-11",
+        "service_date": 4.2706,
+        "time_zone": 2.1353,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.route_filter",
+    "public_2.route_filter"
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.route_filter",
+    "hidden_2.route_filter",
+    "hidden_3.route_filter"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:15:40.319999+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "headway_window": 8,
+        "route_filter": "route-filter-2",
+        "service_date": 3.3971,
+        "time_zone": 1.6176,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-11",
+        "service_date": 0.7765,
+        "time_zone": 1.2941,
+        "transfer_policy": "edge"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-15",
+        "service_date": 2.5882,
+        "time_zone": 6.0,
+        "transfer_policy": "compat"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "headway_window": 10,
+        "route_filter": "route-filter-6",
+        "service_date": 7.6471,
+        "time_zone": 3.0588,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "headway_window": 17,
+        "route_filter": "route-filter-16",
+        "service_date": 8.5706,
+        "time_zone": 6.2,
+        "transfer_policy": "baseline"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-13",
+        "service_date": 10.7588,
+        "time_zone": 4.9235,
+        "transfer_policy": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:52.673508+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "GTFS validators",
+    "transit feed tooling"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "google_transit",
+    "gtfs_validator"
+  ],
+  "task_id": "gtfs_realtime_trip_update_join__02"
+}

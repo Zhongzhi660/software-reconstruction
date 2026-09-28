@@ -1,0 +1,188 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:57.796729+00:00",
+  "axes_to_vary": [
+    "partitioning",
+    "window_frame",
+    "schema_evolution",
+    "ordering_ties",
+    "nested_types"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:26.660632+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "duckdb_outlier_quality_dashboard",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: online source exists and complexity meets medium-high threshold",
+    "difficulty_score": 10,
+    "expected_command_lines": 12,
+    "expected_oracle_steps": 12,
+    "parameter_axis_count": 5,
+    "rationale": "medium-high: multi-command native tool oracle with hidden parameter axes and nontrivial fixtures",
+    "static_source_bytes": 242440,
+    "static_source_file_count": 15420,
+    "static_source_repos": {
+      "duckdb": {
+        "bytes": 242440,
+        "exists": true,
+        "file_count": 15420,
+        "suffix_counts": {
+          ".benchmark": 1156,
+          ".c": 67,
+          ".cpp": 2198,
+          ".csv": 1805,
+          ".gram": 41,
+          ".gz": 85,
+          ".h": 454,
+          ".hpp": 1796,
+          ".in": 47,
+          ".json": 175,
+          ".md": 47,
+          ".parquet": 389,
+          ".patch": 113,
+          ".py": 173,
+          ".sql": 586,
+          ".swift": 45,
+          ".test": 4742,
+          ".test_slow": 788,
+          ".txt": 260,
+          ".yaml": 53
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "nested_types",
+    "ordering_ties",
+    "partitioning",
+    "schema_evolution",
+    "window_frame"
+  ],
+  "family_id": "duckdb_reporting",
+  "family_oracle_repaired": false,
+  "group_id": "duckdb_outlier_quality_dashboard_param_group_06",
+  "hidden_intervention": "schema evolution and ordering ties",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 5.829,
+        "ordering_ties": 2.671,
+        "partitioning": 14,
+        "schema_evolution": "edge",
+        "window_frame": 14.45
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 9.714,
+        "ordering_ties": 12.629,
+        "partitioning": 3,
+        "schema_evolution": "stress",
+        "window_frame": 6.63
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "nested_types": 3.643,
+        "ordering_ties": 11.657,
+        "partitioning": 14,
+        "schema_evolution": "baseline",
+        "window_frame": 18.02
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "image_family": "Data / SQL / Reporting",
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:44:16.046287+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 7.771,
+        "ordering_ties": 2.186,
+        "partitioning": 3,
+        "schema_evolution": "compat",
+        "window_frame": 4.59
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 2.671,
+        "ordering_ties": 2.429,
+        "partitioning": 5,
+        "schema_evolution": "stress",
+        "window_frame": 10.03
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "nested_types": 5.714,
+        "ordering_ties": 7.714,
+        "partitioning": 8,
+        "schema_evolution": "edge",
+        "window_frame": 9.0
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "nested_types": 3.714,
+        "ordering_ties": 5.143,
+        "partitioning": 2,
+        "schema_evolution": "baseline",
+        "window_frame": 9.5
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "nested_types": 2.2,
+        "ordering_ties": 1.1,
+        "partitioning": 3,
+        "schema_evolution": "stress",
+        "window_frame": 1.595
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "nested_types": 2.285,
+        "ordering_ties": 5.497,
+        "partitioning": 26,
+        "schema_evolution": "schema-evolution-10",
+        "window_frame": 6.812
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:25.634968+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "duckdb",
+    "jq"
+  ],
+  "source_repos": [
+    "duckdb"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "stress_resource",
+  "task_id": "duckdb_outlier_quality_dashboard__06"
+}

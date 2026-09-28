@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:58:15.322778+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2",
+    "base_artifact_sha256": "f00c70a58f9293ef238f928070ea27798c66f3da3781fd266a6d607861f294e8",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "e9fa2fb7fae94f9537f9fbc6a2030bbbc2f4d879b0a5c1e0dc2ca25132fd1b96",
+  "reference_outputs_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2",
+  "status": "parametric_oracle_accepted",
+  "task_id": "kicad_led_matrix_driver__04"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:35:27.302374+00:00",
+  "demo_id": "video_interlacing_detection",
+  "group_id": "video_interlacing_detection_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "compat",
+        "gop_size": 6,
+        "pixel_format": 3.3647,
+        "subtitle_policy": "edge"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "compat",
+        "frame_rate": "domain_specific",
+        "gop_size": 6,
+        "pixel_format": 3.8824,
+        "subtitle_policy": "strict"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "domain_specific",
+        "gop_size": 3,
+        "pixel_format": 1.1,
+        "subtitle_policy": "domain_specific"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "strict",
+        "gop_size": 4,
+        "pixel_format": 1.4235,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "stress",
+        "gop_size": 2,
+        "pixel_format": 1.2941,
+        "subtitle_policy": "edge"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "6ff4917f1789d5fbd9b739ee4d826d85beafcb8357ffcb49e71b0c8a5a0a928f",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__video_interlacing_detection__02"
+}

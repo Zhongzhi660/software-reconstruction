@@ -1,0 +1,155 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:13.485384+00:00",
+  "axes_to_vary": [
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "analysis_type",
+    "tolerance"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:54.907715+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Circuit Simulation",
+  "demo_id": "circuit_noise_source_response",
+  "effective_axes_to_vary": [
+    "analysis_type",
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "tolerance"
+  ],
+  "family_id": "circuit_simulation",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "component/source/temperature interventions changing simulation summaries",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 4.185,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 8.7038,
+        "tolerance": 0.5425
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "stress",
+        "component_value": 6.2775,
+        "source_waveform": "source_waveform_11_hidden",
+        "temperature": 6.0808,
+        "tolerance": 7.8275
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 8.6025,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 12.7577,
+        "tolerance": 7.75
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:49:13.678985+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 6.4325,
+        "source_waveform": "source_waveform_7_public",
+        "temperature": 11.0885,
+        "tolerance": 6.975
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 0.3875,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 11.0885,
+        "tolerance": 1.7825
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 4.25,
+        "source_waveform": "source_waveform_10_public",
+        "temperature": 2.3077,
+        "tolerance": 1.9
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 4.25,
+        "source_waveform": "source_waveform_4_public",
+        "temperature": 5.4615,
+        "tolerance": 4.9
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 1.21,
+        "source_waveform": "source_waveform_1_public",
+        "temperature": 3.2577,
+        "tolerance": 0.88
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 3.135,
+        "source_waveform": "source_waveform_14_public",
+        "temperature": 0.7615,
+        "tolerance": 2.6125
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:31.762517+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "ngspice",
+    "xyce",
+    "PySpice"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "ngspice",
+    "pyspice",
+    "qucsator"
+  ],
+  "task_id": "circuit_noise_source_response__03"
+}

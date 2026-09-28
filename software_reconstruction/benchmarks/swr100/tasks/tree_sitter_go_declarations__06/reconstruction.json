@@ -1,0 +1,75 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "tree_sitter_grammar",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "generics",
+      "interface",
+      "composite"
+    ],
+    "demo_id": "tree_sitter_go_declarations",
+    "group_id": "tree_sitter_go_declarations_param_group_06",
+    "oracle_distinctness_gate": "Parse trees, query captures, or hidden corpus pass/fail outcomes must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "robustness_negative"
+  },
+  "parent": {
+    "attribution": "Acquired tree_sitter_grammar demo tree_sitter_go_declarations with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "2346a3ab1bb3857b48b29d779a1ef9799a248cd7",
+    "sha256": "639d10d8b625f1b4e7c780cc1e1029f0e074217d790e07bfa8fd9f64fc5d0cbe",
+    "source_url": "acquired:tree-sitter-go"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "tree-sitter parse/test scenarios",
+    "image_digest": "daytona-build-context:language_security",
+    "name": "tree-sitter CLI",
+    "version": "Daytona language_security image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "tree_sitter_go_declarations__06"
+}

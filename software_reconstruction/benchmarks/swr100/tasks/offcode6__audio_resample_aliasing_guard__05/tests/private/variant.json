@@ -1,0 +1,237 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:40:57.280115+00:00",
+  "axes_to_vary": [
+    "sample_rate",
+    "filter_type",
+    "window_size",
+    "channel_layout",
+    "noise_profile"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:45.692809+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Audio / Signal Processing",
+  "demo_id": "audio_resample_aliasing_guard",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high complexity evidence",
+    "difficulty_score": 10,
+    "expected_command_lines": 15,
+    "expected_oracle_steps": 22,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must produce parameter-sensitive artifacts",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 116,
+    "static_source_bytes": 15991328,
+    "static_source_file_count": 5268,
+    "static_source_repos": {
+      "ffmpeg": {
+        "bytes": 9731230,
+        "domain_file_count": 31,
+        "exists": true,
+        "file_count": 5097,
+        "suffix_counts": {
+          ".1": 20,
+          ".1-48000": 4,
+          ".2": 12,
+          ".2-mono": 3,
+          ".2-stereo": 3,
+          ".3": 3,
+          ".4": 12,
+          ".4-mono": 3,
+          ".4-stereo": 3,
+          ".c": 24,
+          ".dpx": 5,
+          ".exr": 12,
+          ".fits": 6,
+          ".mak": 117,
+          ".mp4": 7,
+          ".pam": 5,
+          ".pfm": 4,
+          ".png": 3,
+          ".txt": 3,
+          ".xwd": 7,
+          ".y4m": 4,
+          "ast": 2,
+          "dpx": 2,
+          "mkv": 2,
+          "tta": 2
+        }
+      },
+      "librosa": {
+        "bytes": 5303255,
+        "domain_file_count": 59,
+        "exists": true,
+        "file_count": 143,
+        "suffix_counts": {
+          ".flac": 1,
+          ".json": 1,
+          ".md": 1,
+          ".msgpack": 1,
+          ".npy": 2,
+          ".ogg": 1,
+          ".png": 75,
+          ".py": 55,
+          ".pyi": 4,
+          ".txt": 1,
+          ".typed": 1
+        }
+      },
+      "scipy": {
+        "bytes": 956843,
+        "domain_file_count": 26,
+        "exists": true,
+        "file_count": 28,
+        "suffix_counts": {
+          ".build": 1,
+          ".csv": 1,
+          ".md": 1,
+          ".py": 25
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "channel_layout",
+    "filter_type",
+    "noise_profile",
+    "sample_rate",
+    "window_size"
+  ],
+  "family_id": "audio_signal_processing",
+  "family_oracle_repaired": false,
+  "group_id": "audio_resample_aliasing_guard_param_group_05",
+  "hidden_intervention": "unseen resampling/filter/noise interactions not present in public clips",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "edge",
+        "noise_profile": "baseline",
+        "sample_rate": 11,
+        "window_size": 15
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "baseline",
+        "filter_type": "stress",
+        "noise_profile": "baseline",
+        "sample_rate": 24,
+        "window_size": 14
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "compat",
+        "noise_profile": "stress",
+        "sample_rate": 20,
+        "window_size": 20
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:48:18.691552+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "strict",
+        "noise_profile": "baseline",
+        "sample_rate": 11,
+        "window_size": 14
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_layout": "edge",
+        "filter_type": "strict",
+        "noise_profile": "strict",
+        "sample_rate": 21,
+        "window_size": 4
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "edge",
+        "noise_profile": "stress",
+        "sample_rate": 6,
+        "window_size": 3
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "channel_layout": "edge",
+        "filter_type": "compat",
+        "noise_profile": "compat",
+        "sample_rate": 15,
+        "window_size": 8
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "channel_layout": "stress",
+        "filter_type": "compat",
+        "noise_profile": "baseline",
+        "sample_rate": 7,
+        "window_size": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "channel_layout": "compat",
+        "filter_type": "edge",
+        "noise_profile": "baseline",
+        "sample_rate": 9,
+        "window_size": 9
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:19.771625+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "ffmpeg",
+    "sox",
+    "python scipy.signal",
+    "librosa"
+  ],
+  "source_repos": [
+    "ffmpeg",
+    "scipy",
+    "librosa"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "hidden_axis_holdout",
+  "task_id": "audio_resample_aliasing_guard__05"
+}

@@ -1,0 +1,7 @@
+{
+  "family_id": "microscopy_cell_analysis",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:21.411848+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__micro_cell_segmentation_counts__01"
+}

@@ -1,0 +1,7 @@
+{
+  "family_id": "typography_font_shaping",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:47:59.837296+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__font_coverage_script_report__02"
+}

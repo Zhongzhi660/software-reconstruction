@@ -1,0 +1,91 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "openscad_parametric_cad",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files",
+      "stl_bbox_extents",
+      "stl_volume",
+      "stl_surface_area",
+      "stl_component_count",
+      "stl_sampled_surface_distance"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "geometry_verification": {
+      "artifact": "product.stl",
+      "byte_size_or_hash_used": false,
+      "metrics": [
+        "bbox_extents",
+        "volume",
+        "surface_area",
+        "component_count",
+        "sampled_surface_distance"
+      ]
+    },
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "lip_depth",
+      "wall",
+      "corner_radius"
+    ],
+    "demo_id": "openscad_bosl2_snap_fit_box",
+    "group_id": "openscad_bosl2_snap_fit_box_param_group_03",
+    "oracle_distinctness_gate": "STL bbox/volume/facet count and sampled surface distance must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "boundary_high"
+  },
+  "parent": {
+    "attribution": "Acquired openscad_parametric_cad demo openscad_bosl2_snap_fit_box with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "5b1f7b2d4344b75265324309e11c3c8e7f5cbb8b",
+    "sha256": "ddb1189fb398151416453b9aaa79aadda2af922034b3848bced70de559eb87d8",
+    "source_url": "acquired:BOSL2"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "openscad scenario export",
+    "image_digest": "daytona-build-context:visual_web",
+    "name": "OpenSCAD",
+    "version": "Daytona visual_web image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "openscad_bosl2_snap_fit_box__03"
+}

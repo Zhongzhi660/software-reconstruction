@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:14.085948+00:00",
+  "demo_id": "robotics_urdf_mass_inertia_repair",
+  "group_id": "robotics_urdf_mass_inertia_repair_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 15,
+        "collision_margin": true,
+        "initial_pose": 7.5385,
+        "joint_limit": 8.8308,
+        "trajectory_target": "trajectory_target_7_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 10,
+        "collision_margin": true,
+        "initial_pose": 7.0,
+        "joint_limit": 2.9077,
+        "trajectory_target": "trajectory_target_11_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 20,
+        "collision_margin": false,
+        "initial_pose": 11.4154,
+        "joint_limit": 3.8769,
+        "trajectory_target": "trajectory_target_15_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 6,
+        "collision_margin": false,
+        "initial_pose": 10.6615,
+        "joint_limit": 3.7692,
+        "trajectory_target": "trajectory_target_14_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 3,
+        "collision_margin": true,
+        "initial_pose": 5.4923,
+        "joint_limit": 9.9077,
+        "trajectory_target": "trajectory_target_12_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "4bc25166b26769cd19a24b0cfc9dc3ea2b0828e2a69531ad38276025d4e22983",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__robotics_urdf_mass_inertia_repair__05"
+}

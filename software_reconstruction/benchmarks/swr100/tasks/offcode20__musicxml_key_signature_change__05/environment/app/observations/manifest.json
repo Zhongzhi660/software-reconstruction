@@ -1,0 +1,126 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:53.489765+00:00",
+  "axes_to_vary": [
+    "transpose_interval",
+    "meter_change",
+    "quantization_grid",
+    "instrument_part",
+    "lyric_alignment"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:46:20.018643+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Music / Score Engraving",
+  "demo_id": "musicxml_key_signature_change",
+  "effective_axes_to_vary": [
+    "instrument_part",
+    "lyric_alignment",
+    "meter_change",
+    "quantization_grid",
+    "transpose_interval"
+  ],
+  "family_id": "music_score_engraving",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "MusicXML/MIDI score structure under hidden transposition, meter, and part interventions",
+  "naturalized_public_parameter_keys": [
+    "public_1.instrument_part",
+    "public_2.instrument_part"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:20:45.888062+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-6",
+        "lyric_alignment": 4.6118,
+        "meter_change": true,
+        "quantization_grid": 9.7176,
+        "transpose_interval": 7.4118
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-5",
+        "lyric_alignment": 8.1529,
+        "meter_change": false,
+        "quantization_grid": 3.2118,
+        "transpose_interval": 7.4941
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-11",
+        "lyric_alignment": 3.8824,
+        "meter_change": false,
+        "quantization_grid": 5.2941,
+        "transpose_interval": 5.5882
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-12",
+        "lyric_alignment": 9.7428,
+        "meter_change": true,
+        "quantization_grid": 6.3196,
+        "transpose_interval": 8.6801
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-11",
+        "lyric_alignment": 2.3294,
+        "meter_change": false,
+        "quantization_grid": 3.6559,
+        "transpose_interval": 3.8176
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-10",
+        "lyric_alignment": 4.5928,
+        "meter_change": true,
+        "quantization_grid": 7.5373,
+        "transpose_interval": 8.4625
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:40.821125+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "music21",
+    "MusicXML",
+    "LilyPond-style rendering"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "music21",
+    "musicxml"
+  ],
+  "task_id": "musicxml_key_signature_change__05"
+}

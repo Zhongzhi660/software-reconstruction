@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:36:45.772567+00:00",
+  "demo_id": "micro_cell_segmentation_counts",
+  "group_id": "micro_cell_segmentation_counts_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 5.0,
+        "object_size_range": 16,
+        "threshold_method": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": true,
+        "measurement_feature": 5.2353,
+        "object_size_range": 15,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_selection": "stress",
+        "illumination_correction": true,
+        "measurement_feature": 2.1765,
+        "object_size_range": 11,
+        "threshold_method": "compat"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "baseline",
+        "illumination_correction": true,
+        "measurement_feature": 2.8824,
+        "object_size_range": 11,
+        "threshold_method": "edge"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 6.5294,
+        "object_size_range": 5,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "1f2da42d42e2622264ed2bd8bd2f44ae3ddc3e352e6ea1f3a5644a1d7b18a747",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__micro_cell_segmentation_counts__01"
+}

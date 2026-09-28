@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:33.210583+00:00",
+  "demo_id": "chem_ring_system_classification",
+  "group_id": "chem_ring_system_classification_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "conformer_seed": 20,
+        "fingerprint_radius": 22,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_16_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 7,
+        "fingerprint_radius": 6,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_5_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 3,
+        "fingerprint_radius": 8,
+        "protonation_state": true,
+        "stereochemistry": false,
+        "substructure_query": "substructure_query_11_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "conformer_seed": 7,
+        "fingerprint_radius": 14,
+        "protonation_state": true,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_15_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 3,
+        "fingerprint_radius": 18,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_15_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "bf29ed3aa8b96d8db98ba177df7a3651f207dc1f10c7852b0b0ed3543244824f",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__chem_ring_system_classification__05"
+}

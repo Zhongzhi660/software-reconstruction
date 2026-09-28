@@ -1,0 +1,153 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:47.083332+00:00",
+  "axes_to_vary": [
+    "wcs_frame",
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:47.880730+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Astronomy / FITS Photometry",
+  "demo_id": "astro_cosmic_ray_mask_qc",
+  "effective_axes_to_vary": [
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold",
+    "wcs_frame"
+  ],
+  "family_id": "astronomy_fits_photometry",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "FITS/WCS photometry summaries under hidden aperture and background interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 21,
+        "background_model": "stress",
+        "sigma_clip": 0.1625,
+        "source_threshold": 3.8125,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 6,
+        "background_model": "domain_specific",
+        "sigma_clip": 5.0125,
+        "source_threshold": 4.4625,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 12,
+        "background_model": "strict",
+        "sigma_clip": 3.9625,
+        "source_threshold": 4.6125,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:10:34.073503+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 10,
+        "background_model": "edge",
+        "sigma_clip": 1.9125,
+        "source_threshold": 3.5625,
+        "wcs_frame": "domain_specific"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 12,
+        "background_model": "compat",
+        "sigma_clip": 1.8125,
+        "source_threshold": 6.7625,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 13,
+        "background_model": "edge",
+        "sigma_clip": 4.73,
+        "source_threshold": 5.37,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 9,
+        "background_model": "stress",
+        "sigma_clip": 4.49,
+        "source_threshold": 2.49,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 8,
+        "background_model": "stress",
+        "sigma_clip": 2.5795,
+        "source_threshold": 2.8215,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 8,
+        "background_model": "edge",
+        "sigma_clip": 2.1175,
+        "source_threshold": 0.9735,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:05.105488+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "astropy",
+    "photutils"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "astropy",
+    "photutils"
+  ],
+  "task_id": "astro_cosmic_ray_mask_qc__04"
+}

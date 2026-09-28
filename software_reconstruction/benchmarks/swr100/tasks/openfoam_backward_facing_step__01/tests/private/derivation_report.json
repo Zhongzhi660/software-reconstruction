@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:53:19.103990+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "47774a9776357c8cc183581268992f93a4572e071f55bc48dda07fe781647e5b",
+    "base_artifact_sha256": "bddf764b263687c9f51213a51cedb5fec6e4c3cdf3be96a41f11ecc7feae2f7a",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 27
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "005f142971807579050d3b188b6a912ccf8a4a17734a55d8ca37048bb20d5e82",
+  "reference_outputs_sha256": "47774a9776357c8cc183581268992f93a4572e071f55bc48dda07fe781647e5b",
+  "status": "parametric_oracle_accepted",
+  "task_id": "openfoam_backward_facing_step__01"
+}

@@ -1,0 +1,147 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:16.835339+00:00",
+  "axes_to_vary": [
+    "voxel_size",
+    "crop_bounds",
+    "normal_radius",
+    "classification_filter",
+    "registration_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:50.045400+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Point Cloud / LiDAR",
+  "demo_id": "lidar_bounding_box_volume",
+  "effective_axes_to_vary": [
+    "classification_filter",
+    "crop_bounds",
+    "normal_radius",
+    "registration_threshold",
+    "voxel_size"
+  ],
+  "family_id": "point_cloud_lidar",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "LAS/PLY point statistics under hidden crop, voxel, and registration interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:16:59.844151+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "classification_filter": 0.8735,
+        "crop_bounds": [
+          2.2,
+          2.75,
+          3.3
+        ],
+        "normal_radius": 7,
+        "registration_threshold": 2.6895,
+        "voxel_size": 6
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "classification_filter": 2.3294,
+        "crop_bounds": [
+          7.15,
+          7.7,
+          8.25
+        ],
+        "normal_radius": 8,
+        "registration_threshold": 2.0955,
+        "voxel_size": 6
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "classification_filter": 1.4118,
+        "crop_bounds": [
+          13.0,
+          14.0,
+          15.0
+        ],
+        "normal_radius": 18,
+        "registration_threshold": 4.21,
+        "voxel_size": 4
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "classification_filter": 1.0588,
+        "crop_bounds": [
+          8.0,
+          9.0,
+          10.0
+        ],
+        "normal_radius": 2,
+        "registration_threshold": 2.57,
+        "voxel_size": 10
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "classification_filter": 5.3794,
+        "crop_bounds": [
+          4.65,
+          6.2,
+          7.75
+        ],
+        "normal_radius": 22,
+        "registration_threshold": 5.5335,
+        "voxel_size": 20
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "classification_filter": 6.9294,
+        "crop_bounds": [
+          10.85,
+          12.4,
+          13.95
+        ],
+        "normal_radius": 6,
+        "registration_threshold": 3.0535,
+        "voxel_size": 26
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:05.867409+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "Open3D",
+    "PDAL",
+    "laspy"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "open3d",
+    "pdal",
+    "laspy"
+  ],
+  "task_id": "lidar_bounding_box_volume__02"
+}

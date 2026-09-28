@@ -1,0 +1,123 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:37:09.380282+00:00",
+  "axes_to_vary": [
+    "color_space",
+    "white_point",
+    "tone_curve",
+    "demosaic_method",
+    "compression_quality"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:54.180511+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Color / Imaging Pipeline",
+  "demo_id": "color_tone_curve_lut",
+  "effective_axes_to_vary": [
+    "color_space",
+    "compression_quality",
+    "demosaic_method",
+    "tone_curve",
+    "white_point"
+  ],
+  "family_id": "color_imaging_pipeline",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "image/color metrics under hidden color transform and compression interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:12:40.757033+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "color_space": "edge",
+        "compression_quality": 29,
+        "demosaic_method": "baseline",
+        "tone_curve": 5.4,
+        "white_point": 11.3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "color_space": "strict",
+        "compression_quality": 31,
+        "demosaic_method": "baseline",
+        "tone_curve": 9.6,
+        "white_point": 6.2
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "color_space": "baseline",
+        "compression_quality": 13,
+        "demosaic_method": "compat",
+        "tone_curve": 3.1765,
+        "white_point": 2.1176
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "color_space": "stress",
+        "compression_quality": 2,
+        "demosaic_method": "baseline",
+        "tone_curve": 5.5882,
+        "white_point": 7.4706
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 5,
+        "demosaic_method": "baseline",
+        "tone_curve": 2.5882,
+        "white_point": 2.5559
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "color_space": "domain_specific",
+        "compression_quality": 8,
+        "demosaic_method": "baseline",
+        "tone_curve": 3.9794,
+        "white_point": 4.2706
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:25.904971+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "colour-science",
+    "ImageMagick",
+    "scikit-image"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "colour",
+    "imagemagick",
+    "scikit_image"
+  ],
+  "task_id": "color_tone_curve_lut__06"
+}

@@ -1,0 +1,162 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "axes_to_vary": [
+    "alignment_trim",
+    "substitution_model",
+    "bootstrap_replicates",
+    "outgroup_taxon",
+    "branch_support_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:47:06.394648+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Phylogenetics",
+  "demo_id": "phylo_fasta_header_repair",
+  "effective_axes_to_vary": [
+    "alignment_trim",
+    "bootstrap_replicates",
+    "branch_support_threshold",
+    "outgroup_taxon",
+    "substitution_model"
+  ],
+  "family_id": "phylogenetics_tree_reconstruction",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "alignment/tree summaries under hidden model, trimming, and rooting interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 7.3853,
+        "bootstrap_replicates": 23,
+        "branch_support_threshold": 2.0615,
+        "outgroup_taxon": "outgroup-taxon-27",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 9.2088,
+        "bootstrap_replicates": 16,
+        "branch_support_threshold": 0.0775,
+        "outgroup_taxon": "outgroup-taxon-20",
+        "substitution_model": "compat"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 2.1882,
+        "bootstrap_replicates": 20,
+        "branch_support_threshold": 0.3255,
+        "outgroup_taxon": "outgroup-taxon-18",
+        "substitution_model": "domain_specific"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.outgroup_taxon",
+    "public_2.outgroup_taxon"
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.outgroup_taxon",
+    "hidden_2.outgroup_taxon",
+    "hidden_3.outgroup_taxon"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:22:38.628314+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 8.3882,
+        "bootstrap_replicates": 25,
+        "branch_support_threshold": 8.0755,
+        "outgroup_taxon": "outgroup-taxon-3",
+        "substitution_model": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 5.2882,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 6.9595,
+        "outgroup_taxon": "outgroup-taxon-14",
+        "substitution_model": "domain_specific"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 2.7059,
+        "bootstrap_replicates": 14,
+        "branch_support_threshold": 4.53,
+        "outgroup_taxon": "outgroup-taxon-2",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.1176,
+        "bootstrap_replicates": 19,
+        "branch_support_threshold": 4.97,
+        "outgroup_taxon": "outgroup-taxon-12",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 4.3029,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 1.4355,
+        "outgroup_taxon": "outgroup-taxon-13",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.3647,
+        "bootstrap_replicates": 10,
+        "branch_support_threshold": 0.9985,
+        "outgroup_taxon": "outgroup-taxon-1",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:00.428981+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "Biopython",
+    "IQ-TREE/FastTree-style CLI"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "biopython",
+    "iqtree2"
+  ],
+  "task_id": "phylo_fasta_header_repair__03"
+}

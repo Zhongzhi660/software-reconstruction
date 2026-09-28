@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:57:59.003653+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "add299d53709a7ca7f5f295f6d87a59071c09dc754e32184380ea606db88937c",
+    "base_artifact_sha256": "dd9759ae5a3f6180326d0722923ef0d721997b94e9bcd56942ebf1730bf9d6ba",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 33
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "b8bc37f6b339190df9e79172c7cd6386742b8e3595c5353dc4fecb113d0fc120",
+  "reference_outputs_sha256": "add299d53709a7ca7f5f295f6d87a59071c09dc754e32184380ea606db88937c",
+  "status": "parametric_oracle_accepted",
+  "task_id": "openssl_cms_signed_envelope__04"
+}

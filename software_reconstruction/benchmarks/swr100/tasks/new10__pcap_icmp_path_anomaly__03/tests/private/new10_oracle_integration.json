@@ -1,0 +1,7 @@
+{
+  "family_id": "network_security_pcap",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:58.788390+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__pcap_icmp_path_anomaly__03"
+}

@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:58:32.287955+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "5815141346ca5e718026c03541765227c9ce9bf7330894585c91fd5aac1af863",
+    "base_artifact_sha256": "679b10a805914b91b51fc55e761f584f5a635682afccdabb28b11b8ad5a91782",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "28b3b1fee529662565c93ade4bf9170b2e08bc9c1bfb6a293b95704e0bb51c8b",
+  "reference_outputs_sha256": "5815141346ca5e718026c03541765227c9ce9bf7330894585c91fd5aac1af863",
+  "status": "parametric_oracle_accepted",
+  "task_id": "blender_instanced_product_shelf__05"
+}

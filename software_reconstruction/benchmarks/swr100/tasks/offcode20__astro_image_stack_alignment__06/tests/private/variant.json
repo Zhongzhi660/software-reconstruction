@@ -1,0 +1,197 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:48.924799+00:00",
+  "axes_to_vary": [
+    "wcs_frame",
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:48.910468+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Astronomy / FITS Photometry",
+  "demo_id": "astro_image_stack_alignment",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 17,
+    "expected_oracle_steps": 20,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 157,
+    "static_source_bytes": 3852883,
+    "static_source_file_count": 219,
+    "static_source_repos": {
+      "astropy": {
+        "bytes": 2608539,
+        "domain_file_count": 86,
+        "exists": true,
+        "file_count": 148,
+        "suffix_counts": {
+          ".c": 2,
+          ".fits": 44,
+          ".gitignore": 1,
+          ".gz": 2,
+          ".hdr": 50,
+          ".py": 42,
+          ".txt": 6,
+          ".z": 1
+        }
+      },
+      "photutils": {
+        "bytes": 1244344,
+        "domain_file_count": 71,
+        "exists": true,
+        "file_count": 71,
+        "suffix_counts": {
+          ".ecsv": 2,
+          ".fits": 9,
+          ".py": 60
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "aperture_radius",
+    "background_model",
+    "sigma_clip",
+    "source_threshold",
+    "wcs_frame"
+  ],
+  "family_id": "astronomy_fits_photometry",
+  "family_oracle_repaired": false,
+  "group_id": "astro_image_stack_alignment_param_group_06",
+  "hidden_intervention": "FITS/WCS photometry summaries under hidden aperture and background interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 3,
+        "background_model": "domain_specific",
+        "sigma_clip": 8.041,
+        "source_threshold": 4.029,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 10,
+        "background_model": "compat",
+        "sigma_clip": 1.785,
+        "source_threshold": 0.085,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 22,
+        "background_model": "strict",
+        "sigma_clip": 8.721,
+        "source_threshold": 2.941,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:10:47.327326+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 3,
+        "background_model": "stress",
+        "sigma_clip": 4.641,
+        "source_threshold": 5.661,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 5,
+        "background_model": "baseline",
+        "sigma_clip": 8.721,
+        "source_threshold": 8.721,
+        "wcs_frame": "compat"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 14,
+        "background_model": "baseline",
+        "sigma_clip": 3.69,
+        "source_threshold": 2.01,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 13,
+        "background_model": "stress",
+        "sigma_clip": 1.41,
+        "source_threshold": 1.97,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 5,
+        "background_model": "domain_specific",
+        "sigma_clip": 2.5575,
+        "source_threshold": 2.9535,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 9,
+        "background_model": "domain_specific",
+        "sigma_clip": 3.0635,
+        "source_threshold": 1.9415,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:07.793740+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "astropy",
+    "photutils"
+  ],
+  "source_repos": [
+    "astropy",
+    "photutils"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "stress_resource",
+  "task_id": "astro_image_stack_alignment__06"
+}

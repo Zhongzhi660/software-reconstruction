@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:54.386460+00:00",
+  "demo_id": "astro_cosmic_ray_mask_qc",
+  "group_id": "astro_cosmic_ray_mask_qc_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 21,
+        "background_model": "stress",
+        "sigma_clip": 0.1625,
+        "source_threshold": 3.8125,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 6,
+        "background_model": "domain_specific",
+        "sigma_clip": 5.0125,
+        "source_threshold": 4.4625,
+        "wcs_frame": "stress"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 12,
+        "background_model": "strict",
+        "sigma_clip": 3.9625,
+        "source_threshold": 4.6125,
+        "wcs_frame": "edge"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "aperture_radius": 10,
+        "background_model": "edge",
+        "sigma_clip": 1.9125,
+        "source_threshold": 3.5625,
+        "wcs_frame": "domain_specific"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "aperture_radius": 12,
+        "background_model": "compat",
+        "sigma_clip": 1.8125,
+        "source_threshold": 6.7625,
+        "wcs_frame": "baseline"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "11605e856221144090c7f8ce12aced341621986761b9ec022aa3ad9e2233c8fb",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__astro_cosmic_ray_mask_qc__04"
+}

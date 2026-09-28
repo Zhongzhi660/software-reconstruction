@@ -1,0 +1,146 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:24.607556+00:00",
+  "axes_to_vary": [
+    "zoom_range",
+    "simplification_tolerance",
+    "layer_filter",
+    "projection",
+    "label_priority"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:53.392909+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Cartography / Map Rendering",
+  "demo_id": "map_boundary_clip_antimeridian",
+  "effective_axes_to_vary": [
+    "label_priority",
+    "layer_filter",
+    "projection",
+    "simplification_tolerance",
+    "zoom_range"
+  ],
+  "family_id": "cartography_map_rendering",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "OSM/vector-tile summaries under hidden layer, projection, and simplification interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:17:54.164551+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 3.0882,
+        "layer_filter": 2.6471,
+        "projection": [
+          3.75,
+          5.0,
+          6.25
+        ],
+        "simplification_tolerance": 3.2125,
+        "zoom_range": 6
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 3.0882,
+        "layer_filter": 6.1765,
+        "projection": [
+          10.0,
+          11.25,
+          12.5
+        ],
+        "simplification_tolerance": 0.9625,
+        "zoom_range": 20
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 1.6471,
+        "layer_filter": 5.3529,
+        "projection": [
+          9.0,
+          10.0,
+          11.0
+        ],
+        "simplification_tolerance": 2.29,
+        "zoom_range": 13
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "label_priority": 1.7647,
+        "layer_filter": 7.4706,
+        "projection": [
+          11.0,
+          12.0,
+          13.0
+        ],
+        "simplification_tolerance": 3.45,
+        "zoom_range": 12
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.0382,
+        "layer_filter": 2.0706,
+        "projection": [
+          1.65,
+          2.2,
+          2.75
+        ],
+        "simplification_tolerance": 3.0195,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "label_priority": 4.0441,
+        "layer_filter": 3.5265,
+        "projection": [
+          7.15,
+          7.7,
+          8.25
+        ],
+        "simplification_tolerance": 1.0615,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:14.205600+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "tippecanoe",
+    "osmium",
+    "vector-tile tooling"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "tippecanoe",
+    "libosmium"
+  ],
+  "task_id": "map_boundary_clip_antimeridian__04"
+}

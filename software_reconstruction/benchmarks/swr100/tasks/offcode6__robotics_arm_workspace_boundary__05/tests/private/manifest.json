@@ -1,0 +1,159 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:32.181446+00:00",
+  "axes_to_vary": [
+    "joint_limit",
+    "actuator_gain",
+    "initial_pose",
+    "trajectory_target",
+    "collision_margin"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:47:00.483682+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Robotics / Control",
+  "demo_id": "robotics_arm_workspace_boundary",
+  "effective_axes_to_vary": [
+    "actuator_gain",
+    "collision_margin",
+    "initial_pose",
+    "joint_limit",
+    "trajectory_target"
+  ],
+  "family_id": "robotics_control",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "joint/controller/collision boundary cases under hidden poses",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 20,
+        "collision_margin": false,
+        "initial_pose": 4.6308,
+        "joint_limit": 1.6154,
+        "trajectory_target": "trajectory_target_20_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 3,
+        "collision_margin": false,
+        "initial_pose": 9.6923,
+        "joint_limit": 7.4308,
+        "trajectory_target": "trajectory_target_8_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 18,
+        "collision_margin": true,
+        "initial_pose": 8.9385,
+        "joint_limit": 3.1231,
+        "trajectory_target": "trajectory_target_4_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.trajectory_target",
+    "public_2.trajectory_target"
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:50:33.524132+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 15,
+        "collision_margin": false,
+        "initial_pose": 1.7231,
+        "joint_limit": 4.8462,
+        "trajectory_target": "trajectory-target-7"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 18,
+        "collision_margin": true,
+        "initial_pose": 6.2462,
+        "joint_limit": 9.1538,
+        "trajectory_target": "trajectory-target-2"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 6,
+        "collision_margin": false,
+        "initial_pose": 2.3846,
+        "joint_limit": 4.7692,
+        "trajectory_target": "trajectory-target-2"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 4,
+        "collision_margin": true,
+        "initial_pose": 2.6154,
+        "joint_limit": 5.3077,
+        "trajectory_target": "trajectory-target-8"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 9,
+        "collision_margin": false,
+        "initial_pose": 2.2423,
+        "joint_limit": 0.55,
+        "trajectory_target": "trajectory-target-13"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 7,
+        "collision_margin": true,
+        "initial_pose": 0.9308,
+        "joint_limit": 0.5923,
+        "trajectory_target": "trajectory-target-7"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:47.925990+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "mujoco",
+    "python",
+    "urdf/mjcf tooling"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "mujoco_menagerie",
+    "gymnasium_robotics",
+    "robot_descriptions"
+  ],
+  "task_id": "robotics_arm_workspace_boundary__05"
+}

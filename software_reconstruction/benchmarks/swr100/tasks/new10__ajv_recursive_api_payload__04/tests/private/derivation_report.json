@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:33.893135+00:00",
+  "demo_id": "ajv_recursive_api_payload",
+  "group_id": "ajv_recursive_api_payload_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 9.107,
+        "format": "edge",
+        "recursive_ref": 7.679,
+        "required_fields": 4.821,
+        "union_branch": 8.214
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 3.036,
+        "format": "edge",
+        "recursive_ref": 2.143,
+        "required_fields": 7.857,
+        "union_branch": 3.75
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 7.857,
+        "format": "baseline",
+        "recursive_ref": 6.429,
+        "required_fields": 6.429,
+        "union_branch": 1.429
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 8.036,
+        "format": "stress",
+        "recursive_ref": 8.036,
+        "required_fields": 8.929,
+        "union_branch": 6.429
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 5.893,
+        "format": "baseline",
+        "recursive_ref": 2.321,
+        "required_fields": 1.607,
+        "union_branch": 9.286
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "9ba521344d4aeb7ae67c0f491274145304ed8ff926c7db479e02f33325f25add",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__ajv_recursive_api_payload__04"
+}

@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "rf_signal_processing",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "sample_rate",
+      "modulation_type",
+      "carrier_offset",
+      "filter_taps",
+      "snr_level"
+    ],
+    "demo_id": "rf_iq_spectrum_peak_map",
+    "group_id": "rf_iq_spectrum_peak_map_param_group_01",
+    "hidden_intervention": "IQ/spectrum summaries under hidden modulation, offset, and filter interventions",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+    "source_group": "offcode20"
+  },
+  "parent": {
+    "attribution": "offcode20 online demo rf_iq_spectrum_peak_map with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "6f87cb8e12f9047090c57d1fc095e8574d5ba0bfb72b1c35d36f539addde5a02",
+    "source_url": "acquired:offcode20:rf_signal_processing"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "rf_signal_processing reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:rf_signal_processing",
+    "name": "GNU Radio, scipy.signal",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:39:29.616897+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode20_public_artifacts_repaired_at": "2026-08-31T04:24:15.560193+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 13058,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:40:19.049172+00:00"
+  },
+  "task_id": "offcode20__rf_iq_spectrum_peak_map__01"
+}

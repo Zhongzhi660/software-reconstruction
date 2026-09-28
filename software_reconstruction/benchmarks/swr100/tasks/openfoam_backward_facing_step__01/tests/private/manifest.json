@@ -1,0 +1,91 @@
+{
+  "axes_to_vary": [
+    "mesh",
+    "inlet",
+    "outlet",
+    "nu"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_openfoam_retry_proxy_20260827_2147/tasks/openfoam_backward_facing_step/input.tar.gz",
+  "base_input_bundle_sha256": "005f142971807579050d3b188b6a912ccf8a4a17734a55d8ca37048bb20d5e82",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group01_20260827_2305/tasks/openfoam_backward_facing_step__openfoam_backward_facing_step/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "47774a9776357c8cc183581268992f93a4572e071f55bc48dda07fe781647e5b",
+  "benchmark_repaired_at": "2026-09-12T02:47:06.081616+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "openfoam_backward_facing_step",
+  "distinctness": {
+    "artifact_sha256": "47774a9776357c8cc183581268992f93a4572e071f55bc48dda07fe781647e5b",
+    "base_artifact_sha256": "bddf764b263687c9f51213a51cedb5fec6e4c3cdf3be96a41f11ecc7feae2f7a",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 27
+  },
+  "family_id": "openfoam_cfd",
+  "family_oracle_repaired": false,
+  "group_id": "openfoam_backward_facing_step_param_group_01",
+  "hidden_intervention": "nu",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "inlet": 1.8,
+        "mesh": 4.3,
+        "nu": 2.3,
+        "outlet": 4.1
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "inlet": 3.8,
+        "mesh": 4.6,
+        "nu": 5.0,
+        "outlet": 2.0
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "Mesh stats, residual/probe outputs, or field summaries must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "inlet": 1.6,
+        "mesh": 7.0,
+        "nu": 4.6,
+        "outlet": 5.4
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "inlet": 5.5,
+        "mesh": 2.1,
+        "nu": 2.6,
+        "outlet": 6.0
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/OpenFOAM-dev/tutorials",
+  "status": "parametric_oracle_accepted",
+  "strategy": "balanced_shift",
+  "task_id": "openfoam_backward_facing_step__01"
+}

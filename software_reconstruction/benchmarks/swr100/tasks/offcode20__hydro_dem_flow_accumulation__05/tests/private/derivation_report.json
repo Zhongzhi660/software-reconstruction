@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:24.034300+00:00",
+  "demo_id": "hydro_dem_flow_accumulation",
+  "group_id": "hydro_dem_flow_accumulation_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 0.462,
+        "dem_resolution": 7.5765,
+        "flow_direction_method": "strict",
+        "nodata_policy": "compat",
+        "rainfall_window": 7
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 7.07,
+        "dem_resolution": 4.6118,
+        "flow_direction_method": "compat",
+        "nodata_policy": "compat",
+        "rainfall_window": 13
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 6.398,
+        "dem_resolution": 8.0706,
+        "flow_direction_method": "domain_specific",
+        "nodata_policy": "compat",
+        "rainfall_window": 18
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 1.134,
+        "dem_resolution": 7.7412,
+        "flow_direction_method": "strict",
+        "nodata_policy": "baseline",
+        "rainfall_window": 15
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 1.358,
+        "dem_resolution": 3.8706,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "baseline",
+        "rainfall_window": 6
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "2fc900b1e2e2830dc88e57c27825adf3d40e42f174e92b0856e8fc36b64b54a1",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__hydro_dem_flow_accumulation__05"
+}

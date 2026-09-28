@@ -1,0 +1,220 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:37:09.373792+00:00",
+  "axes_to_vary": [
+    "color_space",
+    "white_point",
+    "tone_curve",
+    "demosaic_method",
+    "compression_quality"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:54.168343+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Color / Imaging Pipeline",
+  "demo_id": "color_tone_curve_lut",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 26,
+    "expected_oracle_steps": 36,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 117,
+    "static_source_bytes": 2215701,
+    "static_source_file_count": 214,
+    "static_source_repos": {
+      "colour": {
+        "bytes": 1195642,
+        "domain_file_count": 117,
+        "exists": true,
+        "file_count": 131,
+        "suffix_counts": {
+          ".csv": 5,
+          ".ctl": 2,
+          ".exr": 6,
+          ".png": 3,
+          ".py": 108,
+          ".spdx": 3,
+          ".txt": 2,
+          ".xls": 1,
+          ".yaml": 1
+        }
+      },
+      "imagemagick": {
+        "bytes": 1020059,
+        "domain_file_count": 0,
+        "exists": true,
+        "file_count": 83,
+        "suffix_counts": {
+          ".am": 1,
+          ".c": 16,
+          ".cpp": 13,
+          ".gif": 10,
+          ".h": 1,
+          ".miff": 7,
+          ".perl": 1,
+          ".pnm": 1,
+          ".sh": 1,
+          ".shi": 1,
+          ".svg": 2,
+          ".tap": 20,
+          ".txt": 2,
+          ".xml": 5,
+          "makefile": 1,
+          "readme": 1
+        }
+      },
+      "scikit_image": {
+        "bytes": 0,
+        "domain_file_count": 0,
+        "exists": true,
+        "file_count": 0,
+        "suffix_counts": {}
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "color_space",
+    "compression_quality",
+    "demosaic_method",
+    "tone_curve",
+    "white_point"
+  ],
+  "family_id": "color_imaging_pipeline",
+  "family_oracle_repaired": false,
+  "group_id": "color_tone_curve_lut_param_group_06",
+  "hidden_intervention": "image/color metrics under hidden color transform and compression interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 26,
+        "demosaic_method": "stress",
+        "tone_curve": 13.2,
+        "white_point": 6.7
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 27,
+        "demosaic_method": "edge",
+        "tone_curve": 10.7,
+        "white_point": 2.3
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "color_space": "stress",
+        "compression_quality": 26,
+        "demosaic_method": "stress",
+        "tone_curve": 9.6,
+        "white_point": 5.2
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:12:40.767099+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "color_space": "edge",
+        "compression_quality": 29,
+        "demosaic_method": "baseline",
+        "tone_curve": 5.4,
+        "white_point": 11.3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "color_space": "strict",
+        "compression_quality": 31,
+        "demosaic_method": "baseline",
+        "tone_curve": 9.6,
+        "white_point": 6.2
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "color_space": "baseline",
+        "compression_quality": 13,
+        "demosaic_method": "compat",
+        "tone_curve": 3.1765,
+        "white_point": 2.1176
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "color_space": "stress",
+        "compression_quality": 2,
+        "demosaic_method": "baseline",
+        "tone_curve": 5.5882,
+        "white_point": 7.4706
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 5,
+        "demosaic_method": "baseline",
+        "tone_curve": 2.5882,
+        "white_point": 2.5559
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "color_space": "domain_specific",
+        "compression_quality": 8,
+        "demosaic_method": "baseline",
+        "tone_curve": 3.9794,
+        "white_point": 4.2706
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:25.898798+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "colour-science",
+    "ImageMagick",
+    "scikit-image"
+  ],
+  "source_repos": [
+    "colour",
+    "imagemagick",
+    "scikit_image"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "stress_resource",
+  "task_id": "color_tone_curve_lut__06"
+}

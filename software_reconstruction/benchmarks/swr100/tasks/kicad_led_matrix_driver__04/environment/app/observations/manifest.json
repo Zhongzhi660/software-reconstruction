@@ -1,0 +1,74 @@
+{
+  "axes_to_vary": [
+    "routing",
+    "bom",
+    "rows",
+    "cols"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/kicad_led_matrix_driver/input.tar.gz",
+  "base_input_bundle_sha256": "e9fa2fb7fae94f9537f9fbc6a2030bbbc2f4d879b0a5c1e0dc2ca25132fd1b96",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/kicad_led_matrix_driver__kicad_led_matrix_driver_param_group/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2",
+  "benchmark_repaired_at": "2026-09-12T02:44:14.839500+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "kicad_led_matrix_driver",
+  "distinctness": {
+    "artifact_sha256": "ed47119096f545b7392710bc7dad8ac4c0250a8f72d2bf5f9f8e740bdfc432d2",
+    "base_artifact_sha256": "f00c70a58f9293ef238f928070ea27798c66f3da3781fd266a6d607861f294e8",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "family_id": "kicad_pcb",
+  "family_oracle_repaired": false,
+  "group_id": "kicad_led_matrix_driver_param_group_04",
+  "hidden_intervention": "cols",
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "ERC/DRC, netlist, footprint placement, or BOM outputs must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_count": 2,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "bom": 2.88,
+        "cols": 6.96,
+        "routing": 3.48,
+        "rows": 9.36
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "bom": 1.56,
+        "cols": 9.36,
+        "routing": 8.52,
+        "rows": 5.4
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/kicad-source-mirror/demos",
+  "status": "parametric_oracle_accepted",
+  "strategy": "cross_interaction",
+  "task_id": "kicad_led_matrix_driver__04"
+}

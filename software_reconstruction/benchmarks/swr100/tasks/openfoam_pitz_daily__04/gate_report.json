@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "1388cc0196fa43987b76aba04738faeb3d4111e4ec38b99bd22b1f522e4c5026",
+      "base_artifact_sha256": "4bbca63998ce5e13ca51dfd43be96b70d9664607e73197bb5d1d014036afbebe",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 27
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/openfoam_pitz_daily__openfoam_pitz_daily_param_group_04/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "1388cc0196fa43987b76aba04738faeb3d4111e4ec38b99bd22b1f522e4c5026"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "openfoam_pitz_daily__04"
+}

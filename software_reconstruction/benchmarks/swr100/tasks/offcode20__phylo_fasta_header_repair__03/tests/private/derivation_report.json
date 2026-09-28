@@ -1,0 +1,116 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "created_at": "2026-08-28T17:35:01.094308+00:00",
+  "demo_id": "phylo_fasta_header_repair",
+  "group_id": "phylo_fasta_header_repair_param_group_03",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 7.3853,
+        "bootstrap_replicates": 23,
+        "branch_support_threshold": 2.0615,
+        "outgroup_taxon": "outgroup-taxon-27",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 9.2088,
+        "bootstrap_replicates": 16,
+        "branch_support_threshold": 0.0775,
+        "outgroup_taxon": "outgroup-taxon-20",
+        "substitution_model": "compat"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 2.1882,
+        "bootstrap_replicates": 20,
+        "branch_support_threshold": 0.3255,
+        "outgroup_taxon": "outgroup-taxon-18",
+        "substitution_model": "domain_specific"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.outgroup_taxon",
+    "hidden_2.outgroup_taxon",
+    "hidden_3.outgroup_taxon"
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 8.3882,
+        "bootstrap_replicates": 25,
+        "branch_support_threshold": 8.0755,
+        "outgroup_taxon": "outgroup-taxon-3",
+        "substitution_model": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 5.2882,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 6.9595,
+        "outgroup_taxon": "outgroup-taxon-14",
+        "substitution_model": "domain_specific"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 2.7059,
+        "bootstrap_replicates": 14,
+        "branch_support_threshold": 4.53,
+        "outgroup_taxon": "outgroup-taxon-2",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.1176,
+        "bootstrap_replicates": 19,
+        "branch_support_threshold": 4.97,
+        "outgroup_taxon": "outgroup-taxon-12",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 4.3029,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 1.4355,
+        "outgroup_taxon": "outgroup-taxon-13",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.3647,
+        "bootstrap_replicates": 10,
+        "branch_support_threshold": 0.9985,
+        "outgroup_taxon": "outgroup-taxon-1",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "record_sha256": "4809938d635f5d8520ef6cac9bd40e43a31bac1ff488a5211985e8ea50dc8e5d",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__phylo_fasta_header_repair__03"
+}

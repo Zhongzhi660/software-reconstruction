@@ -1,0 +1,7 @@
+{
+  "family_id": "cartography_map_rendering",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:16.604478+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__map_boundary_clip_antimeridian__04"
+}

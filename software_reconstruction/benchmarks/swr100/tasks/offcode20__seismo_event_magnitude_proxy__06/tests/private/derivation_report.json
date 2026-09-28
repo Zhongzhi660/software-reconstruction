@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:34:14.169300+00:00",
+  "demo_id": "seismo_event_magnitude_proxy",
+  "group_id": "seismo_event_magnitude_proxy_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "filter_band": 3.0,
+        "phase_pick": 7.2,
+        "response_removal": false,
+        "station_selection": "strict",
+        "window_duration": 20
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "filter_band": 4.3,
+        "phase_pick": 12.2,
+        "response_removal": false,
+        "station_selection": "stress",
+        "window_duration": 19
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "filter_band": 5.0,
+        "phase_pick": 2.3,
+        "response_removal": true,
+        "station_selection": "stress",
+        "window_duration": 5
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "filter_band": 8.9,
+        "phase_pick": 6.4,
+        "response_removal": true,
+        "station_selection": "edge",
+        "window_duration": 32
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "filter_band": 4.1,
+        "phase_pick": 5.2,
+        "response_removal": true,
+        "station_selection": "domain_specific",
+        "window_duration": 29
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "d1d7afbd44a41a0b1bf737537ac7740386db39a7b422ed589c90f9b94e6f23ad",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__seismo_event_magnitude_proxy__06"
+}

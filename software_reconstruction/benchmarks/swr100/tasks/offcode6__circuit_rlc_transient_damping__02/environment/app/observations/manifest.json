@@ -1,0 +1,123 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:16.031751+00:00",
+  "axes_to_vary": [
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "analysis_type",
+    "tolerance"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:56.623839+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Circuit Simulation",
+  "demo_id": "circuit_rlc_transient_damping",
+  "effective_axes_to_vary": [
+    "analysis_type",
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "tolerance"
+  ],
+  "family_id": "circuit_simulation",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "component/source/temperature interventions changing simulation summaries",
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:49:21.881024+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.365,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 3.4269,
+        "tolerance": 2.3375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 0.055,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 3.0038,
+        "tolerance": 2.42
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "stress",
+        "component_value": 2.65,
+        "source_waveform": "source_waveform_5_public",
+        "temperature": 6.0769,
+        "tolerance": 0.55
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "analysis_type": "stress",
+        "component_value": 1.75,
+        "source_waveform": "source_waveform_8_public",
+        "temperature": 5.0769,
+        "tolerance": 1.95
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 1.395,
+        "source_waveform": "source_waveform_11_public",
+        "temperature": 6.0808,
+        "tolerance": 7.905
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 1.7825,
+        "source_waveform": "source_waveform_16_public",
+        "temperature": 4.0538,
+        "tolerance": 5.89
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:33.519675+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "ngspice",
+    "xyce",
+    "PySpice"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "ngspice",
+    "pyspice",
+    "qucsator"
+  ],
+  "task_id": "circuit_rlc_transient_damping__02"
+}

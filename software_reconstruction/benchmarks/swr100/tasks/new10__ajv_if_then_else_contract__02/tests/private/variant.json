@@ -1,0 +1,215 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:38.905129+00:00",
+  "axes_to_vary": [
+    "union_branch",
+    "required_fields",
+    "additional_properties",
+    "format",
+    "recursive_ref"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:21.250976+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "ajv_if_then_else_contract",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: online source exists and complexity meets medium-high threshold",
+    "difficulty_score": 10,
+    "expected_command_lines": 10,
+    "expected_oracle_steps": 15,
+    "parameter_axis_count": 5,
+    "rationale": "medium-high: multi-command native tool oracle with hidden parameter axes and nontrivial fixtures",
+    "static_source_bytes": 79404,
+    "static_source_file_count": 1048,
+    "static_source_repos": {
+      "ajv": {
+        "bytes": 38491,
+        "exists": true,
+        "file_count": 488,
+        "suffix_counts": {
+          ".gitignore": 1,
+          ".gitmodules": 1,
+          ".ico": 1,
+          ".jpg": 2,
+          ".js": 13,
+          ".json": 113,
+          ".md": 46,
+          ".npmrc": 1,
+          ".png": 21,
+          ".prettierignore": 1,
+          ".styl": 10,
+          ".svg": 26,
+          ".ts": 192,
+          ".ttf": 2,
+          ".vue": 41,
+          ".yml": 7,
+          "codeowners": 1,
+          "get-ajv-packages": 1,
+          "license": 2,
+          "prepare-site": 1
+        }
+      },
+      "json_schema_tests": {
+        "bytes": 40913,
+        "exists": true,
+        "file_count": 560,
+        "suffix_counts": {
+          ".editorconfig": 1,
+          ".gitignore": 1,
+          ".ini": 1,
+          ".json": 542,
+          ".md": 5,
+          ".ts": 1,
+          ".yml": 4,
+          "annotate-specification-links": 1,
+          "codeowners": 1,
+          "jsonschema_suite": 1,
+          "latest": 1,
+          "license": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "additional_properties",
+    "format",
+    "recursive_ref",
+    "required_fields",
+    "union_branch"
+  ],
+  "family_id": "ajv_schema",
+  "family_oracle_repaired": false,
+  "group_id": "ajv_if_then_else_contract_param_group_02",
+  "hidden_intervention": "invalid near-miss payloads and recursive references",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 0.629,
+        "format": "stress",
+        "recursive_ref": 0.786,
+        "required_fields": 2.2,
+        "union_branch": 2.593
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 2.436,
+        "format": "stress",
+        "recursive_ref": 1.807,
+        "required_fields": 4.243,
+        "union_branch": 2.75
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 3.143,
+        "format": "edge",
+        "recursive_ref": 4.4,
+        "required_fields": 3.457,
+        "union_branch": 2.121
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "image_family": "Schema / Contract Validation",
+  "naturalized_public_parameter_keys": [
+    "public_2.format"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:43:07.369497+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 1.807,
+        "format": "compat",
+        "recursive_ref": 2.593,
+        "required_fields": 1.336,
+        "union_branch": 4.243
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 2.284,
+        "format": "report",
+        "recursive_ref": 3.801,
+        "required_fields": 5.798,
+        "union_branch": 4.721
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 6.857,
+        "format": "edge",
+        "recursive_ref": 2.286,
+        "required_fields": 6.143,
+        "union_branch": 5.143
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "additional_properties": 2.142,
+        "format": "yaml",
+        "recursive_ref": 5.601,
+        "required_fields": 6.569,
+        "union_branch": 6.828
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.55,
+        "format": "edge",
+        "recursive_ref": 3.543,
+        "required_fields": 9.743,
+        "union_branch": 11.514
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "additional_properties": 9.349,
+        "format": "csv",
+        "recursive_ref": 4.48,
+        "required_fields": 7.248,
+        "union_branch": 8.835
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:07.982382+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:55:21.194636+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "ajv",
+    "jsonschema"
+  ],
+  "source_repos": [
+    "json_schema_tests",
+    "ajv"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "boundary_low",
+  "task_id": "ajv_if_then_else_contract__02"
+}

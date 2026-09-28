@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:18.175257+00:00",
+  "demo_id": "robotics_arm_workspace_boundary",
+  "group_id": "robotics_arm_workspace_boundary_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 20,
+        "collision_margin": false,
+        "initial_pose": 4.6308,
+        "joint_limit": 1.6154,
+        "trajectory_target": "trajectory_target_20_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 3,
+        "collision_margin": false,
+        "initial_pose": 9.6923,
+        "joint_limit": 7.4308,
+        "trajectory_target": "trajectory_target_8_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 18,
+        "collision_margin": true,
+        "initial_pose": 8.9385,
+        "joint_limit": 3.1231,
+        "trajectory_target": "trajectory_target_4_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "actuator_gain": 15,
+        "collision_margin": false,
+        "initial_pose": 1.7231,
+        "joint_limit": 4.8462,
+        "trajectory_target": "trajectory_target_22_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "actuator_gain": 18,
+        "collision_margin": true,
+        "initial_pose": 6.2462,
+        "joint_limit": 9.1538,
+        "trajectory_target": "trajectory_target_1_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "850011954243ec8f6f429a54245b15460e39a0649964801ecaa0ad9e85975087",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__robotics_arm_workspace_boundary__05"
+}

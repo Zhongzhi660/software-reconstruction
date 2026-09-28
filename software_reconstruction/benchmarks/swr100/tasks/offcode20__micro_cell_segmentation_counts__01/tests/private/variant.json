@@ -1,0 +1,231 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:44.090528+00:00",
+  "axes_to_vary": [
+    "channel_selection",
+    "threshold_method",
+    "object_size_range",
+    "illumination_correction",
+    "measurement_feature"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:06.841591+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Microscopy / Cell Analysis",
+  "demo_id": "micro_cell_segmentation_counts",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 17,
+    "expected_oracle_steps": 24,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 676,
+    "static_source_bytes": 195186413,
+    "static_source_file_count": 932,
+    "static_source_repos": {
+      "bioformats": {
+        "bytes": 1069105,
+        "domain_file_count": 7,
+        "exists": true,
+        "file_count": 82,
+        "suffix_counts": {
+          ".h5": 1,
+          ".html": 2,
+          ".java": 47,
+          ".m": 11,
+          ".mdb": 1,
+          ".ome": 6,
+          ".properties": 1,
+          ".txt": 1,
+          ".xls": 1,
+          ".xml": 9,
+          "bftest": 1,
+          "target-test-runner": 1
+        }
+      },
+      "cellprofiler": {
+        "bytes": 194117308,
+        "domain_file_count": 669,
+        "exists": true,
+        "file_count": 850,
+        "suffix_counts": {
+          ".ai": 1,
+          ".avi": 1,
+          ".c01": 1,
+          ".cppipe": 8,
+          ".csv": 1,
+          ".flex": 1,
+          ".h5": 3,
+          ".icns": 1,
+          ".ico": 2,
+          ".json": 3,
+          ".mat": 2,
+          ".npy": 5,
+          ".pipeline": 123,
+          ".png": 138,
+          ".psd": 1,
+          ".py": 315,
+          ".rst": 27,
+          ".stk": 2,
+          ".svg": 2,
+          ".tif": 207,
+          ".tiff": 2,
+          ".txt": 1,
+          ".wav": 1,
+          ".xml": 2
+        }
+      },
+      "scikit_image": {
+        "bytes": 0,
+        "domain_file_count": 0,
+        "exists": true,
+        "file_count": 0,
+        "suffix_counts": {}
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "channel_selection",
+    "illumination_correction",
+    "measurement_feature",
+    "object_size_range",
+    "threshold_method"
+  ],
+  "family_id": "microscopy_cell_analysis",
+  "family_oracle_repaired": false,
+  "group_id": "micro_cell_segmentation_counts_param_group_01",
+  "hidden_intervention": "cell/object measurement outputs under hidden threshold and channel interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 5.0,
+        "object_size_range": 16,
+        "threshold_method": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": true,
+        "measurement_feature": 5.2353,
+        "object_size_range": 15,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_selection": "stress",
+        "illumination_correction": true,
+        "measurement_feature": 2.1765,
+        "object_size_range": 11,
+        "threshold_method": "compat"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:19:40.084013+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "baseline",
+        "illumination_correction": true,
+        "measurement_feature": 2.8824,
+        "object_size_range": 11,
+        "threshold_method": "edge"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 6.5294,
+        "object_size_range": 5,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "channel_selection": "domain_specific",
+        "illumination_correction": false,
+        "measurement_feature": 1.7794,
+        "object_size_range": 2,
+        "threshold_method": "baseline"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 1.8765,
+        "object_size_range": 6,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": true,
+        "measurement_feature": 9.4824,
+        "object_size_range": 9,
+        "threshold_method": "domain_specific"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "channel_selection": "domain_specific",
+        "illumination_correction": false,
+        "measurement_feature": 12.4,
+        "object_size_range": 28,
+        "threshold_method": "strict"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:30.599520+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "CellProfiler",
+    "scikit-image",
+    "Bio-Formats"
+  ],
+  "source_repos": [
+    "cellprofiler",
+    "scikit_image",
+    "bioformats"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "balanced_shift",
+  "task_id": "micro_cell_segmentation_counts__01"
+}

@@ -1,0 +1,251 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:08.953301+00:00",
+  "axes_to_vary": [
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "analysis_type",
+    "tolerance"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:53.265703+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Circuit Simulation",
+  "demo_id": "circuit_bjt_amplifier_temperature",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high complexity evidence",
+    "difficulty_score": 10,
+    "expected_command_lines": 12,
+    "expected_oracle_steps": 30,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must produce parameter-sensitive artifacts",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 348,
+    "static_source_bytes": 5728022,
+    "static_source_file_count": 1043,
+    "static_source_repos": {
+      "ngspice": {
+        "bytes": 5081388,
+        "domain_file_count": 234,
+        "exists": true,
+        "file_count": 849,
+        "suffix_counts": {
+          ".am": 33,
+          ".cir": 178,
+          ".deck": 48,
+          ".h": 4,
+          ".ifs": 6,
+          ".in": 7,
+          ".lib": 9,
+          ".mod": 14,
+          ".nmos": 2,
+          ".out": 82,
+          ".pl": 2,
+          ".pm": 2,
+          ".pmos": 2,
+          ".sh": 3,
+          ".sp": 51,
+          ".standard": 334,
+          ".tcl": 9,
+          ".txt": 4,
+          ".xg": 6,
+          "makefile": 6,
+          "nmosparameters": 6,
+          "pmosparameters": 6,
+          "qaspec": 10,
+          "readme": 7,
+          "run": 8
+        }
+      },
+      "pyspice": {
+        "bytes": 589594,
+        "domain_file_count": 89,
+        "exists": true,
+        "file_count": 151,
+        "suffix_counts": {
+          ".c": 4,
+          ".cir": 25,
+          ".h": 2,
+          ".jinja2": 1,
+          ".lib": 11,
+          ".lib@xyce": 1,
+          ".m4": 22,
+          ".mod": 4,
+          ".png": 3,
+          ".pro": 2,
+          ".py": 58,
+          ".rst": 7,
+          ".sch": 2,
+          ".sh": 1,
+          ".svg": 1,
+          ".tex": 1,
+          ".txt": 4,
+          "makefile": 1,
+          "run-examples": 1
+        }
+      },
+      "qucsator": {
+        "bytes": 57040,
+        "domain_file_count": 25,
+        "exists": true,
+        "file_count": 43,
+        "suffix_counts": {
+          ".am": 2,
+          ".cpp": 7,
+          ".h": 1,
+          ".in": 4,
+          ".net": 12,
+          ".s1p": 1,
+          ".sch": 12,
+          ".sh": 1,
+          ".txt": 1,
+          "changelog": 1,
+          "platforms": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "analysis_type",
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "tolerance"
+  ],
+  "family_id": "circuit_simulation",
+  "family_oracle_repaired": true,
+  "group_id": "circuit_bjt_amplifier_temperature_param_group_04",
+  "hidden_intervention": "component/source/temperature interventions changing simulation summaries",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.8125,
+        "source_waveform": "source_waveform_18_hidden",
+        "temperature": 4.4231,
+        "tolerance": 3.0
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 4.875,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 3.0769,
+        "tolerance": 5.1875
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 5.875,
+        "source_waveform": "source_waveform_15_hidden",
+        "temperature": 3.8462,
+        "tolerance": 2.3125
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:48:59.165041+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 5.4375,
+        "source_waveform": "source_waveform_11_public",
+        "temperature": 5.0962,
+        "tolerance": 1.375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 3.6875,
+        "source_waveform": "source_waveform_17_public",
+        "temperature": 4.4231,
+        "tolerance": 1.25
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.15,
+        "source_waveform": "source_waveform_15_public",
+        "temperature": 4.9231,
+        "tolerance": 1.7
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 5.4,
+        "source_waveform": "source_waveform_4_public",
+        "temperature": 4.2308,
+        "tolerance": 1.3
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 1.0175,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 1.7346,
+        "tolerance": 1.815
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 0.935,
+        "source_waveform": "source_waveform_2_public",
+        "temperature": 1.1846,
+        "tolerance": 2.31
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:28.650824+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "ngspice",
+    "xyce",
+    "PySpice"
+  ],
+  "source_repos": [
+    "ngspice",
+    "pyspice",
+    "qucsator"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "cross_interaction",
+  "task_id": "circuit_bjt_amplifier_temperature__04"
+}

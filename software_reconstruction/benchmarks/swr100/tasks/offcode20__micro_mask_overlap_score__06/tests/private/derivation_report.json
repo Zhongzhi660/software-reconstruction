@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:36:56.541191+00:00",
+  "demo_id": "micro_mask_overlap_score",
+  "group_id": "micro_mask_overlap_score_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "stress",
+        "illumination_correction": true,
+        "measurement_feature": 10.1,
+        "object_size_range": 5,
+        "threshold_method": "domain_specific"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "baseline",
+        "illumination_correction": false,
+        "measurement_feature": 13.6,
+        "object_size_range": 10,
+        "threshold_method": "edge"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": false,
+        "measurement_feature": 9.4,
+        "object_size_range": 10,
+        "threshold_method": "baseline"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "compat",
+        "illumination_correction": false,
+        "measurement_feature": 13.3,
+        "object_size_range": 15,
+        "threshold_method": "baseline"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "strict",
+        "illumination_correction": true,
+        "measurement_feature": 7.5,
+        "object_size_range": 22,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "7d95ed42df1874e650249ee0070f75817b8f7c7f4d1c6f03018f5b79e4271727",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__micro_mask_overlap_score__06"
+}

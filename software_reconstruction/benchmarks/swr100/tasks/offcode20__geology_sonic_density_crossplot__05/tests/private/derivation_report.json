@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:41.009962+00:00",
+  "demo_id": "geology_sonic_density_crossplot",
+  "group_id": "geology_sonic_density_crossplot_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "compat",
+        "depth_interval": 4.3647,
+        "lithology_alias": 3.6235,
+        "smoothing_window": 14,
+        "unit_system": 7.7412
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "baseline",
+        "depth_interval": 6.5059,
+        "lithology_alias": 10.2941,
+        "smoothing_window": 7,
+        "unit_system": 2.8
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "curve_selection": "domain_specific",
+        "depth_interval": 4.6118,
+        "lithology_alias": 3.7882,
+        "smoothing_window": 15,
+        "unit_system": 2.6353
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "curve_selection": "strict",
+        "depth_interval": 3.7059,
+        "lithology_alias": 10.9529,
+        "smoothing_window": 8,
+        "unit_system": 7.0824
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "curve_selection": "compat",
+        "depth_interval": 3.6235,
+        "lithology_alias": 3.5412,
+        "smoothing_window": 4,
+        "unit_system": 11.2
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "d4efada49c47deca0e2d675f7c88d0b180a6f358149d1c7422607f9aa040bf33",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__geology_sonic_density_crossplot__05"
+}

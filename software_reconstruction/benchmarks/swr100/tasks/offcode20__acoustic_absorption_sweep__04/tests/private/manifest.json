@@ -1,0 +1,157 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:35.362486+00:00",
+  "axes_to_vary": [
+    "room_size",
+    "absorption_level",
+    "microphone_array",
+    "source_position",
+    "rir_length"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:45.211421+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Acoustics / Room Simulation",
+  "demo_id": "acoustic_absorption_sweep",
+  "effective_axes_to_vary": [
+    "absorption_level",
+    "microphone_array",
+    "rir_length",
+    "room_size",
+    "source_position"
+  ],
+  "family_id": "acoustics_room_simulation",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "room impulse and beamforming summaries under hidden geometry/acoustic interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 18,
+        "microphone_array": 9.8529,
+        "rir_length": 2.5,
+        "room_size": 21,
+        "source_position": "source_position_14_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 8,
+        "microphone_array": 5.2941,
+        "rir_length": 4.1912,
+        "room_size": 8,
+        "source_position": "source_position_4_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 6,
+        "microphone_array": 6.25,
+        "rir_length": 9.9265,
+        "room_size": 15,
+        "source_position": "source_position_22_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.source_position",
+    "public_2.source_position"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:09:35.245617+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 19,
+        "microphone_array": 6.9853,
+        "rir_length": 9.3382,
+        "room_size": 2,
+        "source_position": "source-position-4"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 4,
+        "microphone_array": 3.3824,
+        "rir_length": 8.0147,
+        "room_size": 15,
+        "source_position": "source-position-11"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 4,
+        "microphone_array": 3.7647,
+        "rir_length": 6.3529,
+        "room_size": 5,
+        "source_position": "source-position-4"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "absorption_level": 12,
+        "microphone_array": 5.9412,
+        "rir_length": 2.0,
+        "room_size": 4,
+        "source_position": "source-position-7"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "absorption_level": 3,
+        "microphone_array": 4.1735,
+        "rir_length": 0.9382,
+        "room_size": 10,
+        "source_position": "source-position-10"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 4.4,
+        "rir_length": 1.7147,
+        "room_size": 4,
+        "source_position": "source-position-14"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:53.710021+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "pyroomacoustics",
+    "scipy.signal"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "pyroomacoustics",
+    "scipy"
+  ],
+  "task_id": "acoustic_absorption_sweep__04"
+}

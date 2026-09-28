@@ -1,0 +1,231 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:12.696128+00:00",
+  "axes_to_vary": [
+    "dem_resolution",
+    "flow_direction_method",
+    "basin_threshold",
+    "rainfall_window",
+    "nodata_policy"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:45.950751+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Hydrology / Raster Modeling",
+  "demo_id": "hydro_nodata_fill_policy",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 14,
+    "expected_oracle_steps": 36,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 263,
+    "static_source_bytes": 24590236,
+    "static_source_file_count": 353,
+    "static_source_repos": {
+      "hydromt": {
+        "bytes": 1856855,
+        "domain_file_count": 105,
+        "exists": true,
+        "file_count": 157,
+        "suffix_counts": {
+          ".csv": 5,
+          ".gitkeep": 1,
+          ".gpkg": 1,
+          ".ipynb": 13,
+          ".json": 7,
+          ".nc": 2,
+          ".parquet": 1,
+          ".py": 86,
+          ".rst": 1,
+          ".tif": 16,
+          ".toml": 1,
+          ".txt": 1,
+          ".vrt": 1,
+          ".yaml": 1,
+          ".yml": 20
+        }
+      },
+      "pysheds": {
+        "bytes": 6813060,
+        "domain_file_count": 2,
+        "exists": true,
+        "file_count": 24,
+        "suffix_counts": {
+          ".ipynb": 13,
+          ".png": 9,
+          ".py": 2
+        }
+      },
+      "rasterio": {
+        "bytes": 15920321,
+        "domain_file_count": 156,
+        "exists": true,
+        "file_count": 172,
+        "suffix_counts": {
+          ".cpg": 1,
+          ".dbf": 1,
+          ".geojson": 1,
+          ".h5": 2,
+          ".jpg": 1,
+          ".msk": 1,
+          ".nc": 1,
+          ".ovr": 2,
+          ".prj": 1,
+          ".py": 119,
+          ".rst": 2,
+          ".shp": 1,
+          ".shx": 1,
+          ".tif": 30,
+          ".vrt": 4,
+          ".xml": 1,
+          ".zip": 3
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "basin_threshold",
+    "dem_resolution",
+    "flow_direction_method",
+    "nodata_policy",
+    "rainfall_window"
+  ],
+  "family_id": "hydrology_raster_modeling",
+  "family_oracle_repaired": false,
+  "group_id": "hydro_nodata_fill_policy_param_group_04",
+  "hidden_intervention": "DEM/watershed outputs under hidden flow, threshold, and nodata interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 6.5125,
+        "dem_resolution": 9.7059,
+        "flow_direction_method": "stress",
+        "nodata_policy": "baseline",
+        "rainfall_window": 24
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.0625,
+        "dem_resolution": 4.9265,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "edge",
+        "rainfall_window": 19
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.2125,
+        "dem_resolution": 8.3088,
+        "flow_direction_method": "compat",
+        "nodata_policy": "strict",
+        "rainfall_window": 22
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:16:35.341576+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 4.5125,
+        "dem_resolution": 1.4706,
+        "flow_direction_method": "edge",
+        "nodata_policy": "edge",
+        "rainfall_window": 2
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 2.0125,
+        "dem_resolution": 3.3088,
+        "flow_direction_method": "stress",
+        "nodata_policy": "compat",
+        "rainfall_window": 12
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 0.33,
+        "dem_resolution": 1.6471,
+        "flow_direction_method": "stress",
+        "nodata_policy": "strict",
+        "rainfall_window": 2
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 4.57,
+        "dem_resolution": 3.6471,
+        "flow_direction_method": "strict",
+        "nodata_policy": "compat",
+        "rainfall_window": 15
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 0.5335,
+        "dem_resolution": 1.8441,
+        "flow_direction_method": "stress",
+        "nodata_policy": "compat",
+        "rainfall_window": 7
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 2.0075,
+        "dem_resolution": 3.6882,
+        "flow_direction_method": "strict",
+        "nodata_policy": "domain_specific",
+        "rainfall_window": 3
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:01.209237+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "HydroMT",
+    "pysheds",
+    "rasterio"
+  ],
+  "source_repos": [
+    "hydromt",
+    "pysheds",
+    "rasterio"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "cross_interaction",
+  "task_id": "hydro_nodata_fill_policy__04"
+}

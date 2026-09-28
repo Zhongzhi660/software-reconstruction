@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:34:20.190232+00:00",
+  "demo_id": "climate_time_calendar_conversion",
+  "group_id": "climate_time_calendar_conversion_param_group_03",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "calendar_type": "baseline",
+        "missing_value_policy": "stress",
+        "regrid_method": "compat",
+        "time_window": 23,
+        "variable_name": "variable_name_12_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "calendar_type": "compat",
+        "missing_value_policy": "compat",
+        "regrid_method": "compat",
+        "time_window": 11,
+        "variable_name": "variable_name_20_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "calendar_type": "domain_specific",
+        "missing_value_policy": "stress",
+        "regrid_method": "edge",
+        "time_window": 9,
+        "variable_name": "variable_name_2_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "calendar_type": "strict",
+        "missing_value_policy": "stress",
+        "regrid_method": "strict",
+        "time_window": 11,
+        "variable_name": "variable_name_19_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "calendar_type": "strict",
+        "missing_value_policy": "baseline",
+        "regrid_method": "baseline",
+        "time_window": 12,
+        "variable_name": "variable_name_12_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "94fcd7834e174a93132cc74825669a97b370039b99b495830c5a8da8bffb64ed",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__climate_time_calendar_conversion__03"
+}

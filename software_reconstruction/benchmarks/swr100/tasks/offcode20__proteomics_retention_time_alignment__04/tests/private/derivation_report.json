@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:34:42.580519+00:00",
+  "demo_id": "proteomics_retention_time_alignment",
+  "group_id": "proteomics_retention_time_alignment_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 2.5735,
+        "enzyme_rule": 4.2647,
+        "fdr_threshold": 6.0125,
+        "mass_tolerance": 4.7625,
+        "retention_window": 11
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 8.0147,
+        "enzyme_rule": 7.2794,
+        "fdr_threshold": 4.5625,
+        "mass_tolerance": 1.5125,
+        "retention_window": 8
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.8676,
+        "enzyme_rule": 2.5,
+        "fdr_threshold": 5.2125,
+        "mass_tolerance": 0.9125,
+        "retention_window": 12
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 6.9118,
+        "enzyme_rule": 6.9853,
+        "fdr_threshold": 3.8625,
+        "mass_tolerance": 7.0125,
+        "retention_window": 10
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.1324,
+        "enzyme_rule": 4.7794,
+        "fdr_threshold": 4.8625,
+        "mass_tolerance": 1.4625,
+        "retention_window": 12
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "ba504fe57c37a5b260682803267c58ea96a4a01a389ac335c5821465b3e65d4e",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__proteomics_retention_time_alignment__04"
+}

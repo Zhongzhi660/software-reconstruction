@@ -1,0 +1,155 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:23.979371+00:00",
+  "axes_to_vary": [
+    "mesh_density",
+    "material_property",
+    "load_case",
+    "boundary_condition",
+    "contact_region"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:57.831684+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Finite Element / Mechanics",
+  "demo_id": "fea_truss_load_path",
+  "effective_axes_to_vary": [
+    "boundary_condition",
+    "contact_region",
+    "load_case",
+    "material_property",
+    "mesh_density"
+  ],
+  "family_id": "finite_element_mechanics",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "mesh/material/load/boundary interventions changing mechanics summaries",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_19_hidden",
+        "contact_region": false,
+        "load_case": "load_case_8_hidden",
+        "material_property": 0.77,
+        "mesh_density": 2
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_9_hidden",
+        "contact_region": false,
+        "load_case": "load_case_20_hidden",
+        "material_property": 1.5125,
+        "mesh_density": 9
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_8_hidden",
+        "contact_region": false,
+        "load_case": "load_case_0_hidden",
+        "material_property": 0.055,
+        "mesh_density": 2
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:49:54.464268+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_19_public",
+        "contact_region": false,
+        "load_case": "load_case_11_public",
+        "material_property": 0.1375,
+        "mesh_density": 5
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_1_public",
+        "contact_region": false,
+        "load_case": "load_case_9_public",
+        "material_property": 3.3,
+        "mesh_density": 7
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_13_public",
+        "contact_region": true,
+        "load_case": "load_case_15_public",
+        "material_property": 4.3,
+        "mesh_density": 5
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_4_public",
+        "contact_region": false,
+        "load_case": "load_case_11_public",
+        "material_property": 4.0,
+        "mesh_density": 7
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_16_public",
+        "contact_region": false,
+        "load_case": "load_case_0_public",
+        "material_property": 9.145,
+        "mesh_density": 9
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_1_public",
+        "contact_region": true,
+        "load_case": "load_case_8_public",
+        "material_property": 3.255,
+        "mesh_density": 25
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:40.164595+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "CalculiX",
+    "Elmer",
+    "SfePy"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "calculix",
+    "elmerfem",
+    "sfepy"
+  ],
+  "task_id": "fea_truss_load_path__02"
+}

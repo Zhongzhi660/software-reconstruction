@@ -1,0 +1,123 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:08.099418+00:00",
+  "axes_to_vary": [
+    "chain_selection",
+    "residue_window",
+    "altloc_policy",
+    "secondary_structure",
+    "distance_cutoff"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:46:53.971584+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Structural Biology / PDB",
+  "demo_id": "pdb_symmetry_mate_contacts",
+  "effective_axes_to_vary": [
+    "altloc_policy",
+    "chain_selection",
+    "distance_cutoff",
+    "residue_window",
+    "secondary_structure"
+  ],
+  "family_id": "structural_biology_pdb",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "PDB/mmCIF structure summaries under hidden chain, altloc, and cutoff interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:31:09.679507+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "altloc_policy": "edge",
+        "chain_selection": "compat",
+        "distance_cutoff": 5.838,
+        "residue_window": 27,
+        "secondary_structure": 8.0706
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "baseline",
+        "chain_selection": "baseline",
+        "distance_cutoff": 2.254,
+        "residue_window": 14,
+        "secondary_structure": 10.1294
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "compat",
+        "chain_selection": "strict",
+        "distance_cutoff": 2.05,
+        "residue_window": 10,
+        "secondary_structure": 7.9412
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "compat",
+        "chain_selection": "domain_specific",
+        "distance_cutoff": 4.73,
+        "residue_window": 4,
+        "secondary_structure": 4.4706
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "edge",
+        "chain_selection": "compat",
+        "distance_cutoff": 3.0415,
+        "residue_window": 7,
+        "secondary_structure": 2.1676
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "edge",
+        "chain_selection": "compat",
+        "distance_cutoff": 0.2255,
+        "residue_window": 8,
+        "secondary_structure": 3.2353
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:55.929067+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "Biopython",
+    "gemmi",
+    "MDAnalysis"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "biopython",
+    "gemmi",
+    "mdanalysis"
+  ],
+  "task_id": "pdb_symmetry_mate_contacts__05"
+}

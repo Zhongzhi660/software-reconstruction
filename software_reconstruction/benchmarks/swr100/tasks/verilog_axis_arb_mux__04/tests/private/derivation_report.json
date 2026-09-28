@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:58:01.834383+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55",
+    "base_artifact_sha256": "bbc569a906bcc8af819ff0d5ae3c809225b01f6b447d27b90a89fae0a2724a03",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 2
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "0cca870d1e6f682419ba8ea73514ce46c02c02bbcb397885f9bac48606363639",
+  "reference_outputs_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55",
+  "status": "parametric_oracle_accepted",
+  "task_id": "verilog_axis_arb_mux__04"
+}

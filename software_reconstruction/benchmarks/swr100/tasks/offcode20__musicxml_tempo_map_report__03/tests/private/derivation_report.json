@@ -1,0 +1,116 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "created_at": "2026-08-28T17:35:14.915226+00:00",
+  "demo_id": "musicxml_tempo_map_report",
+  "group_id": "musicxml_tempo_map_report_param_group_03",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-12",
+        "lyric_alignment": 5.2882,
+        "meter_change": false,
+        "quantization_grid": 11.1235,
+        "transpose_interval": 10.2118
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-10",
+        "lyric_alignment": 9.8471,
+        "meter_change": true,
+        "quantization_grid": 10.2118,
+        "transpose_interval": 8.0235
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-8",
+        "lyric_alignment": 10.3029,
+        "meter_change": false,
+        "quantization_grid": 10.3941,
+        "transpose_interval": 8.4794
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.instrument_part",
+    "hidden_2.instrument_part",
+    "hidden_3.instrument_part"
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-4",
+        "lyric_alignment": 6.0176,
+        "meter_change": false,
+        "quantization_grid": 10.9412,
+        "transpose_interval": 2.7353
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-16",
+        "lyric_alignment": 11.3971,
+        "meter_change": true,
+        "quantization_grid": 2.6441,
+        "transpose_interval": 4.4676
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-14",
+        "lyric_alignment": 8.0,
+        "meter_change": false,
+        "quantization_grid": 7.0,
+        "transpose_interval": 2.2941
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-3",
+        "lyric_alignment": 2.5882,
+        "meter_change": true,
+        "quantization_grid": 6.0588,
+        "transpose_interval": 7.5882
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-9",
+        "lyric_alignment": 3.4941,
+        "meter_change": true,
+        "quantization_grid": 3.1382,
+        "transpose_interval": 3.4941
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "instrument_part": "instrument-part-1",
+        "lyric_alignment": 1.8765,
+        "meter_change": false,
+        "quantization_grid": 4.4,
+        "transpose_interval": 3.4618
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "record_sha256": "81b660acad4f832be347b8284d52390e20b29aa7e3476d1c1cdfdd54d32a8609",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__musicxml_tempo_map_report__03"
+}

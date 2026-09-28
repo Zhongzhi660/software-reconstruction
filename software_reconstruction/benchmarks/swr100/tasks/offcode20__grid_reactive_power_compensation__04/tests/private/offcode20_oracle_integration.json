@@ -1,0 +1,7 @@
+{
+  "family_id": "power_grid_simulation",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:08.323234+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__grid_reactive_power_compensation__04"
+}

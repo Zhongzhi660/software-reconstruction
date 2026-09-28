@@ -1,0 +1,258 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:24.601278+00:00",
+  "axes_to_vary": [
+    "zoom_range",
+    "simplification_tolerance",
+    "layer_filter",
+    "projection",
+    "label_priority"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:53.380850+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Cartography / Map Rendering",
+  "demo_id": "map_boundary_clip_antimeridian",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 17,
+    "expected_oracle_steps": 20,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 382,
+    "static_source_bytes": 107676965,
+    "static_source_file_count": 450,
+    "static_source_repos": {
+      "libosmium": {
+        "bytes": 1430226,
+        "domain_file_count": 174,
+        "exists": true,
+        "file_count": 224,
+        "suffix_counts": {
+          ".bz2": 3,
+          ".cmake": 1,
+          ".cpp": 131,
+          ".gitattributes": 2,
+          ".gitignore": 1,
+          ".gz": 3,
+          ".hpp": 11,
+          ".md": 2,
+          ".o5m": 4,
+          ".opl": 7,
+          ".osh": 1,
+          ".osm": 29,
+          ".pbf": 3,
+          ".qgs": 1,
+          ".supp": 1,
+          ".txt": 21,
+          "empty_file": 1,
+          "known_file_size": 1,
+          "readme": 1
+        }
+      },
+      "tippecanoe": {
+        "bytes": 106246739,
+        "domain_file_count": 208,
+        "exists": true,
+        "file_count": 226,
+        "suffix_counts": {
+          ".csv": 3,
+          ".geojson": 2,
+          ".gz": 1,
+          ".json": 205,
+          ".pbf": 1,
+          ".standard": 4,
+          "alb": 1,
+          "alg": 1,
+          "enum": 1,
+          "filter": 1,
+          "make-filter-test": 1,
+          "null": 1,
+          "places-filter": 1,
+          "remove": 1,
+          "rename": 1,
+          "rename2": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "label_priority",
+    "layer_filter",
+    "projection",
+    "simplification_tolerance",
+    "zoom_range"
+  ],
+  "family_id": "cartography_map_rendering",
+  "family_oracle_repaired": false,
+  "group_id": "map_boundary_clip_antimeridian_param_group_04",
+  "hidden_intervention": "OSM/vector-tile summaries under hidden layer, projection, and simplification interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 6.8382,
+        "layer_filter": 2.7941,
+        "projection": [
+          6.25,
+          7.5,
+          8.75
+        ],
+        "simplification_tolerance": 2.4125,
+        "zoom_range": 11
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 5.8088,
+        "layer_filter": 2.4265,
+        "projection": [
+          6.25,
+          7.5,
+          8.75
+        ],
+        "simplification_tolerance": 3.7125,
+        "zoom_range": 6
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 4.8529,
+        "layer_filter": 3.75,
+        "projection": [
+          12.5,
+          13.75,
+          15.0
+        ],
+        "simplification_tolerance": 2.9625,
+        "zoom_range": 6
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:17:54.176846+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 3.0882,
+        "layer_filter": 2.6471,
+        "projection": [
+          3.75,
+          5.0,
+          6.25
+        ],
+        "simplification_tolerance": 3.2125,
+        "zoom_range": 6
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 3.0882,
+        "layer_filter": 6.1765,
+        "projection": [
+          10.0,
+          11.25,
+          12.5
+        ],
+        "simplification_tolerance": 0.9625,
+        "zoom_range": 20
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 1.6471,
+        "layer_filter": 5.3529,
+        "projection": [
+          9.0,
+          10.0,
+          11.0
+        ],
+        "simplification_tolerance": 2.29,
+        "zoom_range": 13
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "label_priority": 1.7647,
+        "layer_filter": 7.4706,
+        "projection": [
+          11.0,
+          12.0,
+          13.0
+        ],
+        "simplification_tolerance": 3.45,
+        "zoom_range": 12
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.0382,
+        "layer_filter": 2.0706,
+        "projection": [
+          1.65,
+          2.2,
+          2.75
+        ],
+        "simplification_tolerance": 3.0195,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "label_priority": 4.0441,
+        "layer_filter": 3.5265,
+        "projection": [
+          7.15,
+          7.7,
+          8.25
+        ],
+        "simplification_tolerance": 1.0615,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:14.187129+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "tippecanoe",
+    "osmium",
+    "vector-tile tooling"
+  ],
+  "source_repos": [
+    "tippecanoe",
+    "libosmium"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "cross_interaction",
+  "task_id": "map_boundary_clip_antimeridian__04"
+}

@@ -1,0 +1,159 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:37:11.323402+00:00",
+  "axes_to_vary": [
+    "glyph_subset",
+    "script_language",
+    "kerning_policy",
+    "variation_axis",
+    "hinting_mode"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:55.377507+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Typography / Font Shaping",
+  "demo_id": "font_coverage_script_report",
+  "effective_axes_to_vary": [
+    "glyph_subset",
+    "hinting_mode",
+    "kerning_policy",
+    "script_language",
+    "variation_axis"
+  ],
+  "family_id": "typography_font_shaping",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "font table and shaping outputs under hidden subset, script, and variation interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_15_hidden",
+        "hinting_mode": 1.5206,
+        "kerning_policy": "strict",
+        "script_language": "strict",
+        "variation_axis": 1.1647
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_7_hidden",
+        "hinting_mode": 2.3294,
+        "kerning_policy": "strict",
+        "script_language": "baseline",
+        "variation_axis": 3.5912
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_13_hidden",
+        "hinting_mode": 3.2353,
+        "kerning_policy": "edge",
+        "script_language": "edge",
+        "variation_axis": 2.6206
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.glyph_subset",
+    "public_2.glyph_subset"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:12:52.677809+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-1",
+        "hinting_mode": 3.3324,
+        "kerning_policy": "edge",
+        "script_language": "baseline",
+        "variation_axis": 4.3676
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-14",
+        "hinting_mode": 3.4941,
+        "kerning_policy": "baseline",
+        "script_language": "strict",
+        "variation_axis": 3.4294
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-4",
+        "hinting_mode": 3.1176,
+        "kerning_policy": "baseline",
+        "script_language": "strict",
+        "variation_axis": 5.0
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-14",
+        "hinting_mode": 2.1176,
+        "kerning_policy": "strict",
+        "script_language": "stress",
+        "variation_axis": 1.0
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-4",
+        "hinting_mode": 8.8441,
+        "kerning_policy": "domain_specific",
+        "script_language": "baseline",
+        "variation_axis": 3.1
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph-subset-16",
+        "hinting_mode": 2.0059,
+        "kerning_policy": "edge",
+        "script_language": "baseline",
+        "variation_axis": 3.8294
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:27.981152+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "fontTools",
+    "HarfBuzz",
+    "fontbakery"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "fonttools",
+    "harfbuzz",
+    "fontbakery"
+  ],
+  "task_id": "font_coverage_script_report__02"
+}

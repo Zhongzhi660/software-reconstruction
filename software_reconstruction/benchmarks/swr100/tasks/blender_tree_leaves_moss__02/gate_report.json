@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "2d0cf984a948b0cc5dd3e89fea9193c792a4cbda5fa27804b79ab67104ecad53",
+      "base_artifact_sha256": "32ca9cb77f5a7b5212274a3fc8a1a6f338528a7f89fd65d183a656bdedeb5eab",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 4
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group02_20260827_2320/tasks/blender_tree_leaves_moss__blender_tree_leaves_moss_param_gro/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "2d0cf984a948b0cc5dd3e89fea9193c792a4cbda5fa27804b79ab67104ecad53"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "blender_tree_leaves_moss__02"
+}

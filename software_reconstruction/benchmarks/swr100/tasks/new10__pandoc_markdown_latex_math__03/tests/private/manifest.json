@@ -1,0 +1,164 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:35:19.898520+00:00",
+  "axes_to_vary": [
+    "page_range",
+    "dpi",
+    "language",
+    "font",
+    "metadata"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:36.644783+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "pandoc_markdown_latex_math",
+  "effective_axes_to_vary": [
+    "dpi",
+    "font",
+    "language",
+    "metadata",
+    "page_range"
+  ],
+  "family_id": "document_ocr_publishing",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "page overflow, OCR language/font and metadata changes",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "dpi": 3.72,
+        "font": "baseline",
+        "language": "stress",
+        "metadata": 3.764,
+        "page_range": 3.1
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "dpi": 14.725,
+        "font": "stress",
+        "language": "edge",
+        "metadata": 3.321,
+        "page_range": 2.015
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "dpi": 8.06,
+        "font": "compat",
+        "language": "baseline",
+        "metadata": 7.75,
+        "page_range": 2.17
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_2.font",
+    "public_2.language"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:45:39.999796+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "dpi": 3.565,
+        "font": "strict",
+        "language": "strict",
+        "metadata": 2.657,
+        "page_range": 8.68
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "dpi": 17.941,
+        "font": "font-9",
+        "language": "language-15",
+        "metadata": 10.31,
+        "page_range": 16.326
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "dpi": 6.7,
+        "font": "strict",
+        "language": "baseline",
+        "metadata": 7.857,
+        "page_range": 5.6
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "dpi": 10.046,
+        "font": "font-11",
+        "language": "language-6",
+        "metadata": 6.024,
+        "page_range": 3.201
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "dpi": 0.77,
+        "font": "edge",
+        "language": "strict",
+        "metadata": 2.986,
+        "page_range": 3.74
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "dpi": 5.226,
+        "font": "font-10",
+        "language": "language-9",
+        "metadata": 3.26,
+        "page_range": 4.296
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:45.704203+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:27:10.937381+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "pandoc",
+    "poppler-utils",
+    "tesseract",
+    "qpdf"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "pandoc",
+    "qpdf",
+    "tesseract"
+  ],
+  "task_id": "pandoc_markdown_latex_math__03"
+}

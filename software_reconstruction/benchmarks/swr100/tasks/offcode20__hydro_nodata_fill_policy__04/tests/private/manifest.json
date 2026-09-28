@@ -1,0 +1,155 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:12.689543+00:00",
+  "axes_to_vary": [
+    "dem_resolution",
+    "flow_direction_method",
+    "basin_threshold",
+    "rainfall_window",
+    "nodata_policy"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:45.936817+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Hydrology / Raster Modeling",
+  "demo_id": "hydro_nodata_fill_policy",
+  "effective_axes_to_vary": [
+    "basin_threshold",
+    "dem_resolution",
+    "flow_direction_method",
+    "nodata_policy",
+    "rainfall_window"
+  ],
+  "family_id": "hydrology_raster_modeling",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "DEM/watershed outputs under hidden flow, threshold, and nodata interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 6.5125,
+        "dem_resolution": 9.7059,
+        "flow_direction_method": "stress",
+        "nodata_policy": "baseline",
+        "rainfall_window": 24
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.0625,
+        "dem_resolution": 4.9265,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "edge",
+        "rainfall_window": 19
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.2125,
+        "dem_resolution": 8.3088,
+        "flow_direction_method": "compat",
+        "nodata_policy": "strict",
+        "rainfall_window": 22
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:16:35.333250+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 4.5125,
+        "dem_resolution": 1.4706,
+        "flow_direction_method": "edge",
+        "nodata_policy": "edge",
+        "rainfall_window": 2
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 2.0125,
+        "dem_resolution": 3.3088,
+        "flow_direction_method": "stress",
+        "nodata_policy": "compat",
+        "rainfall_window": 12
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 0.33,
+        "dem_resolution": 1.6471,
+        "flow_direction_method": "stress",
+        "nodata_policy": "strict",
+        "rainfall_window": 2
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 4.57,
+        "dem_resolution": 3.6471,
+        "flow_direction_method": "strict",
+        "nodata_policy": "compat",
+        "rainfall_window": 15
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 0.5335,
+        "dem_resolution": 1.8441,
+        "flow_direction_method": "stress",
+        "nodata_policy": "compat",
+        "rainfall_window": 7
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 2.0075,
+        "dem_resolution": 3.6882,
+        "flow_direction_method": "strict",
+        "nodata_policy": "domain_specific",
+        "rainfall_window": 3
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:01.201715+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "HydroMT",
+    "pysheds",
+    "rasterio"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "hydromt",
+    "pysheds",
+    "rasterio"
+  ],
+  "task_id": "hydro_nodata_fill_policy__04"
+}

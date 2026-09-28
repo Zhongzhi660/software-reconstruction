@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:51.705644+00:00",
+  "demo_id": "circuit_noise_source_response",
+  "group_id": "circuit_noise_source_response_param_group_03",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 4.185,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 8.7038,
+        "tolerance": 0.5425
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "stress",
+        "component_value": 6.2775,
+        "source_waveform": "source_waveform_11_hidden",
+        "temperature": 6.0808,
+        "tolerance": 7.8275
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 8.6025,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 12.7577,
+        "tolerance": 7.75
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 6.4325,
+        "source_waveform": "source_waveform_7_public",
+        "temperature": 11.0885,
+        "tolerance": 6.975
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 0.3875,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 11.0885,
+        "tolerance": 1.7825
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "8b9f1545cd2d25760be9dbd9a6debc4cd34fbe9e24ca84925ca22d7fafa3db4c",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__circuit_noise_source_response__03"
+}

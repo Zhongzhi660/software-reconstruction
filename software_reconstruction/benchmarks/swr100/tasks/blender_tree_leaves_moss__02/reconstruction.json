@@ -1,0 +1,77 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "blender_scene_graph",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "leaf_density",
+      "moss",
+      "wind",
+      "camera",
+      "branch_depth"
+    ],
+    "demo_id": "blender_tree_leaves_moss",
+    "group_id": "blender_tree_leaves_moss_param_group_02",
+    "oracle_distinctness_gate": "Scene graph object/material/node counts or rendered crop hashes must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "boundary_low"
+  },
+  "parent": {
+    "attribution": "Acquired blender_scene_graph demo blender_tree_leaves_moss with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "229661d29edf502f3a69c8fe2cc5ffe93b7ac95d",
+    "sha256": "851ac309a25a2b85157616953ec224632ad1162c81f7096424c431e0d7a97caa",
+    "source_url": "acquired:blender-replacement-assets"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "blender batch scene evaluation",
+    "image_digest": "daytona-build-context:visual_web",
+    "name": "Blender",
+    "version": "Daytona visual_web image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "blender_tree_leaves_moss__02"
+}

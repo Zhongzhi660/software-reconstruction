@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-28T00:00:31.446214+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "6ff2f7d395d700a689dc3ab56913d404f9d97c5e87e71cc42aec2bc2a1f4d732",
+    "base_artifact_sha256": "fe685128d5f76db81eefe5e73df0be7917ce126ff6705fc08546f9ab5b4acb60",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 5
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "639d10d8b625f1b4e7c780cc1e1029f0e074217d790e07bfa8fd9f64fc5d0cbe",
+  "reference_outputs_sha256": "6ff2f7d395d700a689dc3ab56913d404f9d97c5e87e71cc42aec2bc2a1f4d732",
+  "status": "parametric_oracle_accepted",
+  "task_id": "tree_sitter_go_declarations__06"
+}

@@ -1,0 +1,215 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:35.946175+00:00",
+  "axes_to_vary": [
+    "union_branch",
+    "required_fields",
+    "additional_properties",
+    "format",
+    "recursive_ref"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:20.012945+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "ajv_defaults_coercion_compat",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: online source exists and complexity meets medium-high threshold",
+    "difficulty_score": 10,
+    "expected_command_lines": 12,
+    "expected_oracle_steps": 12,
+    "parameter_axis_count": 5,
+    "rationale": "medium-high: multi-command native tool oracle with hidden parameter axes and nontrivial fixtures",
+    "static_source_bytes": 79404,
+    "static_source_file_count": 1048,
+    "static_source_repos": {
+      "ajv": {
+        "bytes": 38491,
+        "exists": true,
+        "file_count": 488,
+        "suffix_counts": {
+          ".gitignore": 1,
+          ".gitmodules": 1,
+          ".ico": 1,
+          ".jpg": 2,
+          ".js": 13,
+          ".json": 113,
+          ".md": 46,
+          ".npmrc": 1,
+          ".png": 21,
+          ".prettierignore": 1,
+          ".styl": 10,
+          ".svg": 26,
+          ".ts": 192,
+          ".ttf": 2,
+          ".vue": 41,
+          ".yml": 7,
+          "codeowners": 1,
+          "get-ajv-packages": 1,
+          "license": 2,
+          "prepare-site": 1
+        }
+      },
+      "json_schema_tests": {
+        "bytes": 40913,
+        "exists": true,
+        "file_count": 560,
+        "suffix_counts": {
+          ".editorconfig": 1,
+          ".gitignore": 1,
+          ".ini": 1,
+          ".json": 542,
+          ".md": 5,
+          ".ts": 1,
+          ".yml": 4,
+          "annotate-specification-links": 1,
+          "codeowners": 1,
+          "jsonschema_suite": 1,
+          "latest": 1,
+          "license": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "additional_properties",
+    "format",
+    "recursive_ref",
+    "required_fields",
+    "union_branch"
+  ],
+  "family_id": "ajv_schema",
+  "family_oracle_repaired": false,
+  "group_id": "ajv_defaults_coercion_compat_param_group_01",
+  "hidden_intervention": "invalid near-miss payloads and recursive references",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 3.714,
+        "format": "baseline",
+        "recursive_ref": 2.714,
+        "required_fields": 3.0,
+        "union_branch": 7.571
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 6.429,
+        "format": "compat",
+        "recursive_ref": 4.143,
+        "required_fields": 7.714,
+        "union_branch": 1.429
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 3.0,
+        "format": "baseline",
+        "recursive_ref": 1.0,
+        "required_fields": 1.857,
+        "union_branch": 5.286
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "image_family": "Schema / Contract Validation",
+  "naturalized_public_parameter_keys": [
+    "public_2.format"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:42:52.424630+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "additional_properties": 3.0,
+        "format": "edge",
+        "recursive_ref": 4.0,
+        "required_fields": 5.286,
+        "union_branch": 4.571
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.713,
+        "format": "csv",
+        "recursive_ref": 6.744,
+        "required_fields": 3.998,
+        "union_branch": 5.971
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.021,
+        "format": "baseline",
+        "recursive_ref": 3.771,
+        "required_fields": 2.829,
+        "union_branch": 3.3
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "additional_properties": 1.42,
+        "format": "table",
+        "recursive_ref": 5.844,
+        "required_fields": 4.698,
+        "union_branch": 2.521
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "additional_properties": 9.743,
+        "format": "compat",
+        "recursive_ref": 10.85,
+        "required_fields": 4.65,
+        "union_branch": 9.521
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "additional_properties": 8.906,
+        "format": "report",
+        "recursive_ref": 8.244,
+        "required_fields": 9.683,
+        "union_branch": 10.828
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:04.591508+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:54:14.720522+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "ajv",
+    "jsonschema"
+  ],
+  "source_repos": [
+    "json_schema_tests",
+    "ajv"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "balanced_shift",
+  "task_id": "ajv_defaults_coercion_compat__01"
+}

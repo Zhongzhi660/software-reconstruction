@@ -1,0 +1,87 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "ajv_schema",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "union_branch",
+      "required_fields",
+      "additional_properties",
+      "format",
+      "recursive_ref"
+    ],
+    "demo_id": "ajv_if_then_else_contract",
+    "group_id": "ajv_if_then_else_contract_param_group_02",
+    "hidden_intervention": "invalid near-miss payloads and recursive references",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+    "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+    "source_group": "new10"
+  },
+  "parent": {
+    "attribution": "new10 online demo ajv_if_then_else_contract with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "c8448799f6ebffaaba68c43e9ce0f9a77088ce5ab2148a261759ae8ee314fc8d",
+    "source_url": "acquired:new10:ajv_schema"
+  },
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:55:21.194636+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "ajv_schema reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:ajv_schema",
+    "name": "ajv, jsonschema",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:34:38.919199+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "new10_public_artifacts_repaired_at": "2026-08-31T04:43:07.385841+00:00",
+    "public_artifact_concrete_file_count": 18,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 3376,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:36:07.995017+00:00"
+  },
+  "task_id": "new10__ajv_if_then_else_contract__02"
+}

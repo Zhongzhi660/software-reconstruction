@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:45.569446+00:00",
+  "demo_id": "opa_configmap_secret_guard",
+  "group_id": "opa_configmap_secret_guard_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_2_h",
+        "namespace": "namespace_3_h",
+        "overlay": 7.286,
+        "resource_shape": 6.571
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_10_h",
+        "namespace": "namespace_9_h",
+        "overlay": 4.429,
+        "resource_shape": 6.857
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_5_h",
+        "namespace": "namespace_12_h",
+        "overlay": 4.857,
+        "resource_shape": 3.857
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_4_p",
+        "namespace": "namespace_0_p",
+        "overlay": 1.857,
+        "resource_shape": 6.714
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_9_p",
+        "namespace": "namespace_6_p",
+        "overlay": 3.0,
+        "resource_shape": 2.857
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "2d202fe8cb29f74e6036b6c706b9d2b7187acbfc43f56430f3aa3fe002b54c63",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__opa_configmap_secret_guard__01"
+}

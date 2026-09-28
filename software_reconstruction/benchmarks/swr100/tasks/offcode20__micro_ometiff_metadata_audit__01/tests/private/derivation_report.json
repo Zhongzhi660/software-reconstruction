@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:36:52.828897+00:00",
+  "demo_id": "micro_ometiff_metadata_audit",
+  "group_id": "micro_ometiff_metadata_audit_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "edge",
+        "illumination_correction": true,
+        "measurement_feature": 7.2941,
+        "object_size_range": 3,
+        "threshold_method": "compat"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "domain_specific",
+        "illumination_correction": true,
+        "measurement_feature": 3.1765,
+        "object_size_range": 7,
+        "threshold_method": "stress"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "channel_selection": "edge",
+        "illumination_correction": true,
+        "measurement_feature": 3.1765,
+        "object_size_range": 8,
+        "threshold_method": "domain_specific"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "channel_selection": "edge",
+        "illumination_correction": false,
+        "measurement_feature": 7.4706,
+        "object_size_range": 11,
+        "threshold_method": "edge"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "channel_selection": "stress",
+        "illumination_correction": true,
+        "measurement_feature": 3.0,
+        "object_size_range": 11,
+        "threshold_method": "strict"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "1706d4b51f66e464c7635831478e13b3257f077a1b6f52d87ae803f64c74444d",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__micro_ometiff_metadata_audit__01"
+}

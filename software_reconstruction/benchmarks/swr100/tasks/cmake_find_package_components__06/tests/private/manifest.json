@@ -1,0 +1,86 @@
+{
+  "axes_to_vary": [
+    "components",
+    "version",
+    "optional_dep"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/cmake_find_package_components/input.tar.gz",
+  "base_input_bundle_sha256": "5db2bb9841987d2be007892c34e350845684eb9b74ec35619a9f72bae0cb4f26",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group06_20260827_2320/tasks/cmake_find_package_components__cmake_find_package_components/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "93be954670d147e7003b17c0e840befb1f1870c425424d4cf38ca646e8c94fd9",
+  "benchmark_repaired_at": "2026-09-12T02:44:08.551980+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "cmake_find_package_components",
+  "distinctness": {
+    "artifact_sha256": "93be954670d147e7003b17c0e840befb1f1870c425424d4cf38ca646e8c94fd9",
+    "base_artifact_sha256": "85c00a0587614fe3b2f606226209b3d0f646297311276db4548448904ede3a69",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 70
+  },
+  "family_id": "cmake_build_config",
+  "family_oracle_repaired": false,
+  "group_id": "cmake_find_package_components_param_group_06",
+  "hidden_intervention": "optional_dep",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "components": 3.3,
+        "optional_dep": 3.1,
+        "version": 2.7
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "components": 7.7,
+        "optional_dep": 1.3,
+        "version": 6.7
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 3,
+  "oracle_distinctness_gate": "CMake cache, target graph, generated header, ctest/install logs must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "components": 2.2,
+        "optional_dep": 4.7,
+        "version": 4.0
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "components": 2.5,
+        "optional_dep": 3.8,
+        "version": 7.5
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/CMake",
+  "status": "parametric_oracle_accepted",
+  "strategy": "robustness_negative",
+  "task_id": "cmake_find_package_components__06"
+}

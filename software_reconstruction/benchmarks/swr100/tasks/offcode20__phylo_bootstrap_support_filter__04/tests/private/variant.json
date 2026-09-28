@@ -1,0 +1,233 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "axes_to_vary": [
+    "alignment_trim",
+    "substitution_model",
+    "bootstrap_replicates",
+    "outgroup_taxon",
+    "branch_support_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:46:58.335997+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Phylogenetics",
+  "demo_id": "phylo_bootstrap_support_filter",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 23,
+    "expected_oracle_steps": 32,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 692,
+    "static_source_bytes": 111982843,
+    "static_source_file_count": 1666,
+    "static_source_repos": {
+      "biopython": {
+        "bytes": 109469176,
+        "domain_file_count": 687,
+        "exists": true,
+        "file_count": 1633,
+        "suffix_counts": {
+          ".aln": 18,
+          ".as": 11,
+          ".bb": 29,
+          ".bed": 16,
+          ".chain": 13,
+          ".cif": 19,
+          ".ctl": 42,
+          ".embl": 17,
+          ".exn": 52,
+          ".fa": 44,
+          ".fasta": 15,
+          ".fastq": 59,
+          ".gb": 38,
+          ".gbk": 12,
+          ".gfa": 10,
+          ".hhr": 10,
+          ".id": 27,
+          ".m10": 16,
+          ".maf": 9,
+          ".out": 263,
+          ".pdb": 12,
+          ".phy": 10,
+          ".psl": 10,
+          ".py": 225,
+          ".sam": 9,
+          ".sff": 11,
+          ".sth": 8,
+          ".tre": 10,
+          ".txt": 155,
+          ".xml": 177
+        }
+      },
+      "iqtree2": {
+        "bytes": 2513667,
+        "domain_file_count": 5,
+        "exists": true,
+        "file_count": 33,
+        "suffix_counts": {
+          ".c": 3,
+          ".cc": 1,
+          ".cf": 1,
+          ".cpp": 23,
+          ".nex": 2,
+          ".nwk": 1,
+          ".phy": 1,
+          ".txt": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "alignment_trim",
+    "bootstrap_replicates",
+    "branch_support_threshold",
+    "outgroup_taxon",
+    "substitution_model"
+  ],
+  "family_id": "phylogenetics_tree_reconstruction",
+  "family_oracle_repaired": true,
+  "group_id": "phylo_bootstrap_support_filter_param_group_04",
+  "hidden_intervention": "alignment/tree summaries under hidden model, trimming, and rooting interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 8.3824,
+        "bootstrap_replicates": 10,
+        "branch_support_threshold": 5.7625,
+        "outgroup_taxon": "outgroup-taxon-27",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 8.5294,
+        "bootstrap_replicates": 10,
+        "branch_support_threshold": 2.2125,
+        "outgroup_taxon": "outgroup-taxon-4",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 6.1765,
+        "bootstrap_replicates": 12,
+        "branch_support_threshold": 2.7125,
+        "outgroup_taxon": "outgroup-taxon-12",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.outgroup_taxon",
+    "public_2.outgroup_taxon"
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.outgroup_taxon",
+    "hidden_2.outgroup_taxon",
+    "hidden_3.outgroup_taxon"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:22:20.216547+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "alignment_trim": 7.5735,
+        "bootstrap_replicates": 6,
+        "branch_support_threshold": 0.4625,
+        "outgroup_taxon": "outgroup-taxon-6",
+        "substitution_model": "compat"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 2.4265,
+        "bootstrap_replicates": 24,
+        "branch_support_threshold": 5.6125,
+        "outgroup_taxon": "outgroup-taxon-15",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.8824,
+        "bootstrap_replicates": 12,
+        "branch_support_threshold": 3.25,
+        "outgroup_taxon": "outgroup-taxon-17",
+        "substitution_model": "edge"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 1.8824,
+        "bootstrap_replicates": 10,
+        "branch_support_threshold": 1.77,
+        "outgroup_taxon": "outgroup-taxon-9",
+        "substitution_model": "strict"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 3.0088,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 1.3695,
+        "outgroup_taxon": "outgroup-taxon-9",
+        "substitution_model": "edge"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "alignment_trim": 4.3676,
+        "bootstrap_replicates": 9,
+        "branch_support_threshold": 1.1935,
+        "outgroup_taxon": "outgroup-taxon-5",
+        "substitution_model": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:57.028115+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "Biopython",
+    "IQ-TREE/FastTree-style CLI"
+  ],
+  "source_repos": [
+    "biopython",
+    "iqtree2"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "cross_interaction",
+  "task_id": "phylo_bootstrap_support_filter__04"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:35:52.984797+00:00",
+  "demo_id": "rf_iq_spectrum_peak_map",
+  "group_id": "rf_iq_spectrum_peak_map_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "carrier_offset": 3.97,
+        "filter_taps": 1.2353,
+        "modulation_type": "edge",
+        "sample_rate": 7,
+        "snr_level": 14
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 4.77,
+        "filter_taps": 4.9412,
+        "modulation_type": "compat",
+        "sample_rate": 12,
+        "snr_level": 10
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 4.37,
+        "filter_taps": 3.0588,
+        "modulation_type": "stress",
+        "sample_rate": 8,
+        "snr_level": 3
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "carrier_offset": 4.57,
+        "filter_taps": 2.1176,
+        "modulation_type": "baseline",
+        "sample_rate": 7,
+        "snr_level": 14
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 0.81,
+        "filter_taps": 8.0,
+        "modulation_type": "stress",
+        "sample_rate": 9,
+        "snr_level": 10
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "6f87cb8e12f9047090c57d1fc095e8574d5ba0bfb72b1c35d36f539addde5a02",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__rf_iq_spectrum_peak_map__01"
+}

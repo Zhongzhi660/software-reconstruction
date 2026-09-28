@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:36:26.766561+00:00",
+  "demo_id": "font_gsub_ligature_policy",
+  "group_id": "font_gsub_ligature_policy_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_9_hidden",
+        "hinting_mode": 3.7059,
+        "kerning_policy": "baseline",
+        "script_language": "edge",
+        "variation_axis": 6.5882
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_21_hidden",
+        "hinting_mode": 2.6353,
+        "kerning_policy": "strict",
+        "script_language": "baseline",
+        "variation_axis": 7.8235
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_24_hidden",
+        "hinting_mode": 3.0471,
+        "kerning_policy": "compat",
+        "script_language": "baseline",
+        "variation_axis": 2.8824
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_5_public",
+        "hinting_mode": 3.1294,
+        "kerning_policy": "compat",
+        "script_language": "compat",
+        "variation_axis": 3.6235
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "glyph_subset": "glyph_subset_4_public",
+        "hinting_mode": 10.0471,
+        "kerning_policy": "stress",
+        "script_language": "strict",
+        "variation_axis": 7.4941
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "eeb9b70533219d71a14d8ddc33fef001c4b04439205f4c9aaf88f8396d2d521a",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__font_gsub_ligature_policy__05"
+}

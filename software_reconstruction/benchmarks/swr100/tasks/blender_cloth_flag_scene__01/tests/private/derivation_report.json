@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:52:37.783571+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad",
+    "base_artifact_sha256": "94c0565d1a8080af4681e5461a7f9e73a2ecea8b4b624a4e00836404197f9c61",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "529340403ba74722c9702ff6e74ec5222125dca4a86c7d2a337541db8d92bb27",
+  "reference_outputs_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad",
+  "status": "parametric_oracle_accepted",
+  "task_id": "blender_cloth_flag_scene__01"
+}

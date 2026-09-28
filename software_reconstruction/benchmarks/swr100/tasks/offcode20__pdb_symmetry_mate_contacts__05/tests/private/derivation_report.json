@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:06.865154+00:00",
+  "demo_id": "pdb_symmetry_mate_contacts",
+  "group_id": "pdb_symmetry_mate_contacts_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "altloc_policy": "edge",
+        "chain_selection": "domain_specific",
+        "distance_cutoff": 7.518,
+        "residue_window": 8,
+        "secondary_structure": 3.8706
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "domain_specific",
+        "chain_selection": "stress",
+        "distance_cutoff": 7.63,
+        "residue_window": 22,
+        "secondary_structure": 7.0
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "baseline",
+        "chain_selection": "edge",
+        "distance_cutoff": 4.494,
+        "residue_window": 20,
+        "secondary_structure": 3.0471
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "altloc_policy": "edge",
+        "chain_selection": "compat",
+        "distance_cutoff": 5.838,
+        "residue_window": 27,
+        "secondary_structure": 8.0706
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "altloc_policy": "baseline",
+        "chain_selection": "baseline",
+        "distance_cutoff": 2.254,
+        "residue_window": 14,
+        "secondary_structure": 10.1294
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "d9e3736acc8e28373780a2150ab2c63a7d51817b1a1dbcf34c6d65846e8686ab",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__pdb_symmetry_mate_contacts__05"
+}

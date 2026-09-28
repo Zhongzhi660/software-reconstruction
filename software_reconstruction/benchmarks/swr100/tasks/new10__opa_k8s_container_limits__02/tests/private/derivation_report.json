@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:38.613124+00:00",
+  "demo_id": "opa_k8s_container_limits",
+  "group_id": "opa_k8s_container_limits_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_3_h",
+        "namespace": "namespace_6_h",
+        "overlay": 2.671,
+        "resource_shape": 3.929
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_7_h",
+        "namespace": "namespace_3_h",
+        "overlay": 1.964,
+        "resource_shape": 1.493
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_4_h",
+        "namespace": "namespace_2_h",
+        "overlay": 4.164,
+        "resource_shape": 0.629
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "exception": false,
+        "identity": "identity_2_p",
+        "namespace": "namespace_0_p",
+        "overlay": 1.179,
+        "resource_shape": 1.964
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "exception": true,
+        "identity": "identity_7_p",
+        "namespace": "namespace_8_p",
+        "overlay": 3.221,
+        "resource_shape": 2.75
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "46de73afbd863a886e1b0ead127c91c69c47804f22f3d36dea936dbf27210c52",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__opa_k8s_container_limits__02"
+}

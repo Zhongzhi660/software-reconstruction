@@ -1,0 +1,121 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:35:39.960526+00:00",
+  "axes_to_vary": [
+    "schema_version",
+    "date_window",
+    "join_depth",
+    "null_policy",
+    "recovery_mode"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:40.833628+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "sqlite_northwind_supplier_fillrate",
+  "effective_axes_to_vary": [
+    "date_window",
+    "join_depth",
+    "null_policy",
+    "recovery_mode",
+    "schema_version"
+  ],
+  "family_id": "sqlite_analytics",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "date/null/join boundary rows not present in public observations",
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:47:05.795453+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "date_window": 9.9,
+        "join_depth": 7,
+        "null_policy": "baseline",
+        "recovery_mode": "stress",
+        "schema_version": "compat"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "date_window": 9.5,
+        "join_depth": 3,
+        "null_policy": "edge",
+        "recovery_mode": "strict",
+        "schema_version": "baseline"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "date_window": 2.365,
+        "join_depth": 3,
+        "null_policy": "compat",
+        "recovery_mode": "edge",
+        "schema_version": "baseline"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "date_window": 5.5,
+        "join_depth": 4,
+        "null_policy": "edge",
+        "recovery_mode": "stress",
+        "schema_version": "strict"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "date_window": 14.105,
+        "join_depth": 9,
+        "null_policy": "edge",
+        "recovery_mode": "compat",
+        "schema_version": "compat"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "date_window": 11.78,
+        "join_depth": 11,
+        "null_policy": "strict",
+        "recovery_mode": "stress",
+        "schema_version": "compat"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:04.734911+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "sqlite3"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "chinook",
+    "northwind",
+    "sqlite"
+  ],
+  "task_id": "sqlite_northwind_supplier_fillrate__01"
+}

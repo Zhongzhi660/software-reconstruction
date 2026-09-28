@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "color_imaging_pipeline",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "color_space",
+      "white_point",
+      "tone_curve",
+      "demosaic_method",
+      "compression_quality"
+    ],
+    "demo_id": "color_tone_curve_lut",
+    "group_id": "color_tone_curve_lut_param_group_06",
+    "hidden_intervention": "image/color metrics under hidden color transform and compression interventions",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+    "source_group": "offcode20"
+  },
+  "parent": {
+    "attribution": "offcode20 online demo color_tone_curve_lut with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "1fc3ad25ae9950af453b8d59b7fe3ba9ae2cfc8a334e3a0eb7ae339ad9eb1313",
+    "source_url": "acquired:offcode20:color_imaging_pipeline"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "color_imaging_pipeline reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:color_imaging_pipeline",
+    "name": "colour-science, ImageMagick, scikit-image",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:37:09.387322+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode20_public_artifacts_repaired_at": "2026-08-31T04:12:40.772367+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 4198,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:38:25.911480+00:00"
+  },
+  "task_id": "offcode20__color_tone_curve_lut__06"
+}

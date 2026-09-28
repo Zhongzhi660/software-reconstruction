@@ -1,0 +1,197 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:26.758855+00:00",
+  "axes_to_vary": [
+    "sample_rate",
+    "modulation_type",
+    "carrier_offset",
+    "filter_taps",
+    "snr_level"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:27.992754+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "RF / SDR Signal Processing",
+  "demo_id": "rf_carrier_offset_estimate",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 26,
+    "expected_oracle_steps": 36,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 124,
+    "static_source_bytes": 1878703,
+    "static_source_file_count": 143,
+    "static_source_repos": {
+      "gnuradio": {
+        "bytes": 858641,
+        "domain_file_count": 84,
+        "exists": true,
+        "file_count": 98,
+        "suffix_counts": {
+          ".gitignore": 4,
+          ".grc": 50,
+          ".m": 4,
+          ".py": 34,
+          ".txt": 4,
+          "filter_taps_example_complex_bandpass_taps": 1,
+          "readme": 1
+        }
+      },
+      "scipy": {
+        "bytes": 1020062,
+        "domain_file_count": 40,
+        "exists": true,
+        "file_count": 45,
+        "suffix_counts": {
+          ".build": 4,
+          ".csv": 1,
+          ".md": 1,
+          ".py": 39
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "carrier_offset",
+    "filter_taps",
+    "modulation_type",
+    "sample_rate",
+    "snr_level"
+  ],
+  "family_id": "rf_signal_processing",
+  "family_oracle_repaired": false,
+  "group_id": "rf_carrier_offset_estimate_param_group_01",
+  "hidden_intervention": "IQ/spectrum summaries under hidden modulation, offset, and filter interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "carrier_offset": 0.65,
+        "filter_taps": 3.4706,
+        "modulation_type": "stress",
+        "sample_rate": 17,
+        "snr_level": 5
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 0.21,
+        "filter_taps": 3.2353,
+        "modulation_type": "strict",
+        "sample_rate": 13,
+        "snr_level": 8
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 0.77,
+        "filter_taps": 4.8824,
+        "modulation_type": "baseline",
+        "sample_rate": 9,
+        "snr_level": 17
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:23:52.323188+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "carrier_offset": 3.97,
+        "filter_taps": 2.4706,
+        "modulation_type": "baseline",
+        "sample_rate": 5,
+        "snr_level": 7
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 0.49,
+        "filter_taps": 1.8824,
+        "modulation_type": "strict",
+        "sample_rate": 16,
+        "snr_level": 9
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 1.8535,
+        "filter_taps": 2.9441,
+        "modulation_type": "stress",
+        "sample_rate": 6,
+        "snr_level": 2
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 2.4475,
+        "filter_taps": 0.7118,
+        "modulation_type": "baseline",
+        "sample_rate": 2,
+        "snr_level": 4
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 3.1155,
+        "filter_taps": 10.0294,
+        "modulation_type": "strict",
+        "sample_rate": 26,
+        "snr_level": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "carrier_offset": 7.7035,
+        "filter_taps": 8.5706,
+        "modulation_type": "compat",
+        "sample_rate": 28,
+        "snr_level": 5
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:15.295278+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "GNU Radio",
+    "scipy.signal"
+  ],
+  "source_repos": [
+    "gnuradio",
+    "scipy"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "balanced_shift",
+  "task_id": "rf_carrier_offset_estimate__01"
+}

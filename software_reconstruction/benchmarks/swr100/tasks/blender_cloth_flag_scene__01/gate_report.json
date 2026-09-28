@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad",
+      "base_artifact_sha256": "94c0565d1a8080af4681e5461a7f9e73a2ecea8b4b624a4e00836404197f9c61",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 4
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group01_20260827_2305/tasks/blender_cloth_flag_scene__blender_cloth_flag_scene_param_gro/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "b16fa9a2151d944861760063189f0e4fffda3c9107140440d42382a2ce35b5ad"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "blender_cloth_flag_scene__01"
+}

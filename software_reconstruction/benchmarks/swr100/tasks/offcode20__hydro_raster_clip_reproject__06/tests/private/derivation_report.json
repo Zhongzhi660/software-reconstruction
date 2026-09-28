@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:30.694008+00:00",
+  "demo_id": "hydro_raster_clip_reproject",
+  "group_id": "hydro_raster_clip_reproject_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 1.785,
+        "dem_resolution": 6.2,
+        "flow_direction_method": "edge",
+        "nodata_policy": "edge",
+        "rainfall_window": 14
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 5.593,
+        "dem_resolution": 2.8,
+        "flow_direction_method": "strict",
+        "nodata_policy": "stress",
+        "rainfall_window": 29
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.825,
+        "dem_resolution": 10.6,
+        "flow_direction_method": "stress",
+        "nodata_policy": "edge",
+        "rainfall_window": 29
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 0.085,
+        "dem_resolution": 4.2,
+        "flow_direction_method": "edge",
+        "nodata_policy": "edge",
+        "rainfall_window": 26
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 4.437,
+        "dem_resolution": 7.7,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "stress",
+        "rainfall_window": 31
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "3683dd08223924aca2a322586f26ce75a7a11be2588eab0b687352a10e37f1d4",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__hydro_raster_clip_reproject__06"
+}

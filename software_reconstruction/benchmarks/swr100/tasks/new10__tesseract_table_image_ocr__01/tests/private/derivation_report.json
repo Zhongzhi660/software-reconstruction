@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:46.164247+00:00",
+  "demo_id": "tesseract_table_image_ocr",
+  "group_id": "tesseract_table_image_ocr_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "dpi": 7.7,
+        "font": "compat",
+        "language": "compat",
+        "metadata": 1.571,
+        "page_range": 2.4
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "dpi": 9.9,
+        "font": "stress",
+        "language": "stress",
+        "metadata": 4.286,
+        "page_range": 10.1
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "dpi": 8.8,
+        "font": "compat",
+        "language": "stress",
+        "metadata": 3.857,
+        "page_range": 4.1
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "dpi": 5.7,
+        "font": "edge",
+        "language": "compat",
+        "metadata": 6.429,
+        "page_range": 2.0
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "dpi": 3.0,
+        "font": "stress",
+        "language": "stress",
+        "metadata": 1.714,
+        "page_range": 10.0
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "8721ef30e60bf1cf3d8479a21ab20b4f6c9663875472ca95422bc1622da882c7",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__tesseract_table_image_ocr__01"
+}

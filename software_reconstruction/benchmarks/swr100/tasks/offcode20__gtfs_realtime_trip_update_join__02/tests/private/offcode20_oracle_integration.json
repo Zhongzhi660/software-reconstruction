@@ -1,0 +1,7 @@
+{
+  "family_id": "transport_gtfs_schedule",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:10.393689+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__gtfs_realtime_trip_update_join__02"
+}

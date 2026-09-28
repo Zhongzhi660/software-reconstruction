@@ -1,0 +1,76 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "openfoam_cfd",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "steps",
+      "sample_line",
+      "mesh",
+      "inlet"
+    ],
+    "demo_id": "openfoam_pitz_daily",
+    "group_id": "openfoam_pitz_daily_param_group_04",
+    "oracle_distinctness_gate": "Mesh stats, residual/probe outputs, or field summaries must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "cross_interaction"
+  },
+  "parent": {
+    "attribution": "Acquired openfoam_cfd demo openfoam_pitz_daily with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "09951d6e6b9e0fb45834507abf5bc5fea718330d",
+    "sha256": "8104195f234c4993913fc22820ffa4d72538e0dee9a7f68a8ac9642c7d80a2aa",
+    "source_url": "acquired:OpenFOAM-dev"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "OpenFOAM mesh/solver scenario",
+    "image_digest": "daytona-build-context:cfd_foundation",
+    "name": "OpenFOAM",
+    "version": "Daytona cfd_foundation image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "openfoam_pitz_daily__04"
+}

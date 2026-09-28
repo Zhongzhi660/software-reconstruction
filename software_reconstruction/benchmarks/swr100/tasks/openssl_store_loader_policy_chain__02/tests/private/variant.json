@@ -1,0 +1,44 @@
+{
+  "axes_to_vary": [
+    "provider",
+    "cert_store",
+    "purpose",
+    "chain",
+    "verification_purpose"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/openssl_store_loader_policy_chain/input.tar.gz",
+  "base_input_bundle_sha256": "dcc2f0768f79131aacabf9b144d9df679ddd095228cbcafb87a9b968f44b2b7e",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group02_20260827_2320/tasks/openssl_store_loader_policy_chain__openssl_store_loader_poli/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "9c544e4ed7c982c34c43ee5d602209adb3cf7c59b8f86d45d103cf99983af177",
+  "benchmark_repaired_at": "2026-09-12T02:47:25.844603+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "openssl_store_loader_policy_chain",
+  "distinctness": {
+    "artifact_sha256": "9c544e4ed7c982c34c43ee5d602209adb3cf7c59b8f86d45d103cf99983af177",
+    "base_artifact_sha256": "baece0e3042c4350307f742db813c8e9d37952a2cb50320da82a58e6b8c94d03",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 33
+  },
+  "family_id": "openssl_pki",
+  "family_oracle_repaired": false,
+  "group_id": "openssl_store_loader_policy_chain_param_group_02",
+  "hidden_intervention": "verification_purpose",
+  "minimum_changed_axes": 5,
+  "oracle_distinctness_gate": "Certificate/chain parsed extensions and verify diagnostics must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/openssl",
+  "status": "parametric_oracle_accepted",
+  "strategy": "boundary_low",
+  "task_id": "openssl_store_loader_policy_chain__02"
+}

@@ -1,0 +1,96 @@
+{
+  "axes_to_vary": [
+    "leaf_density",
+    "moss",
+    "wind",
+    "camera",
+    "branch_depth"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/blender_tree_leaves_moss/input.tar.gz",
+  "base_input_bundle_sha256": "851ac309a25a2b85157616953ec224632ad1162c81f7096424c431e0d7a97caa",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group02_20260827_2320/tasks/blender_tree_leaves_moss__blender_tree_leaves_moss_param_gro/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "2d0cf984a948b0cc5dd3e89fea9193c792a4cbda5fa27804b79ab67104ecad53",
+  "benchmark_repaired_at": "2026-09-12T02:44:06.790558+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "blender_tree_leaves_moss",
+  "distinctness": {
+    "artifact_sha256": "2d0cf984a948b0cc5dd3e89fea9193c792a4cbda5fa27804b79ab67104ecad53",
+    "base_artifact_sha256": "32ca9cb77f5a7b5212274a3fc8a1a6f338528a7f89fd65d183a656bdedeb5eab",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "family_id": "blender_scene_graph",
+  "family_oracle_repaired": false,
+  "group_id": "blender_tree_leaves_moss_param_group_02",
+  "hidden_intervention": "branch_depth",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "branch_depth": 4,
+        "camera": 4.55,
+        "leaf_density": 4.55,
+        "moss": 1.105,
+        "wind": 2.6
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "branch_depth": 8,
+        "camera": 1.69,
+        "leaf_density": 2.99,
+        "moss": 0.845,
+        "wind": 3.9
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 5,
+  "oracle_distinctness_gate": "Scene graph object/material/node counts or rendered crop hashes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "branch_depth": 6,
+        "camera": 4.745,
+        "leaf_density": 4.81,
+        "moss": 3.12,
+        "wind": 3.965
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "branch_depth": 7,
+        "camera": 4.16,
+        "leaf_density": 1.56,
+        "moss": 1.235,
+        "wind": 2.665
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/blender-node-assets/Nodes/3StrandRope.blend",
+  "status": "parametric_oracle_accepted",
+  "strategy": "boundary_low",
+  "task_id": "blender_tree_leaves_moss__02"
+}

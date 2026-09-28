@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:21.479732+00:00",
+  "demo_id": "z3_array_memory_aliasing",
+  "group_id": "z3_array_memory_aliasing_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "bitwidth": 9,
+        "bounds": 12.75,
+        "capacity": 5.375,
+        "precedence": 5.893,
+        "satisfiability_mode": "compat"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "bitwidth": 5,
+        "bounds": 6.25,
+        "capacity": 2.625,
+        "precedence": 4.286,
+        "satisfiability_mode": "edge"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "bitwidth": 10,
+        "bounds": 2.5,
+        "capacity": 13.375,
+        "precedence": 10.0,
+        "satisfiability_mode": "baseline"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "bitwidth": 6,
+        "bounds": 3.125,
+        "capacity": 13.5,
+        "precedence": 2.143,
+        "satisfiability_mode": "compat"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "bitwidth": 2,
+        "bounds": 4.5,
+        "capacity": 9.25,
+        "precedence": 7.5,
+        "satisfiability_mode": "edge"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "f2cab2368069fcf729689c40c9990daf6f945d6ea777394720dd022f0e702ea8",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__z3_array_memory_aliasing__04"
+}

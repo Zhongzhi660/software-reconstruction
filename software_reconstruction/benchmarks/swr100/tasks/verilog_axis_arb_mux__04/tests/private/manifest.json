@@ -1,0 +1,91 @@
+{
+  "axes_to_vary": [
+    "reset",
+    "frame",
+    "ports",
+    "width"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/verilog_axis_arb_mux/input.tar.gz",
+  "base_input_bundle_sha256": "0cca870d1e6f682419ba8ea73514ce46c02c02bbcb397885f9bac48606363639",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/verilog_axis_arb_mux__verilog_axis_arb_mux_param_group_04/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55",
+  "benchmark_repaired_at": "2026-09-12T02:47:31.229671+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "verilog_axis_arb_mux",
+  "distinctness": {
+    "artifact_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55",
+    "base_artifact_sha256": "bbc569a906bcc8af819ff0d5ae3c809225b01f6b447d27b90a89fae0a2724a03",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 2
+  },
+  "family_id": "verilog_rtl",
+  "family_oracle_repaired": false,
+  "group_id": "verilog_axis_arb_mux_param_group_04",
+  "hidden_intervention": "width",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "frame": 54,
+        "ports": 1.92,
+        "reset": 5.16,
+        "width": 18.27
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "frame": 40,
+        "ports": 7.32,
+        "reset": 9.48,
+        "width": 23.1
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "Cocotb result logs, frame traces, or hidden assertion summaries must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "frame": 36,
+        "ports": 7.44,
+        "reset": 2.88,
+        "width": 29.31
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "frame": 35,
+        "ports": 2.76,
+        "reset": 4.08,
+        "width": 12.54
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/verilog-axis",
+  "status": "parametric_oracle_accepted",
+  "strategy": "cross_interaction",
+  "task_id": "verilog_axis_arb_mux__04"
+}

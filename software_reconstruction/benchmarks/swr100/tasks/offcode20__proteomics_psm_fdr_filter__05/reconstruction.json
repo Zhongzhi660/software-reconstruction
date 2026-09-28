@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "proteomics_mass_spectrometry",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "enzyme_rule",
+      "mass_tolerance",
+      "charge_state",
+      "retention_window",
+      "fdr_threshold"
+    ],
+    "demo_id": "proteomics_psm_fdr_filter",
+    "group_id": "proteomics_psm_fdr_filter_param_group_05",
+    "hidden_intervention": "mzML/peptide QC summaries under hidden tolerance, charge, and FDR interventions",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+    "source_group": "offcode20"
+  },
+  "parent": {
+    "attribution": "offcode20 online demo proteomics_psm_fdr_filter with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "3323ad8a2e8eb2e1e263c233141448a174bbc0c90f87b4816e832a0a57cc9d8e",
+    "source_url": "acquired:offcode20:proteomics_mass_spectrometry"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "proteomics_mass_spectrometry reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:proteomics_mass_spectrometry",
+    "name": "OpenMS, pyteomics",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:39:22.757996+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode20_public_artifacts_repaired_at": "2026-08-31T04:23:33.305740+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 3592,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:40:11.375791+00:00"
+  },
+  "task_id": "offcode20__proteomics_psm_fdr_filter__05"
+}

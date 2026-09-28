@@ -1,0 +1,74 @@
+{
+  "axes_to_vary": [
+    "root",
+    "leaf",
+    "dns",
+    "rfc822"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/openssl_pkits_name_constraints/input.tar.gz",
+  "base_input_bundle_sha256": "3fbbe93491ed4ebb78c34f1d4783e9b03b0d52c7f4cebb52ba3f4ae7c7a43f7d",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/openssl_pkits_name_constraints__openssl_pkits_name_constrain/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "d3af08294a40fe379776e1dfb2c2d9d933c4ecc3f0263a8333dd0c5abfdeb9d9",
+  "benchmark_repaired_at": "2026-09-12T02:47:22.545431+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "openssl_pkits_name_constraints",
+  "distinctness": {
+    "artifact_sha256": "d3af08294a40fe379776e1dfb2c2d9d933c4ecc3f0263a8333dd0c5abfdeb9d9",
+    "base_artifact_sha256": "e8f5e17d083e7ea9bba6883ec828b3600ab455a2a9e9d160f0551daaca099a62",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 33
+  },
+  "family_id": "openssl_pki",
+  "family_oracle_repaired": false,
+  "group_id": "openssl_pkits_name_constraints_param_group_04",
+  "hidden_intervention": "rfc822",
+  "minimum_changed_axes": 4,
+  "oracle_distinctness_gate": "Certificate/chain parsed extensions and verify diagnostics must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_count": 2,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "dns": 3.84,
+        "leaf": 8.52,
+        "rfc822": 4.08,
+        "root": 4.08
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "dns": 9.24,
+        "leaf": 3.0,
+        "rfc822": 5.76,
+        "root": 2.76
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/openssl",
+  "status": "parametric_oracle_accepted",
+  "strategy": "cross_interaction",
+  "task_id": "openssl_pkits_name_constraints__04"
+}

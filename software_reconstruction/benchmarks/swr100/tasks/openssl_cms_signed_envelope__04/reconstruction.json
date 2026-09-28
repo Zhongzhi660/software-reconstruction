@@ -1,0 +1,76 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "openssl_pki",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "detach",
+      "verify",
+      "signer",
+      "recipient"
+    ],
+    "demo_id": "openssl_cms_signed_envelope",
+    "group_id": "openssl_cms_signed_envelope_param_group_04",
+    "oracle_distinctness_gate": "Certificate/chain parsed extensions and verify diagnostics must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "cross_interaction"
+  },
+  "parent": {
+    "attribution": "Acquired openssl_pki demo openssl_cms_signed_envelope with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "5f61ae81549a6872869469bcb2784cdc08be9271",
+    "sha256": "b8bc37f6b339190df9e79172c7cd6386742b8e3595c5353dc4fecb113d0fc120",
+    "source_url": "acquired:openssl"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "openssl certificate-chain scenarios",
+    "image_digest": "daytona-build-context:language_security",
+    "name": "OpenSSL",
+    "version": "Daytona language_security image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "openssl_cms_signed_envelope__04"
+}

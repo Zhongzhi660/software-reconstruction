@@ -1,0 +1,7 @@
+{
+  "family_id": "hydrology_raster_modeling",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:12.095260+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__hydro_dem_flow_accumulation__05"
+}

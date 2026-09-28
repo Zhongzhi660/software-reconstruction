@@ -1,0 +1,266 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:37:56.681022+00:00",
+  "axes_to_vary": [
+    "load_scale",
+    "line_outage",
+    "voltage_limit",
+    "generator_dispatch",
+    "tap_position"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:41.119006+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Power Grid / Energy Systems",
+  "demo_id": "grid_voltage_violation_report",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 23,
+    "expected_oracle_steps": 32,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 638,
+    "static_source_bytes": 82722306,
+    "static_source_file_count": 1076,
+    "static_source_repos": {
+      "opendssdirect": {
+        "bytes": 209356,
+        "domain_file_count": 5,
+        "exists": true,
+        "file_count": 5,
+        "suffix_counts": {
+          ".csv": 1,
+          ".dss": 2,
+          ".py": 2
+        }
+      },
+      "pandapower": {
+        "bytes": 74785833,
+        "domain_file_count": 400,
+        "exists": true,
+        "file_count": 633,
+        "suffix_counts": {
+          ".csv": 125,
+          ".dia": 1,
+          ".docx": 2,
+          ".html": 1,
+          ".ini": 1,
+          ".ipynb": 71,
+          ".jl": 2,
+          ".json": 112,
+          ".m": 2,
+          ".mat": 1,
+          ".mdb": 1,
+          ".p": 2,
+          ".pdf": 4,
+          ".pfd": 16,
+          ".pkl": 8,
+          ".png": 58,
+          ".py": 159,
+          ".sin": 1,
+          ".sxe": 34,
+          ".test_durations": 1,
+          ".txt": 2,
+          ".uct": 11,
+          ".xlsx": 2,
+          ".zip": 16
+        }
+      },
+      "pypsa": {
+        "bytes": 7727117,
+        "domain_file_count": 233,
+        "exists": true,
+        "file_count": 438,
+        "suffix_counts": {
+          ".csv": 133,
+          ".ipynb": 46,
+          ".json": 12,
+          ".md": 1,
+          ".nc": 5,
+          ".png": 153,
+          ".py": 88
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "generator_dispatch",
+    "line_outage",
+    "load_scale",
+    "tap_position",
+    "voltage_limit"
+  ],
+  "family_id": "power_grid_simulation",
+  "family_oracle_repaired": false,
+  "group_id": "grid_voltage_violation_report_param_group_02",
+  "hidden_intervention": "power-flow summaries under hidden load, outage, and dispatch interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "generator_dispatch": 1.0676,
+        "line_outage": false,
+        "load_scale": 10,
+        "tap_position": [
+          6.6,
+          7.15,
+          7.7
+        ],
+        "voltage_limit": 2.4915
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 2.5882,
+        "line_outage": false,
+        "load_scale": 1,
+        "tap_position": [
+          0.55,
+          1.1,
+          1.65
+        ],
+        "voltage_limit": 0.5335
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 3.9794,
+        "line_outage": false,
+        "load_scale": 7,
+        "tap_position": [
+          4.95,
+          5.5,
+          6.05
+        ],
+        "voltage_limit": 2.6235
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:15:16.777490+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "generator_dispatch": 3.0088,
+        "line_outage": true,
+        "load_scale": 9,
+        "tap_position": [
+          2.2,
+          2.75,
+          3.3
+        ],
+        "voltage_limit": 0.1155
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 2.6853,
+        "line_outage": true,
+        "load_scale": 4,
+        "tap_position": [
+          1.65,
+          2.2,
+          2.75
+        ],
+        "voltage_limit": 2.8875
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 3.6471,
+        "line_outage": false,
+        "load_scale": 4,
+        "tap_position": [
+          7.0,
+          8.0,
+          9.0
+        ],
+        "voltage_limit": 0.89
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 2.3529,
+        "line_outage": true,
+        "load_scale": 14,
+        "tap_position": [
+          8.0,
+          9.0,
+          10.0
+        ],
+        "voltage_limit": 1.61
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 9.1176,
+        "line_outage": true,
+        "load_scale": 12,
+        "tap_position": [
+          13.95,
+          15.5,
+          17.05
+        ],
+        "voltage_limit": 6.0915
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 2.0059,
+        "line_outage": true,
+        "load_scale": 23,
+        "tap_position": [
+          15.5,
+          17.05,
+          18.6
+        ],
+        "voltage_limit": 4.4795
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:48.902568+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "pandapower",
+    "PyPSA",
+    "OpenDSSDirect"
+  ],
+  "source_repos": [
+    "pandapower",
+    "pypsa",
+    "opendssdirect"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "boundary_low",
+  "task_id": "grid_voltage_violation_report__02"
+}

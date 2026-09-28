@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-28T17:35:30.326489+00:00",
+  "demo_id": "lidar_voxel_downsample_normals",
+  "group_id": "lidar_voxel_downsample_normals_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "classification_filter": 5.2941,
+        "crop_bounds": [
+          9.0,
+          10.0,
+          11.0
+        ],
+        "normal_radius": 19,
+        "registration_threshold": 2.57,
+        "voxel_size": 15
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "classification_filter": 7.1176,
+        "crop_bounds": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "normal_radius": 12,
+        "registration_threshold": 4.53,
+        "voxel_size": 14
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "classification_filter": 5.0,
+        "crop_bounds": [
+          3.0,
+          4.0,
+          5.0
+        ],
+        "normal_radius": 4,
+        "registration_threshold": 0.29,
+        "voxel_size": 14
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "classification_filter": 5.5294,
+        "crop_bounds": [
+          12.0,
+          13.0,
+          14.0
+        ],
+        "normal_radius": 13,
+        "registration_threshold": 0.13,
+        "voxel_size": 5
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "classification_filter": 2.0,
+        "crop_bounds": [
+          8.0,
+          9.0,
+          10.0
+        ],
+        "normal_radius": 11,
+        "registration_threshold": 0.69,
+        "voxel_size": 10
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "a2bc10e241fdc634034c5a36396f5a2744e600f83631fbcdf08b59cb684aea66",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__lidar_voxel_downsample_normals__01"
+}

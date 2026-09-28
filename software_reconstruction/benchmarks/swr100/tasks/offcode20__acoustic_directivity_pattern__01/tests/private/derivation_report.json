@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:20.406597+00:00",
+  "demo_id": "acoustic_directivity_pattern",
+  "group_id": "acoustic_directivity_pattern_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 2.0588,
+        "rir_length": 4.4118,
+        "room_size": 11,
+        "source_position": "source_position_23_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 9,
+        "microphone_array": 3.2941,
+        "rir_length": 5.2941,
+        "room_size": 12,
+        "source_position": "source_position_8_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 7,
+        "microphone_array": 7.5882,
+        "rir_length": 5.0,
+        "room_size": 17,
+        "source_position": "source_position_26_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 15,
+        "microphone_array": 7.8235,
+        "rir_length": 1.5882,
+        "room_size": 17,
+        "source_position": "source_position_28_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 3,
+        "microphone_array": 4.4706,
+        "rir_length": 3.7059,
+        "room_size": 2,
+        "source_position": "source_position_5_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "c3cc83e8554be11fd426ac2753189869cad9dc5627be4feae3928c130f65979c",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__acoustic_directivity_pattern__01"
+}

@@ -1,0 +1,236 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:24.191615+00:00",
+  "axes_to_vary": [
+    "enzyme_rule",
+    "mass_tolerance",
+    "charge_state",
+    "retention_window",
+    "fdr_threshold"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:26.835750+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Proteomics / Mass Spectrometry",
+  "demo_id": "proteomics_retention_time_alignment",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 14,
+    "expected_oracle_steps": 40,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 1288,
+    "static_source_bytes": 892045080,
+    "static_source_file_count": 2366,
+    "static_source_repos": {
+      "openms": {
+        "bytes": 889001410,
+        "domain_file_count": 1251,
+        "exists": true,
+        "file_count": 2306,
+        "suffix_counts": {
+          ".consensusxml": 179,
+          ".csv": 61,
+          ".dta": 28,
+          ".dta2d": 9,
+          ".fasta": 74,
+          ".featurexml": 239,
+          ".gz": 16,
+          ".idxml": 325,
+          ".info": 16,
+          ".ini": 105,
+          ".json": 26,
+          ".mgf": 8,
+          ".mzdata": 15,
+          ".mzid": 28,
+          ".mzml": 384,
+          ".mztab": 42,
+          ".mzxml": 18,
+          ".obo": 17,
+          ".oms": 7,
+          ".parquet": 26,
+          ".peff": 18,
+          ".pepxml": 16,
+          ".pgm": 7,
+          ".toppas": 11,
+          ".trafoxml": 32,
+          ".traml": 74,
+          ".tsv": 141,
+          ".txt": 117,
+          ".xml": 54,
+          ".xsd": 24
+        }
+      },
+      "pyteomics": {
+        "bytes": 3043670,
+        "domain_file_count": 37,
+        "exists": true,
+        "file_count": 60,
+        "suffix_counts": {
+          ".fasta": 1,
+          ".featurexml": 1,
+          ".gitignore": 1,
+          ".gz": 2,
+          ".idxml": 1,
+          ".mgf": 3,
+          ".ms1": 1,
+          ".ms2": 1,
+          ".mzid": 2,
+          ".mzml": 2,
+          ".mztab": 2,
+          ".mzxml": 1,
+          ".npy": 4,
+          ".peff": 1,
+          ".py": 28,
+          ".sh": 2,
+          ".trafoxml": 1,
+          ".traml": 1,
+          ".txt": 1,
+          ".xml": 4
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "charge_state",
+    "enzyme_rule",
+    "fdr_threshold",
+    "mass_tolerance",
+    "retention_window"
+  ],
+  "family_id": "proteomics_mass_spectrometry",
+  "family_oracle_repaired": false,
+  "group_id": "proteomics_retention_time_alignment_param_group_04",
+  "hidden_intervention": "mzML/peptide QC summaries under hidden tolerance, charge, and FDR interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 2.5735,
+        "enzyme_rule": 4.2647,
+        "fdr_threshold": 6.0125,
+        "mass_tolerance": 4.7625,
+        "retention_window": 11
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 8.0147,
+        "enzyme_rule": 7.2794,
+        "fdr_threshold": 4.5625,
+        "mass_tolerance": 1.5125,
+        "retention_window": 8
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.8676,
+        "enzyme_rule": 2.5,
+        "fdr_threshold": 5.2125,
+        "mass_tolerance": 0.9125,
+        "retention_window": 12
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:23:39.058459+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 6.9118,
+        "enzyme_rule": 6.9853,
+        "fdr_threshold": 3.8625,
+        "mass_tolerance": 7.0125,
+        "retention_window": 10
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.1324,
+        "enzyme_rule": 4.7794,
+        "fdr_threshold": 4.8625,
+        "mass_tolerance": 1.4625,
+        "retention_window": 12
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 1.1176,
+        "enzyme_rule": 6.6471,
+        "fdr_threshold": 4.53,
+        "mass_tolerance": 2.53,
+        "retention_window": 6
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "charge_state": 1.9412,
+        "enzyme_rule": 2.2353,
+        "fdr_threshold": 1.73,
+        "mass_tolerance": 0.69,
+        "retention_window": 9
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "charge_state": 3.4941,
+        "enzyme_rule": 3.5265,
+        "fdr_threshold": 0.1155,
+        "mass_tolerance": 2.6455,
+        "retention_window": 10
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "charge_state": 0.7118,
+        "enzyme_rule": 4.0118,
+        "fdr_threshold": 1.6555,
+        "mass_tolerance": 1.4135,
+        "retention_window": 4
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:12.471851+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "OpenMS",
+    "pyteomics"
+  ],
+  "source_repos": [
+    "openms",
+    "pyteomics"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "cross_interaction",
+  "task_id": "proteomics_retention_time_alignment__04"
+}

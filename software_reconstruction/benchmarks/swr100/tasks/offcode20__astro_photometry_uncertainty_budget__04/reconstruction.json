@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "astronomy_fits_photometry",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "wcs_frame",
+      "aperture_radius",
+      "background_model",
+      "sigma_clip",
+      "source_threshold"
+    ],
+    "demo_id": "astro_photometry_uncertainty_budget",
+    "group_id": "astro_photometry_uncertainty_budget_param_group_04",
+    "hidden_intervention": "FITS/WCS photometry summaries under hidden aperture and background interventions",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+    "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+    "source_group": "offcode20"
+  },
+  "parent": {
+    "attribution": "offcode20 online demo astro_photometry_uncertainty_budget with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "7e7742cc13ac0c21696b4d4fad6f83ae750fb44374d46275ed0bab5a5a449b7c",
+    "source_url": "acquired:offcode20:astronomy_fits_photometry"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "astronomy_fits_photometry reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:astronomy_fits_photometry",
+    "name": "astropy, photutils",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:36:50.072372+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "offcode20_public_artifacts_repaired_at": "2026-08-31T04:10:53.596914+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 4073,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:38:09.063719+00:00"
+  },
+  "task_id": "offcode20__astro_photometry_uncertainty_budget__04"
+}

@@ -1,0 +1,93 @@
+{
+  "axes_to_vary": [
+    "lip_depth",
+    "wall",
+    "corner_radius"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/openscad_bosl2_snap_fit_box/input.tar.gz",
+  "base_input_bundle_sha256": "ddb1189fb398151416453b9aaa79aadda2af922034b3848bced70de559eb87d8",
+  "base_parent_artifact": "swr3000://construction/openscad_regeneration_20260904/tasks/openscad_bosl2_snap_fit_box__03/oracle_outputs.tar.gz",
+  "base_parent_artifact_sha256": "29bb5ae962ad7661f5273f9a0f516704ab26823572c03ce735236e1332ae4eda",
+  "benchmark_repaired_at": "2026-09-12T02:47:13.797634+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "openscad_bosl2_snap_fit_box",
+  "distinctness": {
+    "artifact_sha256": "29bb5ae962ad7661f5273f9a0f516704ab26823572c03ce735236e1332ae4eda",
+    "file_hash_excluded_from_semantic_gate": true,
+    "gate": "geometry_only_v2",
+    "passed": true,
+    "scenario_count": 4,
+    "scenario_json_excluded_from_gate": true,
+    "unique_geometry_count": 4
+  },
+  "family_id": "openscad_parametric_cad",
+  "family_oracle_repaired": false,
+  "group_id": "openscad_bosl2_snap_fit_box_param_group_03",
+  "hidden_intervention": "corner_radius",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "corner_radius": 32.07,
+        "lip_depth": 8,
+        "wall": 2.03
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "corner_radius": 25.86,
+        "lip_depth": 11,
+        "wall": 1.812
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 3,
+  "openscad_adapter": {
+    "demo_id": "openscad_bosl2_snap_fit_box",
+    "real_software": "OpenSCAD 2021.01",
+    "version": "demo-specific-v2"
+  },
+  "oracle_distinctness_gate": "All four scenarios must have distinct STL geometry; every declared parameter axis must change a geometry fingerprint in a one-axis probe.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "corner_radius": 34.68,
+        "lip_depth": 10,
+        "wall": 1.015
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "corner_radius": 26.15,
+        "lip_depth": 6,
+        "wall": 2.9
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/BOSL2",
+  "status": "openscad_demo_adapter_geometry_v2",
+  "strategy": "boundary_high",
+  "task_id": "openscad_bosl2_snap_fit_box__03"
+}

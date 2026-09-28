@@ -1,0 +1,96 @@
+{
+  "axes_to_vary": [
+    "esd",
+    "mcu",
+    "diff_pair",
+    "drc",
+    "usb_connector"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/kicad_usb_uart_bridge/input.tar.gz",
+  "base_input_bundle_sha256": "dbdbf2dae27a588422c661f2453f26c247850a386db6a9d4325e03d34c6b3c38",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group02_20260827_2320/tasks/kicad_usb_uart_bridge__kicad_usb_uart_bridge_param_group_02/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b",
+  "benchmark_repaired_at": "2026-09-12T02:44:18.045796+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "kicad_usb_uart_bridge",
+  "distinctness": {
+    "artifact_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b",
+    "base_artifact_sha256": "8a5ad1c353fc0625595569a9ec3227677e186f2d9aabbab1185100aa530dce2e",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "family_id": "kicad_pcb",
+  "family_oracle_repaired": false,
+  "group_id": "kicad_usb_uart_bridge_param_group_02",
+  "hidden_intervention": "usb_connector",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "diff_pair": 4.095,
+        "drc": 3.77,
+        "esd": 4.875,
+        "mcu": 2.405,
+        "usb_connector": 1.95
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "diff_pair": 3.835,
+        "drc": 3.77,
+        "esd": 2.925,
+        "mcu": 3.9,
+        "usb_connector": 3.25
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 5,
+  "oracle_distinctness_gate": "ERC/DRC, netlist, footprint placement, or BOM outputs must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "diff_pair": 0.845,
+        "drc": 4.225,
+        "esd": 3.835,
+        "mcu": 1.105,
+        "usb_connector": 4.615
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "diff_pair": 1.105,
+        "drc": 3.38,
+        "esd": 3.38,
+        "mcu": 3.315,
+        "usb_connector": 1.3
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/kicad-source-mirror/demos",
+  "status": "parametric_oracle_accepted",
+  "strategy": "boundary_low",
+  "task_id": "kicad_usb_uart_bridge__02"
+}

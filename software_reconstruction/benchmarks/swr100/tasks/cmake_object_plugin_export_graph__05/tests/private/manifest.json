@@ -1,0 +1,96 @@
+{
+  "axes_to_vary": [
+    "install",
+    "transitive_target_exports",
+    "generated_header_values",
+    "install_tree_consumer",
+    "toolchain_override"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_failed_families_retry_proxy_20260827_2152/tasks/cmake_object_plugin_export_graph/input.tar.gz",
+  "base_input_bundle_sha256": "305278a0baecd6af15c284f8dbae2d29967bda488d384a6b4970e545577ca6be",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group05_20260827_2320/tasks/cmake_object_plugin_export_graph__cmake_object_plugin_export/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076",
+  "benchmark_repaired_at": "2026-09-12T02:44:11.598283+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "cmake_object_plugin_export_graph",
+  "distinctness": {
+    "artifact_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076",
+    "base_artifact_sha256": "a39245ca4b237af678600a5de6a9f0619d0a7d6f8932cf6e73d231e22f9917d7",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 797
+  },
+  "family_id": "cmake_build_config",
+  "family_oracle_repaired": false,
+  "group_id": "cmake_object_plugin_export_graph_param_group_05",
+  "hidden_intervention": "toolchain_override",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "generated_header_values": 19,
+        "install": 1.3,
+        "install_tree_consumer": 7.7,
+        "toolchain_override": 3.2,
+        "transitive_target_exports": 7.6
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "generated_header_values": 21,
+        "install": 5.4,
+        "install_tree_consumer": 4.0,
+        "toolchain_override": 1.2,
+        "transitive_target_exports": 7.7
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 5,
+  "oracle_distinctness_gate": "CMake cache, target graph, generated header, ctest/install logs must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "generated_header_values": 39,
+        "install": 3.7,
+        "install_tree_consumer": 6.7,
+        "toolchain_override": 5.0,
+        "transitive_target_exports": 5.2
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "generated_header_values": 10,
+        "install": 6.4,
+        "install_tree_consumer": 1.2,
+        "toolchain_override": 5.5,
+        "transitive_target_exports": 2.7
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/CMake",
+  "status": "parametric_oracle_accepted",
+  "strategy": "hidden_intervention",
+  "task_id": "cmake_object_plugin_export_graph__05"
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:35:21.417519+00:00",
+  "demo_id": "video_subtitle_burnin_policy",
+  "group_id": "video_subtitle_burnin_policy_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "domain_specific",
+        "gop_size": 9,
+        "pixel_format": 1.8765,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "strict",
+        "frame_rate": "domain_specific",
+        "gop_size": 1,
+        "pixel_format": 3.9794,
+        "subtitle_policy": "edge"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "stress",
+        "gop_size": 6,
+        "pixel_format": 1.3912,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "stress",
+        "gop_size": 8,
+        "pixel_format": 1.3912,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "domain_specific",
+        "frame_rate": "strict",
+        "gop_size": 10,
+        "pixel_format": 0.8735,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "bfb0521b4503923cd2b2956e08326c6d424659ace942710ef223cc7d27af8e8b",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__video_subtitle_burnin_policy__02"
+}

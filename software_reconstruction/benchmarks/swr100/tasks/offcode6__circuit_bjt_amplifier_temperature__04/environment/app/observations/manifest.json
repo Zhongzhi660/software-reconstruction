@@ -1,0 +1,123 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:08.960193+00:00",
+  "axes_to_vary": [
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "analysis_type",
+    "tolerance"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:53.295693+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Circuit Simulation",
+  "demo_id": "circuit_bjt_amplifier_temperature",
+  "effective_axes_to_vary": [
+    "analysis_type",
+    "component_value",
+    "source_waveform",
+    "temperature",
+    "tolerance"
+  ],
+  "family_id": "circuit_simulation",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "component/source/temperature interventions changing simulation summaries",
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:48:59.155174+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 5.4375,
+        "source_waveform": "source_waveform_11_public",
+        "temperature": 5.0962,
+        "tolerance": 1.375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 3.6875,
+        "source_waveform": "source_waveform_17_public",
+        "temperature": 4.4231,
+        "tolerance": 1.25
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.15,
+        "source_waveform": "source_waveform_15_public",
+        "temperature": 4.9231,
+        "tolerance": 1.7
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 5.4,
+        "source_waveform": "source_waveform_4_public",
+        "temperature": 4.2308,
+        "tolerance": 1.3
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 1.0175,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 1.7346,
+        "tolerance": 1.815
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 0.935,
+        "source_waveform": "source_waveform_2_public",
+        "temperature": 1.1846,
+        "tolerance": 2.31
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:28.668005+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "software": [
+    "ngspice",
+    "xyce",
+    "PySpice"
+  ],
+  "source_group": "offcode6",
+  "source_repos": [
+    "ngspice",
+    "pyspice",
+    "qucsator"
+  ],
+  "task_id": "circuit_bjt_amplifier_temperature__04"
+}

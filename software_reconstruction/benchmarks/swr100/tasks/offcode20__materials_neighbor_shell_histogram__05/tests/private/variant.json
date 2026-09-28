@@ -1,0 +1,277 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:37.634570+00:00",
+  "axes_to_vary": [
+    "space_group",
+    "supercell_size",
+    "site_substitution",
+    "strain_tensor",
+    "diffraction_wavelength"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:45:20.584118+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Materials / Crystallography",
+  "demo_id": "materials_neighbor_shell_histogram",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 14,
+    "expected_oracle_steps": 36,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 1305,
+    "static_source_bytes": 6937813,
+    "static_source_file_count": 1429,
+    "static_source_repos": {
+      "ase": {
+        "bytes": 4949777,
+        "domain_file_count": 797,
+        "exists": true,
+        "file_count": 860,
+        "suffix_counts": {
+          ".01-gs_info": 1,
+          ".01_h2o_gs_info": 1,
+          ".02-unocc_eigenvalues": 1,
+          ".05-output_scf_info": 1,
+          ".castep": 1,
+          ".cif": 8,
+          ".con": 2,
+          ".dat": 2,
+          ".data": 2,
+          ".eig": 1,
+          ".in": 3,
+          ".magres": 1,
+          ".md": 1,
+          ".nomad-json": 1,
+          ".nwo": 2,
+          ".out": 9,
+          ".par": 1,
+          ".png": 1,
+          ".py": 786,
+          ".tersoff": 1,
+          ".txt": 1,
+          ".xml": 4,
+          ".xyz": 1,
+          "chg": 1,
+          "convergence_outcar_n_y": 1,
+          "gpaw_expected_text_output": 1,
+          "outcar_example_1": 1,
+          "poscar_example_1": 1,
+          "potcar": 20,
+          "readme": 1
+        }
+      },
+      "pymatgen": {
+        "bytes": 69047,
+        "domain_file_count": 7,
+        "exists": true,
+        "file_count": 7,
+        "suffix_counts": {
+          ".json": 2,
+          ".py": 5
+        }
+      },
+      "spglib": {
+        "bytes": 1918989,
+        "domain_file_count": 501,
+        "exists": true,
+        "file_count": 562,
+        "suffix_counts": {
+          ".c": 4,
+          ".cpp": 16,
+          ".csv": 5,
+          ".dat": 5,
+          ".f90": 13,
+          ".fmf": 2,
+          ".h": 1,
+          ".md": 5,
+          ".py": 33,
+          ".sh": 1,
+          ".txt": 13,
+          ".yaml": 463,
+          "version": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "diffraction_wavelength",
+    "site_substitution",
+    "space_group",
+    "strain_tensor",
+    "supercell_size"
+  ],
+  "family_id": "materials_crystallography",
+  "family_oracle_repaired": true,
+  "group_id": "materials_neighbor_shell_histogram_param_group_05",
+  "hidden_intervention": "crystal symmetry/diffraction descriptors under hidden cell and site interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "diffraction_wavelength": 8.0706,
+        "site_substitution": false,
+        "space_group": "baseline",
+        "strain_tensor": [
+          2.8,
+          4.2,
+          5.6
+        ],
+        "supercell_size": 4
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 8.0706,
+        "site_substitution": true,
+        "space_group": "compat",
+        "strain_tensor": [
+          2.8,
+          4.2,
+          5.6
+        ],
+        "supercell_size": 24
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 4.1176,
+        "site_substitution": false,
+        "space_group": "domain_specific",
+        "strain_tensor": [
+          1.4,
+          2.8,
+          4.2
+        ],
+        "supercell_size": 10
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:19:09.832484+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.3765,
+        "site_substitution": true,
+        "space_group": "compat",
+        "strain_tensor": [
+          4.2,
+          5.6,
+          7.0
+        ],
+        "supercell_size": 24
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.8706,
+        "site_substitution": true,
+        "space_group": "stress",
+        "strain_tensor": [
+          9.8,
+          11.2,
+          12.6
+        ],
+        "supercell_size": 8
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 7.3529,
+        "site_substitution": false,
+        "space_group": "strict",
+        "strain_tensor": [
+          3.0,
+          4.0,
+          5.0
+        ],
+        "supercell_size": 5
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 1.7647,
+        "site_substitution": false,
+        "space_group": "edge",
+        "strain_tensor": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "supercell_size": 3
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.3647,
+        "site_substitution": false,
+        "space_group": "baseline",
+        "strain_tensor": [
+          6.05,
+          6.6,
+          7.15
+        ],
+        "supercell_size": 9
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 0.8412,
+        "site_substitution": true,
+        "space_group": "strict",
+        "strain_tensor": [
+          2.2,
+          2.75,
+          3.3
+        ],
+        "supercell_size": 8
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:25.193552+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "pymatgen",
+    "spglib",
+    "ASE"
+  ],
+  "source_repos": [
+    "pymatgen",
+    "spglib",
+    "ase"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "hidden_axis_holdout",
+  "task_id": "materials_neighbor_shell_histogram__05"
+}

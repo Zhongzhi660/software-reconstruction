@@ -1,0 +1,154 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:39:45.295607+00:00",
+  "axes_to_vary": [
+    "frame_rate",
+    "pixel_format",
+    "gop_size",
+    "audio_layout",
+    "subtitle_policy"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:51:27.488956+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Video / Broadcast QC",
+  "demo_id": "video_interlacing_detection",
+  "effective_axes_to_vary": [
+    "audio_layout",
+    "frame_rate",
+    "gop_size",
+    "pixel_format",
+    "subtitle_policy"
+  ],
+  "family_id": "video_broadcast_qc",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "media stream metadata and quality summaries under hidden transcode interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "compat",
+        "gop_size": 6,
+        "pixel_format": 3.3647,
+        "subtitle_policy": "edge"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "compat",
+        "frame_rate": "domain_specific",
+        "gop_size": 6,
+        "pixel_format": 3.8824,
+        "subtitle_policy": "strict"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "domain_specific",
+        "gop_size": 3,
+        "pixel_format": 1.1,
+        "subtitle_policy": "domain_specific"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:25:36.489754+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "strict",
+        "gop_size": 4,
+        "pixel_format": 1.4235,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "stress",
+        "gop_size": 2,
+        "pixel_format": 1.2941,
+        "subtitle_policy": "edge"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "audio_layout": "baseline",
+        "frame_rate": "strict",
+        "gop_size": 5,
+        "pixel_format": 3.2353,
+        "subtitle_policy": "baseline"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "audio_layout": "edge",
+        "frame_rate": "domain_specific",
+        "gop_size": 3,
+        "pixel_format": 4.8824,
+        "subtitle_policy": "stress"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "audio_layout": "stress",
+        "frame_rate": "compat",
+        "gop_size": 3,
+        "pixel_format": 10.5765,
+        "subtitle_policy": "compat"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "audio_layout": "domain_specific",
+        "frame_rate": "strict",
+        "gop_size": 17,
+        "pixel_format": 8.8441,
+        "subtitle_policy": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:40:39.217245+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "ffmpeg",
+    "ffprobe",
+    "VMAF"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "ffmpeg",
+    "vmaf"
+  ],
+  "task_id": "video_interlacing_detection__02"
+}

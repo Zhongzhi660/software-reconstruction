@@ -1,0 +1,7 @@
+{
+  "family_id": "climate_netcdf_analysis",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:47:56.577579+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__climate_temp_anomaly_grid__03"
+}

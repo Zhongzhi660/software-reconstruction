@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:46.933174+00:00",
+  "demo_id": "circuit_rlc_transient_damping",
+  "group_id": "circuit_rlc_transient_damping_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 2.7225,
+        "source_waveform": "source_waveform_3_hidden",
+        "temperature": 4.4846,
+        "tolerance": 1.375
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 2.3925,
+        "source_waveform": "source_waveform_8_hidden",
+        "temperature": 0.8038,
+        "tolerance": 0.715
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 2.915,
+        "source_waveform": "source_waveform_1_hidden",
+        "temperature": 2.3692,
+        "tolerance": 2.255
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.365,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 3.4269,
+        "tolerance": 2.3375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 0.055,
+        "source_waveform": "source_waveform_9_public",
+        "temperature": 3.0038,
+        "tolerance": 2.42
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "3944470df52679a682e4c7d51783e87af7d813654d1e4c94a8a3244e985fd7ec",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__circuit_rlc_transient_damping__02"
+}

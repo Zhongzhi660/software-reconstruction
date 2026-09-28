@@ -1,0 +1,7 @@
+{
+  "family_id": "video_broadcast_qc",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:40.161912+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__video_subtitle_burnin_policy__02"
+}

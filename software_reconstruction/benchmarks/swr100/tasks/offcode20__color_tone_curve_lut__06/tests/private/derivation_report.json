@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:36:37.454821+00:00",
+  "demo_id": "color_tone_curve_lut",
+  "group_id": "color_tone_curve_lut_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 26,
+        "demosaic_method": "stress",
+        "tone_curve": 13.2,
+        "white_point": 6.7
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "color_space": "compat",
+        "compression_quality": 27,
+        "demosaic_method": "edge",
+        "tone_curve": 10.7,
+        "white_point": 2.3
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "color_space": "stress",
+        "compression_quality": 26,
+        "demosaic_method": "stress",
+        "tone_curve": 9.6,
+        "white_point": 5.2
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "color_space": "edge",
+        "compression_quality": 29,
+        "demosaic_method": "baseline",
+        "tone_curve": 5.4,
+        "white_point": 11.3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "color_space": "strict",
+        "compression_quality": 31,
+        "demosaic_method": "baseline",
+        "tone_curve": 9.6,
+        "white_point": 6.2
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "1fc3ad25ae9950af453b8d59b7fe3ba9ae2cfc8a334e3a0eb7ae339ad9eb1313",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__color_tone_curve_lut__06"
+}

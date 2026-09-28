@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-28T17:35:37.201928+00:00",
+  "demo_id": "lidar_bounding_box_volume",
+  "group_id": "lidar_bounding_box_volume_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "classification_filter": 1.65,
+        "crop_bounds": [
+          6.05,
+          6.6,
+          7.15
+        ],
+        "normal_radius": 2,
+        "registration_threshold": 2.9535,
+        "voxel_size": 10
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "classification_filter": 1.1971,
+        "crop_bounds": [
+          3.3,
+          3.85,
+          4.4
+        ],
+        "normal_radius": 3,
+        "registration_threshold": 2.8655,
+        "voxel_size": 10
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "classification_filter": 1.3265,
+        "crop_bounds": [
+          5.5,
+          6.05,
+          6.6
+        ],
+        "normal_radius": 1,
+        "registration_threshold": 1.3695,
+        "voxel_size": 4
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "classification_filter": 0.8735,
+        "crop_bounds": [
+          2.2,
+          2.75,
+          3.3
+        ],
+        "normal_radius": 7,
+        "registration_threshold": 2.6895,
+        "voxel_size": 6
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "classification_filter": 2.3294,
+        "crop_bounds": [
+          7.15,
+          7.7,
+          8.25
+        ],
+        "normal_radius": 8,
+        "registration_threshold": 2.0955,
+        "voxel_size": 6
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "38b581cb4eb1d84b293911a8ceb2c7ab9bc4a5b1551265d369ae6cfce882609d",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__lidar_bounding_box_volume__02"
+}

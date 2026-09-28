@@ -1,0 +1,7 @@
+{
+  "family_id": "rf_signal_processing",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:34.811200+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__rf_iq_spectrum_peak_map__01"
+}

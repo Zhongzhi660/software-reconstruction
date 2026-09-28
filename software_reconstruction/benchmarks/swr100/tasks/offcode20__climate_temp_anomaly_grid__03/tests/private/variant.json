@@ -1,0 +1,228 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:36:58.778082+00:00",
+  "axes_to_vary": [
+    "variable_name",
+    "calendar_type",
+    "time_window",
+    "regrid_method",
+    "missing_value_policy"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:51.980330+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Climate / NetCDF",
+  "demo_id": "climate_temp_anomaly_grid",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high non-coding oracle complexity",
+    "difficulty_score": 10,
+    "expected_command_lines": 17,
+    "expected_oracle_steps": 24,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must use real domain tooling",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 155,
+    "static_source_bytes": 141264032,
+    "static_source_file_count": 221,
+    "static_source_repos": {
+      "nco": {
+        "bytes": 1656340,
+        "domain_file_count": 56,
+        "exists": true,
+        "file_count": 116,
+        "suffix_counts": {
+          ".am": 1,
+          ".cdl": 55,
+          ".dat": 1,
+          ".gitignore": 1,
+          ".in": 5,
+          ".in2": 1,
+          ".ncl": 1,
+          ".nco": 35,
+          ".py": 1,
+          ".sh": 7,
+          ".slurm": 1,
+          ".xsd": 1,
+          "nccf": 1,
+          "ncchecker": 1,
+          "ncclimo": 1,
+          "ncremap": 1,
+          "ncsplit": 1,
+          "ncz2psx": 1
+        }
+      },
+      "netcdf4_python": {
+        "bytes": 139183232,
+        "domain_file_count": 93,
+        "exists": true,
+        "file_count": 96,
+        "suffix_counts": {
+          ".ipynb": 2,
+          ".md": 1,
+          ".nc": 21,
+          ".py": 72
+        }
+      },
+      "xarray": {
+        "bytes": 424460,
+        "domain_file_count": 6,
+        "exists": true,
+        "file_count": 9,
+        "suffix_counts": {
+          ".grib": 1,
+          ".gz": 1,
+          ".ict": 1,
+          ".nc": 2,
+          ".py": 3,
+          ".uamiv": 1
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "calendar_type",
+    "missing_value_policy",
+    "regrid_method",
+    "time_window",
+    "variable_name"
+  ],
+  "family_id": "climate_netcdf_analysis",
+  "family_oracle_repaired": false,
+  "group_id": "climate_temp_anomaly_grid_param_group_03",
+  "hidden_intervention": "NetCDF variable/statistics outputs under hidden calendar, regrid, and missing-data interventions",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "calendar_type": "stress",
+        "missing_value_policy": "domain_specific",
+        "regrid_method": "compat",
+        "time_window": 5,
+        "variable_name": "variable_name_20_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "calendar_type": "compat",
+        "missing_value_policy": "strict",
+        "regrid_method": "strict",
+        "time_window": 5,
+        "variable_name": "variable_name_5_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "calendar_type": "edge",
+        "missing_value_policy": "domain_specific",
+        "regrid_method": "edge",
+        "time_window": 23,
+        "variable_name": "variable_name_25_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.variable_name",
+    "public_2.variable_name"
+  ],
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:11:50.447275+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "calendar_type": "baseline",
+        "missing_value_policy": "domain_specific",
+        "regrid_method": "strict",
+        "time_window": 29,
+        "variable_name": "variable-name-2"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "calendar_type": "baseline",
+        "missing_value_policy": "edge",
+        "regrid_method": "baseline",
+        "time_window": 17,
+        "variable_name": "variable-name-1"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "calendar_type": "compat",
+        "missing_value_policy": "stress",
+        "regrid_method": "baseline",
+        "time_window": 10,
+        "variable_name": "variable-name-8"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "calendar_type": "baseline",
+        "missing_value_policy": "domain_specific",
+        "regrid_method": "stress",
+        "time_window": 8,
+        "variable_name": "variable-name-8"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "calendar_type": "strict",
+        "missing_value_policy": "compat",
+        "regrid_method": "stress",
+        "time_window": 10,
+        "variable_name": "variable-name-9"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "calendar_type": "stress",
+        "missing_value_policy": "edge",
+        "regrid_method": "stress",
+        "time_window": 2,
+        "variable_name": "variable-name-1"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:38:18.276949+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "xarray",
+    "netCDF4",
+    "NCO/CDO-style CLI"
+  ],
+  "source_repos": [
+    "xarray",
+    "netcdf4_python",
+    "nco"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "boundary_high",
+  "task_id": "climate_temp_anomaly_grid__03"
+}

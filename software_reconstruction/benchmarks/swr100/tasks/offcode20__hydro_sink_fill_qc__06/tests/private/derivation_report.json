@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:28.163334+00:00",
+  "demo_id": "hydro_sink_fill_qc",
+  "group_id": "hydro_sink_fill_qc_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 7.293,
+        "dem_resolution": 7.9,
+        "flow_direction_method": "stress",
+        "nodata_policy": "strict",
+        "rainfall_window": 31
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 7.565,
+        "dem_resolution": 12.9,
+        "flow_direction_method": "baseline",
+        "nodata_policy": "domain_specific",
+        "rainfall_window": 3
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 3.009,
+        "dem_resolution": 11.1,
+        "flow_direction_method": "strict",
+        "nodata_policy": "stress",
+        "rainfall_window": 20
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "basin_threshold": 5.321,
+        "dem_resolution": 12.5,
+        "flow_direction_method": "compat",
+        "nodata_policy": "baseline",
+        "rainfall_window": 24
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "basin_threshold": 5.933,
+        "dem_resolution": 2.0,
+        "flow_direction_method": "domain_specific",
+        "nodata_policy": "edge",
+        "rainfall_window": 12
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "dbece6092c2cee3319fa1e85e484a61f0bc0f8a21aac7432d871a72402b39f1e",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__hydro_sink_fill_qc__06"
+}

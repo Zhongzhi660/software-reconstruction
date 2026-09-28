@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:37:17.114656+00:00",
+  "demo_id": "acoustic_absorption_sweep",
+  "group_id": "acoustic_absorption_sweep_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 18,
+        "microphone_array": 9.8529,
+        "rir_length": 2.5,
+        "room_size": 21,
+        "source_position": "source_position_14_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 8,
+        "microphone_array": 5.2941,
+        "rir_length": 4.1912,
+        "room_size": 8,
+        "source_position": "source_position_4_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "absorption_level": 6,
+        "microphone_array": 6.25,
+        "rir_length": 9.9265,
+        "room_size": 15,
+        "source_position": "source_position_22_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "absorption_level": 19,
+        "microphone_array": 6.9853,
+        "rir_length": 9.3382,
+        "room_size": 2,
+        "source_position": "source_position_19_public"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "absorption_level": 4,
+        "microphone_array": 3.3824,
+        "rir_length": 8.0147,
+        "room_size": 15,
+        "source_position": "source_position_17_public"
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "afc12120d3dbb4039db100838b46942f011b65335c0efa0e1f03ec1cba82311b",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__acoustic_absorption_sweep__04"
+}

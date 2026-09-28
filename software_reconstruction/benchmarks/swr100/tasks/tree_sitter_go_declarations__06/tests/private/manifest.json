@@ -1,0 +1,86 @@
+{
+  "axes_to_vary": [
+    "generics",
+    "interface",
+    "composite"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/tree_sitter_go_declarations/input.tar.gz",
+  "base_input_bundle_sha256": "639d10d8b625f1b4e7c780cc1e1029f0e074217d790e07bfa8fd9f64fc5d0cbe",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group06_20260827_2320/tasks/tree_sitter_go_declarations__tree_sitter_go_declarations_par/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "6ff2f7d395d700a689dc3ab56913d404f9d97c5e87e71cc42aec2bc2a1f4d732",
+  "benchmark_repaired_at": "2026-09-12T02:47:27.795678+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "tree_sitter_go_declarations",
+  "distinctness": {
+    "artifact_sha256": "6ff2f7d395d700a689dc3ab56913d404f9d97c5e87e71cc42aec2bc2a1f4d732",
+    "base_artifact_sha256": "fe685128d5f76db81eefe5e73df0be7917ce126ff6705fc08546f9ab5b4acb60",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 5
+  },
+  "family_id": "tree_sitter_grammar",
+  "family_oracle_repaired": false,
+  "group_id": "tree_sitter_go_declarations_param_group_06",
+  "hidden_intervention": "composite",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "composite": 1.6,
+        "generics": 3.9,
+        "interface": 3.5
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "composite": 7.7,
+        "generics": 6.7,
+        "interface": 5.1
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 3,
+  "oracle_distinctness_gate": "Parse trees, query captures, or hidden corpus pass/fail outcomes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "composite": 6.1,
+        "generics": 6.2,
+        "interface": 2.6
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "composite": 3.2,
+        "generics": 1.4,
+        "interface": 5.8
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/tree-sitter-go",
+  "status": "parametric_oracle_accepted",
+  "strategy": "robustness_negative",
+  "task_id": "tree_sitter_go_declarations__06"
+}

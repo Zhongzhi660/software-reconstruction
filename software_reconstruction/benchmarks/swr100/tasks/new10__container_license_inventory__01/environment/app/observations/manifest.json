@@ -1,0 +1,123 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:34:48.297731+00:00",
+  "axes_to_vary": [
+    "base_image",
+    "package_set",
+    "labels",
+    "entrypoint",
+    "sbom_scope"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:23.914925+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "container_license_inventory",
+  "effective_axes_to_vary": [
+    "base_image",
+    "entrypoint",
+    "labels",
+    "package_set",
+    "sbom_scope"
+  ],
+  "family_id": "container_supply_chain",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "SBOM/license/label edge cases not visible in public layer",
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:43:43.588943+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "base_image": 6.857,
+        "entrypoint": "entrypoint_14_p",
+        "labels": 4.857,
+        "package_set": 2.286,
+        "sbom_scope": 6.143
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "base_image": 1.143,
+        "entrypoint": "entrypoint_4_p",
+        "labels": 6.714,
+        "package_set": 5.286,
+        "sbom_scope": 3.714
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "base_image": 3.379,
+        "entrypoint": "entrypoint_8_p",
+        "labels": 0.55,
+        "package_set": 2.043,
+        "sbom_scope": 1.257
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "base_image": 0.943,
+        "entrypoint": "entrypoint_12_p",
+        "labels": 1.964,
+        "package_set": 0.943,
+        "sbom_scope": 3.143
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "base_image": 3.764,
+        "entrypoint": "entrypoint_0_p",
+        "labels": 6.643,
+        "package_set": 5.757,
+        "sbom_scope": 7.529
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "base_image": 10.186,
+        "entrypoint": "entrypoint_15_p",
+        "labels": 9.079,
+        "package_set": 8.414,
+        "sbom_scope": 4.429
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:17.741338+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "hadolint",
+    "syft",
+    "skopeo"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "hadolint",
+    "syft",
+    "trivy"
+  ],
+  "task_id": "container_license_inventory__01"
+}

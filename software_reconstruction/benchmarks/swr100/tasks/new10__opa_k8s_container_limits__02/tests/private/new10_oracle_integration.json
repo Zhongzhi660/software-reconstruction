@@ -1,0 +1,7 @@
+{
+  "family_id": "opa_rego_policy",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:56.135266+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__opa_k8s_container_limits__02"
+}

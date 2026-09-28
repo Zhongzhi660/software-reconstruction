@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:54:07.567193+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "b6ad7d207d522c2ca255dc701402ce8f7dae834013f419d9ba43bb52ad90ee39",
+    "base_artifact_sha256": "e519f7d9899e8c788df0c276a94b63caad3a6536c48d6feb2a485239cd18d1a2",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "e0af37148c57008a656bd77c3921733fa012769de0f5980dafd122718c7f74be",
+  "reference_outputs_sha256": "b6ad7d207d522c2ca255dc701402ce8f7dae834013f419d9ba43bb52ad90ee39",
+  "status": "parametric_oracle_accepted",
+  "task_id": "kicad_sensor_breakout__01"
+}

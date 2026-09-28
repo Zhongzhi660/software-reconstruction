@@ -1,0 +1,116 @@
+{
+  "agent_facing_contract_repaired_at": "2026-09-04T17:46:10.702000+00:00",
+  "created_at": "2026-08-28T17:37:59.530319+00:00",
+  "demo_id": "gtfs_realtime_trip_update_join",
+  "group_id": "gtfs_realtime_trip_update_join_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "headway_window": 10,
+        "route_filter": "route-filter-8",
+        "service_date": 3.5912,
+        "time_zone": 0.7441,
+        "transfer_policy": "domain_specific"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "headway_window": 9,
+        "route_filter": "route-filter-28",
+        "service_date": 1.6824,
+        "time_zone": 0.7118,
+        "transfer_policy": "strict"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "headway_window": 9,
+        "route_filter": "route-filter-11",
+        "service_date": 4.2706,
+        "time_zone": 2.1353,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "normalized_hidden_parameter_keys": [
+    "hidden_1.route_filter",
+    "hidden_2.route_filter",
+    "hidden_3.route_filter"
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "headway_window": 8,
+        "route_filter": "route-filter-2",
+        "service_date": 3.3971,
+        "time_zone": 1.6176,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-11",
+        "service_date": 0.7765,
+        "time_zone": 1.2941,
+        "transfer_policy": "edge"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-15",
+        "service_date": 2.5882,
+        "time_zone": 6.0,
+        "transfer_policy": "compat"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "headway_window": 10,
+        "route_filter": "route-filter-6",
+        "service_date": 7.6471,
+        "time_zone": 3.0588,
+        "transfer_policy": "stress"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "headway_window": 17,
+        "route_filter": "route-filter-16",
+        "service_date": 8.5706,
+        "time_zone": 6.2,
+        "transfer_policy": "baseline"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "headway_window": 6,
+        "route_filter": "route-filter-13",
+        "service_date": 10.7588,
+        "time_zone": 4.9235,
+        "transfer_policy": "baseline"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "record_sha256": "b499305addd23e32ebbfb2c805e9d8241e2ad3c8b2188aebb7165bc88c227b12",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__gtfs_realtime_trip_update_join__02"
+}

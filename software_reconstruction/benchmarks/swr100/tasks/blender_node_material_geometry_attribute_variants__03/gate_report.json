@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "9c55c8063769d7382bf2d281526aea2527a894215f9c4b9aae94382e42e51bbd",
+      "base_artifact_sha256": "14ebca131f19472085655ea147518e7d0e55e2355f8f94794a557c7d54ec7605",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 4
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group03_20260827_2320/tasks/blender_node_material_geometry_attribute_variants__blender_n/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "9c55c8063769d7382bf2d281526aea2527a894215f9c4b9aae94382e42e51bbd"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "blender_node_material_geometry_attribute_variants__03"
+}

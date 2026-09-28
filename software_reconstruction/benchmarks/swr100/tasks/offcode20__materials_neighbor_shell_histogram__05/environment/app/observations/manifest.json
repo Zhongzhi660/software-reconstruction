@@ -1,0 +1,147 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:37.642576+00:00",
+  "axes_to_vary": [
+    "space_group",
+    "supercell_size",
+    "site_substitution",
+    "strain_tensor",
+    "diffraction_wavelength"
+  ],
+  "benchmark_repaired_at": "2026-09-12T23:45:20.612589+00:00",
+  "benchmark_version": "swr3000-benchmark-v3",
+  "broad_domain": "Materials / Crystallography",
+  "demo_id": "materials_neighbor_shell_histogram",
+  "effective_axes_to_vary": [
+    "diffraction_wavelength",
+    "site_substitution",
+    "space_group",
+    "strain_tensor",
+    "supercell_size"
+  ],
+  "family_id": "materials_crystallography",
+  "family_oracle_repaired": true,
+  "hidden_intervention": "crystal symmetry/diffraction descriptors under hidden cell and site interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:19:09.814457+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.3765,
+        "site_substitution": true,
+        "space_group": "compat",
+        "strain_tensor": [
+          4.2,
+          5.6,
+          7.0
+        ],
+        "supercell_size": 24
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.8706,
+        "site_substitution": true,
+        "space_group": "stress",
+        "strain_tensor": [
+          9.8,
+          11.2,
+          12.6
+        ],
+        "supercell_size": 8
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 7.3529,
+        "site_substitution": false,
+        "space_group": "strict",
+        "strain_tensor": [
+          3.0,
+          4.0,
+          5.0
+        ],
+        "supercell_size": 5
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 1.7647,
+        "site_substitution": false,
+        "space_group": "edge",
+        "strain_tensor": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "supercell_size": 3
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 3.3647,
+        "site_substitution": false,
+        "space_group": "baseline",
+        "strain_tensor": [
+          6.05,
+          6.6,
+          7.15
+        ],
+        "supercell_size": 9
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 0.8412,
+        "site_substitution": true,
+        "space_group": "strict",
+        "strain_tensor": [
+          2.2,
+          2.75,
+          3.3
+        ],
+        "supercell_size": 8
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:25.206637+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "pymatgen",
+    "spglib",
+    "ASE"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "pymatgen",
+    "spglib",
+    "ase"
+  ],
+  "task_id": "materials_neighbor_shell_histogram__05"
+}

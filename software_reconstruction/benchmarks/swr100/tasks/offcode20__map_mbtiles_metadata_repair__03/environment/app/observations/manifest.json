@@ -1,0 +1,146 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:38:27.937898+00:00",
+  "axes_to_vary": [
+    "zoom_range",
+    "simplification_tolerance",
+    "layer_filter",
+    "projection",
+    "label_priority"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:45:56.077672+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Cartography / Map Rendering",
+  "demo_id": "map_mbtiles_metadata_repair",
+  "effective_axes_to_vary": [
+    "label_priority",
+    "layer_filter",
+    "projection",
+    "simplification_tolerance",
+    "zoom_range"
+  ],
+  "family_id": "cartography_map_rendering",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "OSM/vector-tile summaries under hidden layer, projection, and simplification interventions",
+  "offcode20_public_artifacts_repaired_at": "2026-08-31T04:18:19.020209+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode20-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 11.9441,
+        "layer_filter": 5.6529,
+        "projection": [
+          6.2,
+          7.75,
+          9.3
+        ],
+        "simplification_tolerance": 0.3875,
+        "zoom_range": 14
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 9.2088,
+        "layer_filter": 3.5559,
+        "projection": [
+          3.1,
+          4.65,
+          6.2
+        ],
+        "simplification_tolerance": 1.3175,
+        "zoom_range": 17
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 6.2941,
+        "layer_filter": 7.0,
+        "projection": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "simplification_tolerance": 5.57,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "label_priority": 5.3529,
+        "layer_filter": 2.9412,
+        "projection": [
+          13.0,
+          14.0,
+          15.0
+        ],
+        "simplification_tolerance": 0.61,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "label_priority": 0.6471,
+        "layer_filter": 4.3676,
+        "projection": [
+          4.95,
+          5.5,
+          6.05
+        ],
+        "simplification_tolerance": 0.5995,
+        "zoom_range": 5
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "label_priority": 4.3029,
+        "layer_filter": 3.9794,
+        "projection": [
+          1.1,
+          1.65,
+          2.2
+        ],
+        "simplification_tolerance": 0.9735,
+        "zoom_range": 10
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:39:17.504331+00:00",
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "software": [
+    "tippecanoe",
+    "osmium",
+    "vector-tile tooling"
+  ],
+  "source_group": "offcode20",
+  "source_repos": [
+    "tippecanoe",
+    "libosmium"
+  ],
+  "task_id": "map_mbtiles_metadata_repair__03"
+}

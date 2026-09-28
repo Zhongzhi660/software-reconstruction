@@ -1,0 +1,7 @@
+{
+  "family_id": "circuit_simulation",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T20:57:35.650746+00:00",
+  "judge": "offcode6 hidden native-oracle adapter",
+  "task_id": "offcode6__circuit_bjt_amplifier_temperature__04"
+}

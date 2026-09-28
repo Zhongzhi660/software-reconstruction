@@ -1,0 +1,129 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:35:10.202868+00:00",
+  "axes_to_vary": [
+    "crs",
+    "bbox",
+    "resolution",
+    "layer_filter",
+    "nodata"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:44:30.338618+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": null,
+  "demo_id": "gdal_vector_crs_reprojection",
+  "effective_axes_to_vary": [
+    "bbox",
+    "crs",
+    "layer_filter",
+    "nodata",
+    "resolution"
+  ],
+  "family_id": "gdal_geospatial",
+  "family_oracle_repaired": false,
+  "hidden_intervention": "CRS/nodata/invalid geometry boundary cases",
+  "naturalized_public_parameter_keys": [
+    "public_2.crs",
+    "public_2.layer_filter"
+  ],
+  "new10_public_artifacts_repaired_at": "2026-08-31T04:44:52.625493+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 12,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "bbox": 5.2,
+        "crs": "compat",
+        "layer_filter": "layer_filter_16_p",
+        "nodata": 2.0,
+        "resolution": 2.0
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "bbox": 10.561,
+        "crs": "crs-6",
+        "layer_filter": "layer-filter-7",
+        "nodata": 2.453,
+        "resolution": 8.186
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "bbox": 3.41,
+        "crs": "baseline",
+        "layer_filter": "layer_filter_12_p",
+        "nodata": 3.536,
+        "resolution": 1.43
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "bbox": 5.646,
+        "crs": "crs-14",
+        "layer_filter": "layer-filter-8",
+        "nodata": 4.282,
+        "resolution": 4.921
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "bbox": 6.355,
+        "crs": "stress",
+        "layer_filter": "layer_filter_10_p",
+        "nodata": 7.086,
+        "resolution": 14.105
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "bbox": 12.796,
+        "crs": "crs-5",
+        "layer_filter": "layer-filter-9",
+        "nodata": 6.989,
+        "resolution": 5.661
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "rich_public_artifact_repaired_at": "2026-08-30T05:36:34.721339+00:00",
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:30:32.358634+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "software": [
+    "gdal",
+    "ogr2ogr",
+    "proj"
+  ],
+  "source_group": "new10",
+  "source_repos": [
+    "gdal"
+  ],
+  "task_id": "gdal_vector_crs_reprojection__01"
+}

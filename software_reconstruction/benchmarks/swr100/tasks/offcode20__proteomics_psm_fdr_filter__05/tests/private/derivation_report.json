@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:34:40.457445+00:00",
+  "demo_id": "proteomics_psm_fdr_filter",
+  "group_id": "proteomics_psm_fdr_filter_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 5.7647,
+        "enzyme_rule": 10.7882,
+        "fdr_threshold": 3.43,
+        "mass_tolerance": 5.11,
+        "retention_window": 14
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 6.1765,
+        "enzyme_rule": 10.0471,
+        "fdr_threshold": 6.846,
+        "mass_tolerance": 1.694,
+        "retention_window": 13
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "charge_state": 7.8235,
+        "enzyme_rule": 8.3176,
+        "fdr_threshold": 1.75,
+        "mass_tolerance": 2.478,
+        "retention_window": 8
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "charge_state": 1.6471,
+        "enzyme_rule": 3.4588,
+        "fdr_threshold": 5.502,
+        "mass_tolerance": 2.534,
+        "retention_window": 3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "charge_state": 2.1412,
+        "enzyme_rule": 7.9059,
+        "fdr_threshold": 0.07,
+        "mass_tolerance": 0.126,
+        "retention_window": 21
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "3323ad8a2e8eb2e1e263c233141448a174bbc0c90f87b4816e832a0a57cc9d8e",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__proteomics_psm_fdr_filter__05"
+}

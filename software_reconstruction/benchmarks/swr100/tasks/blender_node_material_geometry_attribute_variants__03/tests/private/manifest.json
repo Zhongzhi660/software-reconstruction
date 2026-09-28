@@ -1,0 +1,86 @@
+{
+  "axes_to_vary": [
+    "color_ramp",
+    "uv_scale",
+    "light"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/blender_node_material_geometry_attribute_variants/input.tar.gz",
+  "base_input_bundle_sha256": "370aa53f1494902c8c9538775636d2cedbd110f50df537122778ee27ec8a7589",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group03_20260827_2320/tasks/blender_node_material_geometry_attribute_variants__blender_n/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "9c55c8063769d7382bf2d281526aea2527a894215f9c4b9aae94382e42e51bbd",
+  "benchmark_repaired_at": "2026-09-12T02:44:05.383992+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "blender_node_material_geometry_attribute_variants",
+  "distinctness": {
+    "artifact_sha256": "9c55c8063769d7382bf2d281526aea2527a894215f9c4b9aae94382e42e51bbd",
+    "base_artifact_sha256": "14ebca131f19472085655ea147518e7d0e55e2355f8f94794a557c7d54ec7605",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 4
+  },
+  "family_id": "blender_scene_graph",
+  "family_oracle_repaired": false,
+  "group_id": "blender_node_material_geometry_attribute_variants_param_group_03",
+  "hidden_intervention": "light",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "color_ramp": 8.99,
+        "light": 2.61,
+        "uv_scale": 15.25
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "color_ramp": 6.525,
+        "light": 7.25,
+        "uv_scale": 21.51
+      },
+      "scenario_id": "hidden_2"
+    }
+  ],
+  "minimum_changed_axes": 3,
+  "oracle_distinctness_gate": "Scene graph object/material/node counts or rendered crop hashes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "color_ramp": 9.57,
+        "light": 6.525,
+        "uv_scale": 28.3
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "color_ramp": 8.845,
+        "light": 3.335,
+        "uv_scale": 16.58
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/blender-node-assets/Nodes/HexArray.blend",
+  "status": "parametric_oracle_accepted",
+  "strategy": "boundary_high",
+  "task_id": "blender_node_material_geometry_attribute_variants__03"
+}

@@ -1,0 +1,71 @@
+{
+  "axes_to_vary": [
+    "mapped_type",
+    "generic",
+    "jsx"
+  ],
+  "base_input_bundle": "swr3000://construction/true_10family_parametric_expansion/daytona_oracle_smoke_100demos_grouped_proxy_20260827_2120/tasks/tree_sitter_typescript_types/input.tar.gz",
+  "base_input_bundle_sha256": "e540592c1c013d576ef43e4fbc05ecfbf19ac4486902096f54a5ca66d873eaf6",
+  "base_parent_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group06_20260827_2320/tasks/tree_sitter_typescript_types__tree_sitter_typescript_types_p/parametric_outputs.tar.gz",
+  "base_parent_artifact_sha256": "c37b64d59074d67a08997b62c2dced29bc5d158d92b0f894f4f9e844d2c99bbb",
+  "benchmark_repaired_at": "2026-09-12T02:47:29.616365+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "demo_id": "tree_sitter_typescript_types",
+  "distinctness": {
+    "artifact_sha256": "c37b64d59074d67a08997b62c2dced29bc5d158d92b0f894f4f9e844d2c99bbb",
+    "base_artifact_sha256": "35b19eb9059df16980bfcc96f41cdc02d478f634a147388cb5284c9fc04e7cc1",
+    "overlap_with_base_signature_count": 0,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "family_id": "tree_sitter_grammar",
+  "family_oracle_repaired": false,
+  "group_id": "tree_sitter_typescript_types_param_group_06",
+  "hidden_intervention": "jsx",
+  "minimum_changed_axes": 3,
+  "oracle_distinctness_gate": "Parse trees, query captures, or hidden corpus pass/fail outcomes must change.",
+  "parameter_effect_digest_removed": true,
+  "parametric_oracle_summary": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_all600_summary_20260827_2355.json",
+  "public_artifact_count": 2,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "true10-family10-semantic-public-reference-v1",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "generic": 7.0,
+        "jsx": 3.8,
+        "mapped_type": 5.2
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "generic": 2.9,
+        "jsx": 2.0,
+        "mapped_type": 1.8
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "required_deliverables": [
+    "reconstruct.py",
+    "project.json"
+  ],
+  "schema": "planned-reconstruction-observations-v1",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "source_group": "true10",
+  "source_path_hidden_from_agent": "swr3000://construction/true_10family_parametric_expansion/sources_100demo/tree-sitter-typescript",
+  "status": "parametric_oracle_accepted",
+  "strategy": "robustness_negative",
+  "task_id": "tree_sitter_typescript_types__06"
+}

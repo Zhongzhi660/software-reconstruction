@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:57:55.339387+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "d3af08294a40fe379776e1dfb2c2d9d933c4ecc3f0263a8333dd0c5abfdeb9d9",
+    "base_artifact_sha256": "e8f5e17d083e7ea9bba6883ec828b3600ab455a2a9e9d160f0551daaca099a62",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 33
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "3fbbe93491ed4ebb78c34f1d4783e9b03b0d52c7f4cebb52ba3f4ae7c7a43f7d",
+  "reference_outputs_sha256": "d3af08294a40fe379776e1dfb2c2d9d933c4ecc3f0263a8333dd0c5abfdeb9d9",
+  "status": "parametric_oracle_accepted",
+  "task_id": "openssl_pkits_name_constraints__04"
+}

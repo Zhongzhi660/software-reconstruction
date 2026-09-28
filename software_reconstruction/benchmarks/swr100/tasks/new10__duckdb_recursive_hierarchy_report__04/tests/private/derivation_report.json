@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:24.103373+00:00",
+  "demo_id": "duckdb_recursive_hierarchy_report",
+  "group_id": "duckdb_recursive_hierarchy_report_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 2.5,
+        "ordering_ties": 1.25,
+        "partitioning": 5,
+        "schema_evolution": "stress",
+        "window_frame": 6.625
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 9.286,
+        "ordering_ties": 8.393,
+        "partitioning": 9,
+        "schema_evolution": "strict",
+        "window_frame": 11.5
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "nested_types": 4.464,
+        "ordering_ties": 4.107,
+        "partitioning": 10,
+        "schema_evolution": "stress",
+        "window_frame": 11.875
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "nested_types": 8.036,
+        "ordering_ties": 10.0,
+        "partitioning": 10,
+        "schema_evolution": "compat",
+        "window_frame": 6.375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "nested_types": 3.036,
+        "ordering_ties": 2.857,
+        "partitioning": 8,
+        "schema_evolution": "baseline",
+        "window_frame": 2.875
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "af85fe8d9ce9f51f63d7065a230386a1632a6df97abd1e0670f4a95230000e03",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__duckdb_recursive_hierarchy_report__04"
+}

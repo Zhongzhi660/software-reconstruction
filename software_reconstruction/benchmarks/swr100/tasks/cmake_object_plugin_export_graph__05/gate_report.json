@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076",
+      "base_artifact_sha256": "a39245ca4b237af678600a5de6a9f0619d0a7d6f8932cf6e73d231e22f9917d7",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 797
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group05_20260827_2320/tasks/cmake_object_plugin_export_graph__cmake_object_plugin_export/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "14c8ebc7218b733d1a60bcef5ac378edaf6298e83034f68957093308f1f52076"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "cmake_object_plugin_export_graph__05"
+}

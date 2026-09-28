@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-28T17:36:19.798758+00:00",
+  "demo_id": "map_feature_minzoom_audit",
+  "group_id": "map_feature_minzoom_audit_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 3.2029,
+        "layer_filter": 1.2618,
+        "projection": [
+          7.15,
+          7.7,
+          8.25
+        ],
+        "simplification_tolerance": 2.2495,
+        "zoom_range": 2
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.5559,
+        "layer_filter": 3.4941,
+        "projection": [
+          3.85,
+          4.4,
+          4.95
+        ],
+        "simplification_tolerance": 1.2595,
+        "zoom_range": 5
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "label_priority": 3.5265,
+        "layer_filter": 3.1382,
+        "projection": [
+          6.6,
+          7.15,
+          7.7
+        ],
+        "simplification_tolerance": 1.7655,
+        "zoom_range": 5
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "label_priority": 3.8824,
+        "layer_filter": 1.5529,
+        "projection": [
+          6.6,
+          7.15,
+          7.7
+        ],
+        "simplification_tolerance": 1.4135,
+        "zoom_range": 10
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "label_priority": 2.2324,
+        "layer_filter": 2.4912,
+        "projection": [
+          3.85,
+          4.4,
+          4.95
+        ],
+        "simplification_tolerance": 2.4915,
+        "zoom_range": 7
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "3ab8b1a44dd58f15edea8f18e57921bf216a6c3e54051068325e3e2e59e07f50",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__map_feature_minzoom_audit__02"
+}

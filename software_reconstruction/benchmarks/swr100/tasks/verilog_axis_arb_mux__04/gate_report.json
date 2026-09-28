@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55",
+      "base_artifact_sha256": "bbc569a906bcc8af819ff0d5ae3c809225b01f6b447d27b90a89fae0a2724a03",
+      "overlap_with_base_signature_count": 0,
+      "passed": true,
+      "payload_signature_count": 2
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group04_20260827_2320/tasks/verilog_axis_arb_mux__verilog_axis_arb_mux_param_group_04/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "fee361d684104276bead18bb2e9d872750ece3eab4ed433fe76d85e1a3316d55"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "verilog_axis_arb_mux__04"
+}

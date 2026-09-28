@@ -1,0 +1,76 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "kicad_pcb",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "editable_workspace_nonempty",
+      "uses_native_project_files"
+    ],
+    "public_scenario_count": 2,
+    "schema": "public-signature-feedback-v1"
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "comparison": "family10-style private oracle semantic comparison",
+    "forbidden_shortcuts": [
+      "copied public products",
+      "fixed output archives",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 2,
+    "requires_reconstruct_py": true
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "routing",
+      "bom",
+      "rows",
+      "cols"
+    ],
+    "demo_id": "kicad_led_matrix_driver",
+    "group_id": "kicad_led_matrix_driver_param_group_04",
+    "oracle_distinctness_gate": "ERC/DRC, netlist, footprint placement, or BOM outputs must change.",
+    "status": "parametric_oracle_accepted",
+    "strategy": "cross_interaction"
+  },
+  "parent": {
+    "attribution": "Acquired kicad_pcb demo kicad_led_matrix_driver with Daytona parent smoke pass",
+    "license": "upstream-acquired-demo-license",
+    "revision": "39bec293b0783f69bf3ea63885b1549322f1fbd2",
+    "sha256": "e9fa2fb7fae94f9537f9fbc6a2030bbbc2f4d879b0a5c1e0dc2ca25132fd1b96",
+    "source_url": "acquired:kicad-source-mirror"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "kicad-cli ERC/DRC scenarios",
+    "image_digest": "daytona-build-context:kicad",
+    "name": "KiCad CLI",
+    "version": "Daytona kicad image"
+  },
+  "target_derivation": {
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_axis_generalization",
+      "hidden_boundary_parameter_mix"
+    ],
+    "public_observation_files": [
+      "environment/app/observations/reference_outputs.tar.gz",
+      "environment/app/observations/manifest.json"
+    ],
+    "public_scenarios": [
+      "public_reference_run",
+      "public_parameter_profile"
+    ]
+  },
+  "task_id": "kicad_led_matrix_driver__04"
+}

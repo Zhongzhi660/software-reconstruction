@@ -1,0 +1,7 @@
+{
+  "family_id": "phylogenetics_tree_reconstruction",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:28.933611+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__phylo_alignment_gap_trim__01"
+}

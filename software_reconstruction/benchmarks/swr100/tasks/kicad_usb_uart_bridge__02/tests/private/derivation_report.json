@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-08-27T23:55:31.956855+00:00",
+  "parametric_oracle_distinctness": {
+    "artifact_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b",
+    "base_artifact_sha256": "8a5ad1c353fc0625595569a9ec3227677e186f2d9aabbab1185100aa530dce2e",
+    "overlap_with_base_signature_count": 1,
+    "passed": true,
+    "payload_signature_count": 6
+  },
+  "parametric_oracle_distinctness_status": "passed",
+  "parent_fixture_kind": "acquired demo source bundle plus executed reference outputs",
+  "public_observation_files": [
+    "environment/app/observations/reference_outputs.tar.gz",
+    "environment/app/observations/manifest.json"
+  ],
+  "reference_input_sha256": "dbdbf2dae27a588422c661f2453f26c247850a386db6a9d4325e03d34c6b3c38",
+  "reference_outputs_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b",
+  "status": "parametric_oracle_accepted",
+  "task_id": "kicad_usb_uart_bridge__02"
+}

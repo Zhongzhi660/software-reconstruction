@@ -1,0 +1,7 @@
+{
+  "family_id": "audio_signal_processing",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T20:57:32.837178+00:00",
+  "judge": "offcode6 hidden native-oracle adapter",
+  "task_id": "offcode6__audio_resample_aliasing_guard__05"
+}

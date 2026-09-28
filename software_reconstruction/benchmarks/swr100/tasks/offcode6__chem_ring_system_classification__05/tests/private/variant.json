@@ -1,0 +1,240 @@
+{
+  "agent_facing_contract_repaired_at": "2026-08-30T23:41:03.578014+00:00",
+  "axes_to_vary": [
+    "protonation_state",
+    "stereochemistry",
+    "substructure_query",
+    "fingerprint_radius",
+    "conformer_seed"
+  ],
+  "benchmark_repaired_at": "2026-09-12T02:46:50.077647+00:00",
+  "benchmark_version": "swr-holdout100-v2",
+  "broad_domain": "Chemistry / Molecular Modeling",
+  "demo_id": "chem_ring_system_classification",
+  "difficulty_audit": {
+    "admitted": true,
+    "audit_reason": "admitted: mature source corpus and medium-high complexity evidence",
+    "difficulty_score": 10,
+    "expected_command_lines": 18,
+    "expected_oracle_steps": 18,
+    "minimum_difficulty_score": 8,
+    "parameter_axis_count": 5,
+    "quality_gates": [
+      "source corpus must be present and nontrivial",
+      "native oracle must produce parameter-sensitive artifacts",
+      "hidden intervention must change oracle output",
+      "blank solution and baked-copy shortcuts must fail"
+    ],
+    "requires_native_or_daytona_oracle": true,
+    "static_domain_file_count": 492,
+    "static_source_bytes": 56674243,
+    "static_source_file_count": 776,
+    "static_source_repos": {
+      "openbabel": {
+        "bytes": 16489547,
+        "domain_file_count": 325,
+        "exists": true,
+        "file_count": 488,
+        "suffix_counts": {
+          ".car": 4,
+          ".cdx": 4,
+          ".cdxml": 4,
+          ".cif": 11,
+          ".cml": 4,
+          ".cof": 36,
+          ".config": 2,
+          ".ff": 2,
+          ".g09": 4,
+          ".gz": 8,
+          ".h": 3,
+          ".ket": 7,
+          ".mdl": 7,
+          ".mol": 218,
+          ".mol2": 16,
+          ".out": 5,
+          ".par": 14,
+          ".pdb": 7,
+          ".png": 4,
+          ".pqs": 3,
+          ".prm": 4,
+          ".sdf": 15,
+          ".smi": 12,
+          ".txt": 56,
+          ".xyz": 6
+        }
+      },
+      "rdkit": {
+        "bytes": 40184696,
+        "domain_file_count": 167,
+        "exists": true,
+        "file_count": 288,
+        "suffix_counts": {
+          ".cdx": 7,
+          ".cdxml": 53,
+          ".chk": 1,
+          ".cpp": 1,
+          ".csv": 5,
+          ".dtd": 2,
+          ".fdef": 1,
+          ".gz": 9,
+          ".ipynb": 1,
+          ".md": 1,
+          ".mol": 96,
+          ".new": 1,
+          ".opt": 1,
+          ".out": 19,
+          ".pdb": 1,
+          ".pkl": 8,
+          ".py": 19,
+          ".sdf": 25,
+          ".smi": 8,
+          ".sql": 1,
+          ".sqlt": 2,
+          ".trc": 4,
+          ".trx": 4,
+          ".ttf": 2,
+          ".txt": 13
+        }
+      }
+    }
+  },
+  "effective_axes_to_vary": [
+    "conformer_seed",
+    "fingerprint_radius",
+    "protonation_state",
+    "stereochemistry",
+    "substructure_query"
+  ],
+  "family_id": "molecular_chemistry",
+  "family_oracle_repaired": true,
+  "group_id": "chem_ring_system_classification_param_group_05",
+  "hidden_intervention": "stereo/protonation/substructure boundaries and descriptor changes",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "conformer_seed": 20,
+        "fingerprint_radius": 22,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_16_hidden"
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 7,
+        "fingerprint_radius": 6,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "substructure_query_5_hidden"
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 3,
+        "fingerprint_radius": 8,
+        "protonation_state": true,
+        "stereochemistry": false,
+        "substructure_query": "substructure_query_11_hidden"
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "naturalized_public_parameter_keys": [
+    "public_1.substructure_query",
+    "public_2.substructure_query"
+  ],
+  "offcode6_public_artifacts_repaired_at": "2026-08-31T04:48:38.550296+00:00",
+  "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups; public-only lookup tables must fail",
+  "parameter_effect_digest_removed": true,
+  "public_artifact_concrete_file_count": 18,
+  "public_artifact_count": 6,
+  "public_artifact_distinct_signatures": true,
+  "public_artifact_schema": "offcode6-oracle-faithful-public-reference-v3",
+  "public_feedback_schema": "public-signature-feedback-v1",
+  "public_scenarios": [
+    {
+      "parameters": {
+        "conformer_seed": 7,
+        "fingerprint_radius": 14,
+        "protonation_state": true,
+        "stereochemistry": true,
+        "substructure_query": "c1ccccc1"
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 8,
+        "fingerprint_radius": 25,
+        "protonation_state": false,
+        "stereochemistry": true,
+        "substructure_query": "N"
+      },
+      "scenario_id": "public_2"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 2,
+        "fingerprint_radius": 8,
+        "protonation_state": false,
+        "stereochemistry": false,
+        "substructure_query": "C=O"
+      },
+      "scenario_id": "public_3"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 4,
+        "fingerprint_radius": 4,
+        "protonation_state": false,
+        "stereochemistry": false,
+        "substructure_query": "c1ccccc1"
+      },
+      "scenario_id": "public_4"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 9,
+        "fingerprint_radius": 6,
+        "protonation_state": true,
+        "stereochemistry": false,
+        "substructure_query": "C=O"
+      },
+      "scenario_id": "public_5"
+    },
+    {
+      "parameters": {
+        "conformer_seed": 4,
+        "fingerprint_radius": 2,
+        "protonation_state": true,
+        "stereochemistry": false,
+        "substructure_query": "CCO"
+      },
+      "scenario_id": "public_6"
+    }
+  ],
+  "reference_outputs": "reference_outputs.tar.gz",
+  "rich_public_artifact_repaired_at": "2026-08-30T05:37:24.638819+00:00",
+  "semantic_comparator": {
+    "coverage": "complete_recursive",
+    "dictionary_fields_truncated": false,
+    "digest_fields_ignored": false,
+    "float_abs_tolerance": 1e-06,
+    "float_rel_tolerance": 0.0001,
+    "integer_tolerance": 0,
+    "list_elements_truncated": false
+  },
+  "software": [
+    "rdkit",
+    "openbabel"
+  ],
+  "source_repos": [
+    "rdkit",
+    "openbabel"
+  ],
+  "status": "concrete_parameters_designed_requires_native_oracle_materialization",
+  "strategy": "hidden_axis_holdout",
+  "task_id": "chem_ring_system_classification__05"
+}

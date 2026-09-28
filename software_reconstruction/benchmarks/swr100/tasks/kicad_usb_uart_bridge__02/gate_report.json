@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Parametric oracle distinctness passed for accepted variants; full anti-shortcut rollout gates remain before batch release.",
+    "parametric_distinctness": {
+      "artifact_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b",
+      "base_artifact_sha256": "8a5ad1c353fc0625595569a9ec3227677e186f2d9aabbab1185100aa530dce2e",
+      "overlap_with_base_signature_count": 1,
+      "passed": true,
+      "payload_signature_count": 6
+    },
+    "parent_smoke_artifact": "swr3000://construction/true_10family_parametric_expansion/parametric_oracle_100demo_group02_20260827_2320/tasks/kicad_usb_uart_bridge__kicad_usb_uart_bridge_param_group_02/parametric_outputs.tar.gz",
+    "parent_smoke_artifact_sha256": "3d2ee78991beba650a27297f4bcaf835e71f2f97aa8b55c3a4adc8c5b2f10d6b"
+  },
+  "passed": true,
+  "scope": "pilot_contract_gate_only",
+  "task_id": "kicad_usb_uart_bridge__02"
+}

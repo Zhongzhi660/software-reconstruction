@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:32:49.025041+00:00",
+  "demo_id": "container_syft_python_sbom",
+  "group_id": "container_syft_python_sbom_param_group_03",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "base_image": 7.086,
+        "entrypoint": "entrypoint_15_h",
+        "labels": 3.764,
+        "package_set": 7.971,
+        "sbom_scope": 4.871
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "base_image": 7.529,
+        "entrypoint": "entrypoint_2_h",
+        "labels": 1.55,
+        "package_set": 10.186,
+        "sbom_scope": 8.414
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "base_image": 11.514,
+        "entrypoint": "entrypoint_6_h",
+        "labels": 4.207,
+        "package_set": 3.986,
+        "sbom_scope": 6.421
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "base_image": 6.421,
+        "entrypoint": "entrypoint_2_p",
+        "labels": 8.193,
+        "package_set": 10.186,
+        "sbom_scope": 11.736
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "base_image": 11.293,
+        "entrypoint": "entrypoint_7_p",
+        "labels": 4.871,
+        "package_set": 8.414,
+        "sbom_scope": 2.214
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "79e0339bc37420fb23af6a5f7ee90b764b1f212fa3e6c150ca86e61291394cee",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__container_syft_python_sbom__03"
+}

@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-28T17:34:33.233835+00:00",
+  "demo_id": "materials_surface_slab_orientation",
+  "group_id": "materials_surface_slab_orientation_param_group_01",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "diffraction_wavelength": 6.9412,
+        "site_substitution": false,
+        "space_group": "stress",
+        "strain_tensor": [
+          12.0,
+          13.0,
+          14.0
+        ],
+        "supercell_size": 4
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 4.5882,
+        "site_substitution": true,
+        "space_group": "compat",
+        "strain_tensor": [
+          5.0,
+          6.0,
+          7.0
+        ],
+        "supercell_size": 8
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 5.2941,
+        "site_substitution": false,
+        "space_group": "strict",
+        "strain_tensor": [
+          2.0,
+          3.0,
+          4.0
+        ],
+        "supercell_size": 19
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "diffraction_wavelength": 5.3529,
+        "site_substitution": false,
+        "space_group": "compat",
+        "strain_tensor": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "supercell_size": 14
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "diffraction_wavelength": 2.5294,
+        "site_substitution": false,
+        "space_group": "baseline",
+        "strain_tensor": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "supercell_size": 6
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "f06df7f198c5130ac978df97d764780bd69dd8e6898ca4814b93805cbccc02c4",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__materials_surface_slab_orientation__01"
+}

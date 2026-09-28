@@ -1,0 +1,7 @@
+{
+  "family_id": "molecular_chemistry",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T20:57:34.710135+00:00",
+  "judge": "offcode6 hidden native-oracle adapter",
+  "task_id": "offcode6__chem_smiles_descriptor_matrix__02"
+}

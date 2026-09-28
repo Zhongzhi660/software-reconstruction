@@ -1,0 +1,7 @@
+{
+  "family_id": "duckdb_reporting",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:53.300807+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__duckdb_recursive_hierarchy_report__04"
+}

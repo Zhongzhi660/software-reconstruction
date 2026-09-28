@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-08-28T17:35:52.623670+00:00",
+  "demo_id": "grid_island_detection_qc",
+  "group_id": "grid_island_detection_qc_param_group_05",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "generator_dispatch": 9.1412,
+        "line_outage": false,
+        "load_scale": 4,
+        "tap_position": [
+          12.6,
+          14.0,
+          15.4
+        ],
+        "voltage_limit": 3.206
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 8.7294,
+        "line_outage": false,
+        "load_scale": 15,
+        "tap_position": [
+          12.6,
+          14.0,
+          15.4
+        ],
+        "voltage_limit": 4.606
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 8.2353,
+        "line_outage": true,
+        "load_scale": 18,
+        "tap_position": [
+          1.4,
+          2.8,
+          4.2
+        ],
+        "voltage_limit": 4.158
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "generator_dispatch": 5.5176,
+        "line_outage": false,
+        "load_scale": 11,
+        "tap_position": [
+          16.8,
+          18.2,
+          19.6
+        ],
+        "voltage_limit": 5.278
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "generator_dispatch": 8.8941,
+        "line_outage": false,
+        "load_scale": 17,
+        "tap_position": [
+          1.4,
+          2.8,
+          4.2
+        ],
+        "voltage_limit": 7.742
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "d6c4c675b3cfc4f2923fa089ca34c0076dfdec2c9e1b385808b5d885f1c780eb",
+  "smoke_evidence": "swr3000://construction/offcode20_expansion/offcode20_daytona_oracle_smoke_1440_final_20260828.json",
+  "source_group": "offcode20",
+  "task_id": "offcode20__grid_island_detection_qc__05"
+}

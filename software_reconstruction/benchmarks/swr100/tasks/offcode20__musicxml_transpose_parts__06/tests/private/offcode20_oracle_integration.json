@@ -1,0 +1,7 @@
+{
+  "family_id": "music_score_engraving",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T19:48:26.157549+00:00",
+  "judge": "offcode20 hidden native-oracle adapter",
+  "task_id": "offcode20__musicxml_transpose_parts__06"
+}

@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "blank_fails": true,
+    "copy_product_fails": true,
+    "feedback_executes_candidate": true,
+    "graded_feedback": true,
+    "no_parent_leakage": true,
+    "observation_causality": true,
+    "operational_editability_gate": true,
+    "oracle_behavior_passes": true,
+    "parent_executes": true,
+    "public_overfit_fails": true,
+    "representation_shortcut_fails": true,
+    "reward_protocol": true,
+    "source_hash_not_judged": true,
+    "starter_independence": true
+  },
+  "evidence": {
+    "note": "Native/Daytona oracle smoke passed in the source expansion report; this materialization pass verifies standard task structure and anti-copy scaffold gates.",
+    "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+    "source_group": "offcode6"
+  },
+  "passed": true,
+  "scope": "materialization_structure_gate_plus_prior_native_oracle_smoke",
+  "task_id": "offcode6__robotics_arm_workspace_boundary__05"
+}

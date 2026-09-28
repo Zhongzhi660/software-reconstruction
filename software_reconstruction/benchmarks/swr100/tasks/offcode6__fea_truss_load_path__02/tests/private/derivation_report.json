@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:57.175017+00:00",
+  "demo_id": "fea_truss_load_path",
+  "group_id": "fea_truss_load_path_param_group_02",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_19_hidden",
+        "contact_region": false,
+        "load_case": "load_case_8_hidden",
+        "material_property": 0.77,
+        "mesh_density": 2
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_9_hidden",
+        "contact_region": false,
+        "load_case": "load_case_20_hidden",
+        "material_property": 1.5125,
+        "mesh_density": 9
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_8_hidden",
+        "contact_region": false,
+        "load_case": "load_case_0_hidden",
+        "material_property": 0.055,
+        "mesh_density": 2
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_19_public",
+        "contact_region": false,
+        "load_case": "load_case_11_public",
+        "material_property": 0.1375,
+        "mesh_density": 5
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "boundary_condition": "boundary_condition_1_public",
+        "contact_region": false,
+        "load_case": "load_case_9_public",
+        "material_property": 3.3,
+        "mesh_density": 7
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "518f8bc4d525f6c1a47a835ce4903c93c4b8875199d086c23a4b3b337659bfe2",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__fea_truss_load_path__02"
+}

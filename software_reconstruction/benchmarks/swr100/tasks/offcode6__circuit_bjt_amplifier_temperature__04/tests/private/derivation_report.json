@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:38:49.917628+00:00",
+  "demo_id": "circuit_bjt_amplifier_temperature",
+  "group_id": "circuit_bjt_amplifier_temperature_param_group_04",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 2.8125,
+        "source_waveform": "source_waveform_18_hidden",
+        "temperature": 4.4231,
+        "tolerance": 3.0
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "strict",
+        "component_value": 4.875,
+        "source_waveform": "source_waveform_0_hidden",
+        "temperature": 3.0769,
+        "tolerance": 5.1875
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "analysis_type": "compat",
+        "component_value": 5.875,
+        "source_waveform": "source_waveform_15_hidden",
+        "temperature": 3.8462,
+        "tolerance": 2.3125
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "analysis_type": "edge",
+        "component_value": 5.4375,
+        "source_waveform": "source_waveform_11_public",
+        "temperature": 5.0962,
+        "tolerance": 1.375
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "analysis_type": "baseline",
+        "component_value": 3.6875,
+        "source_waveform": "source_waveform_17_public",
+        "temperature": 4.4231,
+        "tolerance": 1.25
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "d38bfb39c84be47c73774c539bbdeaac22cd490f657a9c63fd6d69ff962178ad",
+  "smoke_evidence": "swr3000://construction/offcode6_expansion/offcode6_full_native_oracle_smoke_summary.json",
+  "source_group": "offcode6",
+  "task_id": "offcode6__circuit_bjt_amplifier_temperature__04"
+}

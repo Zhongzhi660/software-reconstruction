@@ -1,0 +1,87 @@
+{
+  "candidate": {
+    "editable_format": "multi-file editable project or structured project specification",
+    "path": "/app/workspace",
+    "starter_policy": "blank"
+  },
+  "family": "gdal_geospatial",
+  "feedback": {
+    "command": "/app/tools/feedback",
+    "executes_candidate": true,
+    "graded": true,
+    "metrics": [
+      "workspace_file_count",
+      "workspace_bytes",
+      "public_scenario_count"
+    ]
+  },
+  "judge": {
+    "behavior_only": true,
+    "candidate_source_equality_forbidden": true,
+    "forbidden_shortcuts": [
+      "copied public observation manifest",
+      "empty placeholder workspace",
+      "public-case-only branch table"
+    ],
+    "hidden_scenario_count": 3
+  },
+  "mode": "software_in_loop_reconstruction",
+  "parametric_expansion": {
+    "axes_to_vary": [
+      "crs",
+      "bbox",
+      "resolution",
+      "layer_filter",
+      "nodata"
+    ],
+    "demo_id": "gdal_vrt_mosaic_transform",
+    "group_id": "gdal_vrt_mosaic_transform_param_group_06",
+    "hidden_intervention": "CRS/nodata/invalid geometry boundary cases",
+    "oracle_distinctness_gate": "public and hidden native-tool outputs must differ across parameter groups and reject public-only lookup tables",
+    "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+    "source_group": "new10"
+  },
+  "parent": {
+    "attribution": "new10 online demo gdal_vrt_mosaic_transform with smoke-passed parameterized oracle",
+    "license": "upstream-acquired-demo-license",
+    "revision": "pinned-online-source-snapshot",
+    "sha256": "4624c43f5ce6ce46fba798b2212a4541ff02cff27417f78caaa675795f426ae9",
+    "source_url": "acquired:new10:gdal_geospatial"
+  },
+  "scenario_axis_oracle_repair": {
+    "repaired_at": "2026-09-02T22:30:57.992405+00:00",
+    "version": "new10-scenario-axis-oracle-v2"
+  },
+  "schema_version": "2.0",
+  "software": {
+    "command": "gdal_geospatial reference workflow over public and hidden scenarios",
+    "image_digest": "daytona-runtime:gdal_geospatial",
+    "name": "gdal, ogr2ogr, proj",
+    "version": "native/daytona smoke validated"
+  },
+  "target_derivation": {
+    "agent_facing_contract_repaired_at": "2026-08-30T23:35:11.295330+00:00",
+    "derivation_report": "tests/private/derivation_report.json",
+    "hidden_scenarios": [
+      "hidden_1",
+      "hidden_2",
+      "hidden_3"
+    ],
+    "new10_public_artifacts_repaired_at": "2026-08-31T04:44:58.078895+00:00",
+    "public_artifact_concrete_file_count": 12,
+    "public_artifact_distinct_signatures": true,
+    "public_artifact_schema": "new10-oracle-faithful-public-reference-v3",
+    "public_artifact_tar_size": 2987,
+    "public_feedback_schema": "public-signature-feedback-v1",
+    "public_observation_files": [
+      "environment/app/observations/manifest.json",
+      "environment/app/observations/reference_outputs.tar.gz"
+    ],
+    "public_scenarios": [
+      "public_1",
+      "public_2"
+    ],
+    "rich_public_artifact_repaired_at": "2026-08-30T05:36:35.802854+00:00"
+  },
+  "task_id": "new10__gdal_vrt_mosaic_transform__06"
+}

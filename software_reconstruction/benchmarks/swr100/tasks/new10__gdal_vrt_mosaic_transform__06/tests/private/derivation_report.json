@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-08-28T17:33:04.282831+00:00",
+  "demo_id": "gdal_vrt_mosaic_transform",
+  "group_id": "gdal_vrt_mosaic_transform_param_group_06",
+  "hidden_scenarios": [
+    {
+      "parameters": {
+        "bbox": 15.64,
+        "crs": "baseline",
+        "layer_filter": "layer_filter_7_h",
+        "nodata": 12.871,
+        "resolution": 8.16
+      },
+      "scenario_id": "hidden_1"
+    },
+    {
+      "parameters": {
+        "bbox": 8.33,
+        "crs": "strict",
+        "layer_filter": "layer_filter_8_h",
+        "nodata": 5.1,
+        "resolution": 9.69
+      },
+      "scenario_id": "hidden_2"
+    },
+    {
+      "parameters": {
+        "bbox": 14.45,
+        "crs": "edge",
+        "layer_filter": "layer_filter_6_h",
+        "nodata": 3.4,
+        "resolution": 8.16
+      },
+      "scenario_id": "hidden_3"
+    }
+  ],
+  "parent_fixture_kind": "online demo plus parameterized oracle smoke record",
+  "public_reference_outputs": {
+    "distinct_public_signatures": true,
+    "path": "environment/app/observations/reference_outputs.tar.gz",
+    "public_artifact_count": 2,
+    "schema": "rich-public-reference-outputs-v1"
+  },
+  "public_scenarios": [
+    {
+      "parameters": {
+        "bbox": 8.5,
+        "crs": "edge",
+        "layer_filter": "layer_filter_7_p",
+        "nodata": 3.4,
+        "resolution": 16.66
+      },
+      "scenario_id": "public_1"
+    },
+    {
+      "parameters": {
+        "bbox": 7.82,
+        "crs": "edge",
+        "layer_filter": "layer_filter_5_p",
+        "nodata": 10.686,
+        "resolution": 18.53
+      },
+      "scenario_id": "public_2"
+    }
+  ],
+  "record_sha256": "4624c43f5ce6ce46fba798b2212a4541ff02cff27417f78caaa675795f426ae9",
+  "smoke_evidence": "swr3000://construction/new10family_expansion/new10_full_oracle_smoke_600_merged_20260828.json",
+  "source_group": "new10",
+  "task_id": "new10__gdal_vrt_mosaic_transform__06"
+}

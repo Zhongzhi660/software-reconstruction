@@ -1,0 +1,7 @@
+{
+  "family_id": "ajv_schema",
+  "hidden_scenario_count": 3,
+  "integrated_at": "2026-08-28T21:00:48.543995+00:00",
+  "judge": "new10 hidden native-oracle adapter",
+  "task_id": "new10__ajv_recursive_api_payload__04"
+}
